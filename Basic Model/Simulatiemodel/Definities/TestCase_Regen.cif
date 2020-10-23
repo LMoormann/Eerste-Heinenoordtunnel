@@ -1,0 +1,24 @@
+group def Sim_Regen(alg string knop_plus, knop_minus, status):
+  event e_plus, e_min;
+  plant regen_niveau:
+      monitor;
+      disc int[0..8] level = 0;
+      location:
+          initial; marked;
+          edge e_plus when level < 8 do level:=level+1;
+          edge e_min  when level > 0 do level:=level-1;
+  end
+
+  alg bool regenen = regen_niveau.level > 0;
+
+  group Regen_Visu:
+  svgfile"../controle_paneel.svg";
+      svgin id knop_plus  event e_plus;
+      svgin id knop_minus event e_min;
+      svgout id status text value fmt("%s",<string>regen_niveau.level);
+  end
+
+
+end
+
+

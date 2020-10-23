@@ -1,0 +1,13 @@
+import "Sim_Timer.cif";
+group def Sim_Popup(alg bool venster;event aan,reset,timeout,accepteer,
+  afwijzen;alg string locatie):
+
+  popup_timer: Hybride_timer(aan, reset, timeout, 30);
+
+  svgin id "knop_akkoord_popup" +locatie event accepteer;
+  svgin id "knop_afwijzen_popup"+locatie event afwijzen;
+
+  svgout id "popup"+locatie attr "visibility" value
+                            if venster :"visible" else "hidden" end;
+  svgout id "tijd_popup"+locatie text value fmt("%.2f",popup_timer.t);
+end

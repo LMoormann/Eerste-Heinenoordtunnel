@@ -1,0 +1,65 @@
+import "Actuator.cif", "Control.cif";
+
+group def MiddleTunnelChannel():
+  ControlPressure: Control();
+  ButtonPressureOff: PushButton(ControlPressure.Mode.manual, Pressure1.off and Pressure2.off, ControlPressure.Mode.auto);
+  ButtonPressureLeft: PushButton(ControlPressure.Mode.manual, Pressure1.left and Pressure2.left, ControlPressure.Mode.auto);
+  ButtonPressureRight: PushButton(ControlPressure.Mode.manual, Pressure1.right and Pressure2.right, ControlPressure.Mode.auto);
+
+	plant def Pressure():
+    controllable c_off, c_left, c_right;
+    location off:
+      initial; marked;
+      edge c_left  goto left;
+      edge c_right goto right;
+    location left:
+      edge c_off    goto off;
+    location right:
+      edge c_off    goto off;
+  end
+
+  Pressure1: Pressure();
+  Pressure2: Pressure();
+
+  Lighting: Actuator(true, false);
+  ControlLighting: Control();
+  ButtonLightingOff: PushButton(ControlLighting.Mode.manual, Lighting.off, ControlLighting.Mode.auto);
+  ButtonLightingOn: PushButton(ControlLighting.Mode.manual, Lighting.on, ControlLighting.Mode.auto);
+
+	plant DynamicEscaperouteIndication:
+    controllable c_off, c_upward, c_downward;
+    location off:
+      initial; marked;
+      edge c_upward goto upward;
+      edge c_downward goto downward;
+    location upward:
+      edge c_off goto off;
+      edge c_downward goto downward;
+    location downward:
+      edge c_off goto off;
+      edge c_upward goto upward;
+  end
+  ControlDynamicEscaperouteIndication: Control();
+  ButtonDynamicEscaperouteIndicationOff: PushButton(ControlDynamicEscaperouteIndication.Mode.manual, DynamicEscaperouteIndication.off, ControlDynamicEscaperouteIndication.Mode.auto);
+  ButtonDynamicEscaperouteIndicationUpward: PushButton(ControlDynamicEscaperouteIndication.Mode.manual, DynamicEscaperouteIndication.upward, ControlDynamicEscaperouteIndication.Mode.auto);
+  ButtonDynamicEscaperouteIndicationDownward: PushButton(ControlDynamicEscaperouteIndication.Mode.manual, DynamicEscaperouteIndication.downward, ControlDynamicEscaperouteIndication.Mode.auto);
+
+	plant Broadcast:
+  	controllable event c_off, c_on, c_onManual, c_suppressed, c_suppressedManual;
+  	location off:
+  		initial; marked;
+  		edge c_on, c_onManual goto on;
+  	location on:
+  		edge c_off            goto off;
+  		edge c_suppressed     goto suppressed;
+  		edge c_suppressedManual goto suppressedManual;
+  	location suppressed:
+  		edge c_off goto off;
+  		edge c_on goto on;
+  	location suppressedManual:
+  		edge c_off     goto off;
+  		edge c_onManual goto on;
+  end
+  ButtonStartMessage: PushButton(Broadcast.off or Broadcast.suppressedManual, Broadcast.on, false);
+  ButtonStopMessage: PushButton(Broadcast.on, Broadcast.off or Broadcast.suppressedManual, false);
+end

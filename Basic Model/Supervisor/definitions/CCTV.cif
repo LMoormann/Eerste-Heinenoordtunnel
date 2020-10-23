@@ -1,0 +1,30 @@
+plant def CCTV():
+  controllable c_off1, c_off2, c_off3, c_off4, c_off5, c_off6, c_on1, c_on2, c_on3, c_on4, c_on5, c_on6,
+               c_start, c_stop, c_view;
+  location off:
+    initial; marked;
+    edge c_on1, c_start goto camera1;
+    edge c_on2 goto camera2;
+    edge c_on3 goto camera3;
+    edge c_on4 goto camera4;
+    edge c_on5 goto camera5;
+    edge c_on6 goto camera6;
+  location camera1:
+    edge c_off1, c_stop goto off;
+    edge c_view goto camera2;
+  location camera2:
+    edge c_off2, c_stop goto off;
+    edge c_view goto camera3;
+  location camera3:
+    edge c_off3, c_stop goto off;
+    edge c_view goto camera4;
+  location camera4:
+    edge c_off4, c_stop goto off;
+    edge c_view goto camera5;
+  location camera5:
+    edge c_off5, c_stop goto off;
+    edge c_view goto camera6;
+  location camera6:
+   	edge c_off6, c_stop goto off;
+   	edge c_view goto camera1;
+end

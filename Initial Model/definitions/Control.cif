@@ -1,0 +1,17 @@
+import "PushButton.cif";
+
+group def Control():
+  plant Mode:
+  	controllable c_auto, c_manual;
+  	location auto:
+  		initial; marked;
+  		edge c_manual goto manual;
+  	location manual:
+  		edge c_auto goto auto;
+  end
+  ButtonManual: PushButton(Mode.auto, Mode.manual, false);
+  ButtonAuto: PushButton(Mode.manual, Mode.auto, false);
+
+  requirement Mode.c_manual needs ButtonManual.Observer.pressed;
+  requirement Mode.c_auto needs ButtonAuto.Observer.pressed;
+end

@@ -1,0 +1,19 @@
+from "lib:cif3" import *;
+
+// Output files
+string sup_path    = "Supervisor.cif";           //Location of supervisor
+// Input files
+string in_path_db  = "Tunnel.cif";               //Location of plant & requirement models
+
+// Synthesize supervisor.
+outln("File \"%s\": synthesizing...", sup_path);
+cif3datasynth(in_path_db,
+    "--option-dialog=no",
+    "-o", sup_path,
+    "-n", fmt("sup"),
+    "-t normal",
+    "-m debug",
+    "--stats=timing",
+    "--forward-reach=true",
+    "--bdd-table=400000");
+outln("File \"%s\": synthesized.", sup_path);

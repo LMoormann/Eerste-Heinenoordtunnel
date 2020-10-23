@@ -1,0 +1,31 @@
+plant def Hybride_timer(event aan,reset,timeout;alg real looptijd):
+
+  cont t = 0 der if uit:       0
+               elif afgelopen: 0
+               else -1 end;
+
+  location uit:
+      initial; marked;
+      edge aan do t := looptijd goto lopend;
+  location lopend:
+      edge reset goto uit;
+      edge timeout when t <= 0 goto afgelopen;
+  location afgelopen:
+      edge reset goto uit;
+end
+
+
+plant def Hybride_wissel_timer(event aan,reset,timeout;alg real looptijd):
+
+  cont t = 0 der if uit: 0 else -1 end;
+
+  location uit:
+      initial; marked;
+      edge aan do t := looptijd goto aan_1;
+  location aan_1:
+      edge reset goto uit;
+      edge timeout when t <= 0 do t:= looptijd goto aan_2;
+  location aan_2:
+      edge reset goto uit;
+      edge timeout when t <= 0 do t:= looptijd goto aan_1;
+end

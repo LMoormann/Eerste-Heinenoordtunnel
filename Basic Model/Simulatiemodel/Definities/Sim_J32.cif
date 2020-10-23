@@ -1,0 +1,9 @@
+import "Sim_Timer.cif";
+
+group def Sim_J32(alg bool actief ;event aan, reset, timeout;
+                                   alg string j32_visu):
+
+  j32_timer: Hybride_timer(aan,reset,timeout,10);
+
+  svgout id j32_visu attr "fill" value if actief: "silver" else "grey" end;
+end

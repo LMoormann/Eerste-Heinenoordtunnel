@@ -1,0 +1,2711 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="174.19066mm"
+   height="190.22682mm"
+   viewBox="0 0 174.19066 190.22682"
+   version="1.1"
+   id="svg1482"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="controle_paneel.svg">
+  <defs
+     id="defs1476" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.99999996"
+     inkscape:cx="238.13595"
+     inkscape:cy="354.96803"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     showguides="true"
+     inkscape:guide-bbox="true" />
+  <metadata
+     id="metadata1479">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Background"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-11.794398,-15.599726)"
+     style="display:inline">
+    <rect
+       style="opacity:1;fill:#b9b9b9;fill-opacity:1;stroke:#020001;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="rect2049"
+       width="173.19066"
+       height="189.22682"
+       x="12.294398"
+       y="16.099726"
+       sodipodi:insensitive="true" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="13.193862"
+       y="27.648903"
+       id="text1083"><tspan
+         sodipodi:role="line"
+         id="tspan1081"
+         x="13.193862"
+         y="27.648903"
+         style="stroke-width:0.26458332">Time:</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="29.540329"
+       y="27.648903"
+       id="Tijd"><tspan
+         sodipodi:role="line"
+         id="tspan1085"
+         x="29.540329"
+         y="27.648903"
+         style="stroke-width:0.26458332">123</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 12.561668,28.928663 H 185.75232"
+       id="path2123"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:Newcastle;-inkscape-font-specification:Newcastle;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="61.607765"
+       y="25.710686"
+       id="text2127"><tspan
+         sodipodi:role="line"
+         id="tspan2125"
+         x="61.607765"
+         y="25.710686"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:arial;-inkscape-font-specification:arial;stroke-width:0.26458332">Controle paneel</tspan></text>
+    <g
+       id="knop_Disable"
+       inkscape:label="#knop_Bediening"
+       transform="matrix(0.99142439,0,0,1.0002624,0.10668235,-0.00863391)">
+      <rect
+         y="28.928663"
+         x="12.561668"
+         height="7.9375"
+         width="57.606476"
+         id="knop_Disable_achtergrond"
+         style="opacity:1;fill:#f1f1f1;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         inkscape:label="#knop_Bediening_achtergrond" />
+    </g>
+    <g
+       id="knop_TestCases">
+      <rect
+         y="28.928663"
+         x="70.168144"
+         height="7.9375"
+         width="57.60648"
+         id="knop_TestCases_achtergrond"
+         style="opacity:1;fill:#b9b9b9;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+      <text
+         id="text946"
+         y="35.132935"
+         x="84.018806"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="35.132935"
+           x="84.018806"
+           id="tspan944"
+           sodipodi:role="line">Test cases</tspan></text>
+    </g>
+    <g
+       id="knop_Interactie"
+       transform="matrix(0.99140943,0,0,1,1.5925292,0)">
+      <rect
+         y="28.928663"
+         x="127.77462"
+         height="7.9375"
+         width="57.60648"
+         id="knop_Interactie_achtergrond"
+         style="opacity:1;fill:#b9b9b9;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+      <text
+         id="text1610"
+         y="35.132935"
+         x="143.34921"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="35.132935"
+           x="143.34921"
+           id="tspan1608"
+           sodipodi:role="line">Interactie</tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="tabblad_Bediening"
+     inkscape:label="Bediening"
+     style="display:none"
+     sodipodi:insensitive="true">
+    <rect
+       style="opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="knop_calamiteit_buis_1"
+       width="6.7249479"
+       height="6.1645355"
+       x="53.354633"
+       y="47.765785" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.03688717px;line-height:1.25;font-family:arial;-inkscape-font-specification:arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25092217"
+       x="6.4812803"
+       y="53.24292"
+       id="text2031"><tspan
+         sodipodi:role="line"
+         id="tspan2029"
+         x="6.4812803"
+         y="53.24292"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.69125795px;font-family:arial;-inkscape-font-specification:arial;stroke-width:0.25092217">Calamiteit</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.03688717px;line-height:1.25;font-family:Newcastle;-inkscape-font-specification:Newcastle;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25092217"
+       x="6.4812803"
+       y="61.863152"
+       id="text2035"><tspan
+         sodipodi:role="line"
+         id="tspan2033"
+         x="6.4812803"
+         y="61.863152"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.69125795px;font-family:arial;-inkscape-font-specification:arial;stroke-width:0.25092217">Herstel</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.03688717px;line-height:1.25;font-family:Newcastle;-inkscape-font-specification:Newcastle;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25092217"
+       x="6.4812803"
+       y="69.9394"
+       id="text2039"><tspan
+         sodipodi:role="line"
+         id="tspan2037"
+         x="6.4812803"
+         y="69.9394"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.69125795px;font-family:arial;-inkscape-font-specification:arial;stroke-width:0.25092217">Operationeel</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.9612298px;line-height:1.25;font-family:Newcastle;-inkscape-font-specification:Newcastle;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.17403074"
+       x="67.777885"
+       y="29.543205"
+       id="text2043"><tspan
+         sodipodi:role="line"
+         id="tspan2041"
+         x="67.777885"
+         y="29.543205"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:arial;-inkscape-font-specification:arial;stroke-width:0.17403074">Buis 1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.9612298px;line-height:1.25;font-family:Newcastle;-inkscape-font-specification:Newcastle;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.17403074"
+       x="132.53793"
+       y="29.543205"
+       id="text2047"><tspan
+         sodipodi:role="line"
+         id="tspan2045"
+         x="132.53793"
+         y="29.543205"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:arial;-inkscape-font-specification:arial;stroke-width:0.17403074">Buis 2</tspan></text>
+    <rect
+       style="opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="knop_herstel_buis_1"
+       width="6.7249479"
+       height="6.1645355"
+       x="53.354633"
+       y="56.425224" />
+    <rect
+       style="opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="knop_operationeel_buis_1"
+       width="6.7249479"
+       height="6.1645355"
+       x="53.354633"
+       y="65.084671" />
+    <rect
+       style="opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="knop_calamiteit_buis_2"
+       width="6.7249479"
+       height="6.1645355"
+       x="115.177"
+       y="47.765785" />
+    <rect
+       style="opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="knop_herstel_buis_2"
+       width="6.7249479"
+       height="6.1645355"
+       x="115.177"
+       y="56.425224" />
+    <rect
+       style="opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="knop_operationeel_buis_2"
+       width="6.7249479"
+       height="6.1645355"
+       x="115.177"
+       y="65.084671" />
+    <path
+       transform="translate(-11.794398,-15.599726)"
+       style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 62.185549,37.101198 V 205.55928"
+       id="path2129"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       transform="translate(-11.794398,-15.599726)"
+       style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.75, 0.75;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 124.71644,37.112662 V 204.82429"
+       id="path2131"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="6.4812803"
+       y="44.053806"
+       id="text2135"><tspan
+         sodipodi:role="line"
+         id="tspan2133"
+         x="6.4812803"
+         y="44.053806"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332">Stand</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="54.617939"
+       y="41.912334"
+       id="stand_buis_1"><tspan
+         sodipodi:role="line"
+         id="tspan2137"
+         x="54.617939"
+         y="41.912334"
+         style="font-size:5.29166651px;stroke-width:0.26458332">a</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="117.21366"
+       y="41.912334"
+       id="stand_buis_2"><tspan
+         sodipodi:role="line"
+         id="tspan2141"
+         x="117.21366"
+         y="41.912334"
+         style="font-size:5.29166651px;stroke-width:0.26458332">a</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.03688717px;line-height:1.25;font-family:Newcastle;-inkscape-font-specification:Newcastle;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25092217"
+       x="6.4812803"
+       y="79.182037"
+       id="text2039-2"><tspan
+         sodipodi:role="line"
+         id="tspan2037-4"
+         x="6.4812803"
+         y="79.182037"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.69125795px;font-family:arial;-inkscape-font-specification:arial;stroke-width:0.25092217">Evacuatie</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.03688717px;line-height:1.25;font-family:Newcastle;-inkscape-font-specification:Newcastle;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25092217"
+       x="6.4812803"
+       y="87.882332"
+       id="text2039-2-8"><tspan
+         sodipodi:role="line"
+         id="tspan2037-4-9"
+         x="6.4812803"
+         y="87.882332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.69125795px;font-family:arial;-inkscape-font-specification:arial;stroke-width:0.25092217">Onderhoud</tspan><tspan
+         sodipodi:role="line"
+         x="6.4812803"
+         y="100.42844"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.69125795px;font-family:arial;-inkscape-font-specification:arial;stroke-width:0.25092217"
+         id="tspan879" /></text>
+    <rect
+       style="opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="knop_evacuatie_buis_1"
+       width="6.7249479"
+       height="6.1645355"
+       x="53.354633"
+       y="73.74411" />
+    <rect
+       style="opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="knop_onderhoud_buis_1"
+       width="6.7249479"
+       height="6.1645355"
+       x="53.354633"
+       y="82.403557" />
+    <rect
+       style="opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="knop_evacuatie_buis_2"
+       width="6.7249479"
+       height="6.1645355"
+       x="115.177"
+       y="73.74411" />
+    <rect
+       style="opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="knop_onderhoud_buis_2"
+       width="6.7249479"
+       height="6.1645355"
+       x="115.177"
+       y="82.403557" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 0.37417734,92.940713 H 174.17955"
+       id="path1170"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="6.4812803"
+       y="101.57797"
+       id="text1174"><tspan
+         sodipodi:role="line"
+         id="tspan1172"
+         x="6.4812803"
+         y="101.57797"
+         style="stroke-width:0.26458332">Kanaal</tspan></text>
+    <g
+       style="display:inline"
+       transform="translate(11.396314,64.851216)"
+       id="buis_1_kanaal_1_knop">
+      <rect
+         y="31.408964"
+         x="41.862045"
+         height="6.1645355"
+         width="6.7249479"
+         id="buis_1_kanaal_1_knop_achtergrond"
+         style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+      <text
+         id="text1637-4-2-1"
+         y="36.392925"
+         x="43.950695"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-size:5.29166651px;stroke-width:0.26458332"
+           y="36.392925"
+           x="43.950695"
+           id="tspan1635-0-8-9"
+           sodipodi:role="line">1</tspan></text>
+    </g>
+    <g
+       style="display:inline"
+       transform="translate(21.367669,64.851216)"
+       id="buis_1_kanaal_2_knop">
+      <rect
+         y="31.408964"
+         x="41.862045"
+         height="6.1645355"
+         width="6.7249479"
+         id="buis_1_kanaal_2_knop_achtergrond"
+         style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+      <text
+         id="text1637-4-2-1-5"
+         y="36.392925"
+         x="43.812668"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-size:5.29166651px;stroke-width:0.26458332"
+           y="36.392925"
+           x="43.812668"
+           id="tspan1635-0-8-9-2"
+           sodipodi:role="line">2</tspan></text>
+    </g>
+    <g
+       style="display:inline"
+       transform="translate(31.339024,64.851216)"
+       id="buis_1_kanaal_3_knop">
+      <rect
+         y="31.408964"
+         x="41.862045"
+         height="6.1645355"
+         width="6.7249479"
+         id="buis_1_kanaal_3_knop_achtergrond"
+         style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+      <text
+         id="text1637-4-2-1-9"
+         y="36.392925"
+         x="43.762077"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-size:5.29166651px;stroke-width:0.26458332"
+           y="36.392925"
+           x="43.762077"
+           id="tspan1635-0-8-9-0"
+           sodipodi:role="line">3</tspan></text>
+    </g>
+    <g
+       style="display:inline"
+       transform="translate(41.310371,64.851216)"
+       id="buis_1_kanaal_4_knop">
+      <rect
+         y="31.408964"
+         x="41.862045"
+         height="6.1645355"
+         width="6.7249479"
+         id="buis_1_kanaal_4_knop_achtergrond"
+         style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+      <text
+         id="text1637-4-2-1-0"
+         y="36.392925"
+         x="43.847343"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-size:5.29166651px;stroke-width:0.26458332"
+           y="36.392925"
+           x="43.847343"
+           id="tspan1635-0-8-9-1"
+           sodipodi:role="line">4</tspan></text>
+    </g>
+    <g
+       style="display:inline"
+       transform="translate(51.281726,64.851216)"
+       id="buis_1_kanaal_5_knop">
+      <rect
+         y="31.408964"
+         x="41.862045"
+         height="6.1645355"
+         width="6.7249479"
+         id="buis_1_kanaal_5_knop_achtergrond"
+         style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+      <text
+         id="text1637-4-2-1-3"
+         y="36.392925"
+         x="43.749157"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-size:5.29166651px;stroke-width:0.26458332"
+           y="36.392925"
+           x="43.749157"
+           id="tspan1635-0-8-9-8"
+           sodipodi:role="line">5</tspan></text>
+    </g>
+    <g
+       style="display:inline"
+       transform="translate(61.253082,64.851216)"
+       id="buis_1_kanaal_6_knop">
+      <rect
+         y="31.408964"
+         x="41.862045"
+         height="6.1645355"
+         width="6.7249479"
+         id="buis_1_kanaal_6_knop_achtergrond"
+         style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+      <text
+         id="text1637-4-2-1-8"
+         y="36.392925"
+         x="43.774994"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-size:5.29166651px;stroke-width:0.26458332"
+           y="36.392925"
+           x="43.774994"
+           id="tspan1635-0-8-9-86"
+           sodipodi:role="line">6</tspan></text>
+    </g>
+    <g
+       style="display:inline"
+       transform="translate(73.118972,64.851216)"
+       id="buis_2_kanaal_1_knop">
+      <rect
+         y="31.408964"
+         x="41.862045"
+         height="6.1645355"
+         width="6.7249479"
+         id="buis_2_kanaal_1_knop_achtergrond"
+         style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+      <text
+         id="text1637-4-2-1-52"
+         y="36.392925"
+         x="43.950695"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-size:5.29166651px;stroke-width:0.26458332"
+           y="36.392925"
+           x="43.950695"
+           id="tspan1635-0-8-9-4"
+           sodipodi:role="line">1</tspan></text>
+    </g>
+    <g
+       id="buis_2_kanaal_2_knop"
+       style="display:inline"
+       transform="translate(83.090327,64.851216)">
+      <rect
+         y="31.408964"
+         x="41.862045"
+         height="6.1645355"
+         width="6.7249479"
+         id="buis_2_kanaal_2_knop_achtergrond"
+         style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+      <text
+         id="text1637-4-2-1-5-5"
+         y="36.392925"
+         x="43.812668"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-size:5.29166651px;stroke-width:0.26458332"
+           y="36.392925"
+           x="43.812668"
+           id="tspan1635-0-8-9-2-8"
+           sodipodi:role="line">2</tspan></text>
+    </g>
+    <g
+       style="display:inline"
+       transform="translate(93.061681,64.851216)"
+       id="buis_2_kanaal_3_knop">
+      <rect
+         y="31.408964"
+         x="41.862045"
+         height="6.1645355"
+         width="6.7249479"
+         id="buis_2_kanaal_3_knop_achtergrond"
+         style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+      <text
+         id="text1637-4-2-1-9-2"
+         y="36.392925"
+         x="43.762077"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-size:5.29166651px;stroke-width:0.26458332"
+           y="36.392925"
+           x="43.762077"
+           id="tspan1635-0-8-9-0-4"
+           sodipodi:role="line">3</tspan></text>
+    </g>
+    <g
+       style="display:inline"
+       transform="translate(103.03303,64.851216)"
+       id="buis_2_kanaal_4_knop">
+      <rect
+         y="31.408964"
+         x="41.862045"
+         height="6.1645355"
+         width="6.7249479"
+         id="buis_2_kanaal_4_knop_achtergrond"
+         style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+      <text
+         id="text1637-4-2-1-0-2"
+         y="36.392925"
+         x="43.847343"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-size:5.29166651px;stroke-width:0.26458332"
+           y="36.392925"
+           x="43.847343"
+           id="tspan1635-0-8-9-1-7"
+           sodipodi:role="line">4</tspan></text>
+    </g>
+    <g
+       style="display:inline"
+       transform="translate(113.00439,64.851216)"
+       id="buis_2_kanaal_5_knop">
+      <rect
+         y="31.408964"
+         x="41.862045"
+         height="6.1645355"
+         width="6.7249479"
+         id="buis_2_kanaal_5_knop_achtergrond"
+         style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+      <text
+         id="text1637-4-2-1-3-4"
+         y="36.392925"
+         x="43.749157"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-size:5.29166651px;stroke-width:0.26458332"
+           y="36.392925"
+           x="43.749157"
+           id="tspan1635-0-8-9-8-3"
+           sodipodi:role="line">5</tspan></text>
+    </g>
+    <g
+       style="display:inline"
+       transform="translate(122.97574,64.851216)"
+       id="buis_2_kanaal_6_knop">
+      <rect
+         y="31.408964"
+         x="41.862045"
+         height="6.1645355"
+         width="6.7249479"
+         id="buis_2_kanaal_6_knop_achtergrond"
+         style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+      <text
+         id="text1637-4-2-1-8-7"
+         y="36.392925"
+         x="43.774994"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-size:5.29166651px;stroke-width:0.26458332"
+           y="36.392925"
+           x="43.774994"
+           id="tspan1635-0-8-9-86-2"
+           sodipodi:role="line">6</tspan></text>
+    </g>
+    <rect
+       style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="knop_open_buis_1"
+       width="6.7249479"
+       height="6.1645355"
+       x="79.981277"
+       y="51.413296" />
+    <rect
+       style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="knop_dicht_buis_1"
+       width="6.7249479"
+       height="6.1645355"
+       x="96.782318"
+       y="51.413296" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="83.361839"
+       y="49.649864"
+       id="stand_buis_1-4"><tspan
+         sodipodi:role="line"
+         id="tspan2137-8"
+         x="83.361839"
+         y="49.649864"
+         style="font-size:5.29166651px;stroke-width:0.26458332">Open</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="99.63372"
+       y="50.179031"
+       id="stand_buis_1-9"><tspan
+         sodipodi:role="line"
+         id="tspan2137-5"
+         x="99.63372"
+         y="50.179031"
+         style="font-size:5.29166651px;stroke-width:0.26458332">Sluit</tspan></text>
+    <rect
+       style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="knop_open_buis_2"
+       width="6.7249479"
+       height="6.1645355"
+       x="141.4969"
+       y="51.413296" />
+    <rect
+       style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="knop_dicht_buis_2"
+       width="6.7249479"
+       height="6.1645355"
+       x="158.29794"
+       y="51.413296" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="144.87746"
+       y="49.649864"
+       id="stand_buis_1-4-4"><tspan
+         sodipodi:role="line"
+         id="tspan2137-8-7"
+         x="144.87746"
+         y="49.649864"
+         style="font-size:5.29166651px;stroke-width:0.26458332">Open</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="161.14934"
+       y="50.179031"
+       id="stand_buis_1-9-0"><tspan
+         sodipodi:role="line"
+         id="tspan2137-5-8"
+         x="161.14934"
+         y="50.179031"
+         style="font-size:5.29166651px;stroke-width:0.26458332">Sluit</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="tabblad_TestCases"
+     inkscape:label="Test cases"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 0.37797618,52.832476 H 173.11309"
+       id="path1022"
+       inkscape:connector-curvature="0" />
+    <g
+       id="g1606">
+      <text
+         id="text964"
+         y="27.994217"
+         x="72.224922"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="27.994217"
+           x="72.224922"
+           id="tspan962"
+           sodipodi:role="line">Buitenlicht</tspan></text>
+      <g
+         transform="translate(0.57266443)"
+         id="g1155">
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 40.719919,40.642742 v 8.315471"
+           id="path979"
+           inkscape:connector-curvature="0" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="61.988098"
+           y="46.446888"
+           id="licht_stand_buis_1"><tspan
+             sodipodi:role="line"
+             id="tspan4685"
+             x="61.988098"
+             y="46.446888"
+             style="stroke-width:0.26458332">a</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="32.241367"
+           y="34.878609"
+           id="text972"><tspan
+             sodipodi:role="line"
+             id="tspan970"
+             x="32.241367"
+             y="34.878609"
+             style="stroke-width:0.26458332">Buis 1</tspan></text>
+        <g
+           id="knop_licht_plus_buis_1"
+           transform="translate(-5.2916667,-1.4174142)">
+          <rect
+             y="43.135624"
+             x="33.699871"
+             height="6.1645355"
+             width="6.7249479"
+             id="rect1166"
+             style="opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+          <text
+             id="text980"
+             y="49.947495"
+             x="33.971142"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58659458px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.44110808"
+             xml:space="preserve"><tspan
+               style="stroke-width:0.44110808"
+               y="49.947495"
+               x="33.971142"
+               id="tspan978"
+               sodipodi:role="line">+</tspan></text>
+        </g>
+        <g
+           id="knop_licht_min_buis_1"
+           transform="translate(-4.7625,-1.4174142)">
+          <rect
+             y="43.135624"
+             x="51.041512"
+             height="6.1645355"
+             width="6.7249479"
+             id="rect1168"
+             style="opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+          <text
+             transform="scale(1.2609286,0.79306631)"
+             id="text984"
+             y="62.327011"
+             x="40.539139"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.63332748px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.65138859"
+             xml:space="preserve"><tspan
+               style="stroke-width:0.65138859"
+               y="62.327011"
+               x="40.539139"
+               id="tspan982"
+               sodipodi:role="line">-</tspan></text>
+        </g>
+      </g>
+      <g
+         transform="translate(0.57267612)"
+         id="g1140">
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 120.23826,40.642748 v 8.315471"
+           id="path979-1"
+           inkscape:connector-curvature="0" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="141.50635"
+           y="46.446892"
+           id="licht_stand_buis_2"><tspan
+             sodipodi:role="line"
+             id="tspan4685-6"
+             x="141.50635"
+             y="46.446892"
+             style="stroke-width:0.26458332">a</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="111.75964"
+           y="34.878613"
+           id="text972-6"><tspan
+             sodipodi:role="line"
+             id="tspan970-3"
+             x="111.75964"
+             y="34.878613"
+             style="stroke-width:0.26458332">Buis 2</tspan></text>
+        <g
+           id="knop_licht_plus_buis_2"
+           transform="translate(74.226647,-1.4174094)">
+          <rect
+             y="43.135624"
+             x="33.699871"
+             height="6.1645355"
+             width="6.7249479"
+             id="knop_licht_plus_buis_1-1"
+             style="opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+          <text
+             id="text980-4"
+             y="49.947495"
+             x="33.971142"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58659458px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.44110808"
+             xml:space="preserve"><tspan
+               style="stroke-width:0.44110808"
+               y="49.947495"
+               x="33.971142"
+               id="tspan978-6"
+               sodipodi:role="line">+</tspan></text>
+        </g>
+        <g
+           id="knop_licht_min_buis_2"
+           transform="translate(74.755814,-1.4174094)">
+          <rect
+             y="43.135624"
+             x="51.041512"
+             height="6.1645355"
+             width="6.7249479"
+             id="rect1170"
+             style="opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+          <text
+             transform="scale(1.2609286,0.79306631)"
+             id="text984-7"
+             y="62.327011"
+             x="40.539139"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.63332748px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.65138859"
+             xml:space="preserve"><tspan
+               style="stroke-width:0.65138859"
+               y="62.327011"
+               x="40.539139"
+               id="tspan982-3"
+               sodipodi:role="line">-</tspan></text>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(-16.36067,61.322524)"
+       id="g1155-2">
+      <path
+         inkscape:connector-curvature="0"
+         id="path979-3"
+         d="m 40.719919,40.642742 v 8.315471"
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <text
+         id="regen_stand"
+         y="46.446888"
+         x="61.988098"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="46.446888"
+           x="61.988098"
+           id="tspan4685-1"
+           sodipodi:role="line">a</tspan></text>
+      <text
+         id="text972-7"
+         y="34.878609"
+         x="32.241367"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="34.878609"
+           x="32.241367"
+           id="tspan970-0"
+           sodipodi:role="line">Regen</tspan></text>
+      <g
+         transform="translate(-5.2916667,-1.4174142)"
+         id="knop_regen_plus">
+        <rect
+           style="opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="rect1166-8"
+           width="6.7249479"
+           height="6.1645355"
+           x="33.699871"
+           y="43.135624" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58659458px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.44110808"
+           x="33.971142"
+           y="49.947495"
+           id="text980-9"><tspan
+             sodipodi:role="line"
+             id="tspan978-3"
+             x="33.971142"
+             y="49.947495"
+             style="stroke-width:0.44110808">+</tspan></text>
+      </g>
+      <g
+         transform="translate(-4.7625,-1.4174142)"
+         id="knop_regen_min">
+        <rect
+           style="opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="rect1168-2"
+           width="6.7249479"
+           height="6.1645355"
+           x="51.041512"
+           y="43.135624" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.63332748px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.65138859"
+           x="40.539139"
+           y="62.327011"
+           id="text984-8"
+           transform="scale(1.2609286,0.79306631)"><tspan
+             sodipodi:role="line"
+             id="tspan982-7"
+             x="40.539139"
+             y="62.327011"
+             style="stroke-width:0.65138859">-</tspan></text>
+      </g>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 0.37797571,114.15516 H 173.1131"
+       id="path1022-0"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="74.634071"
+       y="120.83474"
+       id="text968"><tspan
+         sodipodi:role="line"
+         id="tspan966"
+         x="74.634071"
+         y="120.83474"
+         style="stroke-width:0.26458332">Obstakel</tspan></text>
+    <g
+       id="g1356"
+       transform="translate(-0.94983546,31.750013)">
+      <text
+         id="text1279"
+         y="95.732773"
+         x="34.909054"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="95.732773"
+           x="34.909054"
+           id="tspan1277"
+           sodipodi:role="line">Buis 1</tspan></text>
+      <text
+         id="text1283"
+         y="104.25068"
+         x="12.85119"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="104.25068"
+           x="12.85119"
+           id="tspan1281"
+           sodipodi:role="line">Rijstrook</tspan></text>
+      <text
+         id="text1287"
+         y="104.25068"
+         x="43.845238"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="104.25068"
+           x="43.845238"
+           id="tspan1285"
+           sodipodi:role="line">Vluchtstrook</tspan></text>
+      <rect
+         y="109.73505"
+         x="22.084846"
+         height="6.1645355"
+         width="6.7249479"
+         id="buis_1_rijstrook_knop_obstakel"
+         style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+      <rect
+         y="109.73505"
+         x="57.965416"
+         height="6.1645355"
+         width="6.7249479"
+         id="buis_1_vluchtstrook_knop_obstakel"
+         style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+    </g>
+    <g
+       id="g1520"
+       transform="translate(0,1.5875139)">
+      <text
+         id="text1279-5"
+         y="125.89528"
+         x="117.91651"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="125.89528"
+           x="117.91651"
+           id="tspan1277-4"
+           sodipodi:role="line">Buis 2</tspan></text>
+      <text
+         id="text1283-0"
+         y="134.41322"
+         x="95.85865"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="134.41322"
+           x="95.85865"
+           id="tspan1281-5"
+           sodipodi:role="line">Rijstrook</tspan></text>
+      <text
+         id="text1287-9"
+         y="134.41322"
+         x="126.85271"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="134.41322"
+           x="126.85271"
+           id="tspan1285-8"
+           sodipodi:role="line">Vluchtstrook</tspan></text>
+      <rect
+         y="139.89758"
+         x="105.0923"
+         height="6.1645355"
+         width="6.7249479"
+         id="buis_2_rijstrook_knop_obstakel"
+         style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+      <rect
+         y="139.89758"
+         x="140.97289"
+         height="6.1645355"
+         width="6.7249479"
+         id="buis_2_vluchtstrook_knop_obstakel"
+         style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+    </g>
+    <g
+       transform="translate(40.589529,-2.1491624)"
+       id="g5049">
+      <text
+         id="text1279-2"
+         y="95.732773"
+         x="32.523361"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="95.732773"
+           x="32.523361"
+           id="tspan1277-6"
+           sodipodi:role="line">Stilstand</tspan></text>
+      <g
+         id="g5038">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="22.392712"
+           y="103.57674"
+           id="text1283-6"><tspan
+             sodipodi:role="line"
+             id="tspan1281-0"
+             x="22.392712"
+             y="103.57674"
+             style="stroke-width:0.26458332">Buis 1</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="48.148277"
+           y="103.57674"
+           id="text1287-6"><tspan
+             sodipodi:role="line"
+             id="tspan1285-7"
+             x="48.148277"
+             y="103.57674"
+             style="stroke-width:0.26458332">Buis 2</tspan></text>
+        <rect
+           style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="knop_sos_stilstand_buis_1"
+           width="6.7249479"
+           height="6.1645355"
+           x="27.508789"
+           y="107.39643" />
+        <rect
+           style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="knop_sos_stilstand_buis_2"
+           width="6.7249479"
+           height="6.1645355"
+           x="53.679832"
+           y="107.39644"
+           inkscape:label="#knop_sos_stilstand_buis_2" />
+      </g>
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path1022-6"
+       d="M 0.72776924,85.693385 H 173.46288"
+       style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <g
+       id="g1574"
+       transform="translate(-0.34979481)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="79.441536"
+         y="60.855129"
+         id="text964-0"><tspan
+           sodipodi:role="line"
+           id="tspan962-8"
+           x="79.441536"
+           y="60.855129"
+           style="stroke-width:0.26458332">Rook</tspan></text>
+      <g
+         id="g1155-3"
+         transform="translate(0.92245924,32.860906)">
+        <path
+           inkscape:connector-curvature="0"
+           id="path979-7"
+           d="m 40.719919,40.642742 v 8.315471"
+           style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <text
+           id="rook_stand_buis_1"
+           y="46.446888"
+           x="61.988098"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           xml:space="preserve"><tspan
+             style="stroke-width:0.26458332"
+             y="46.446888"
+             x="61.988098"
+             id="tspan4685-11"
+             sodipodi:role="line">a</tspan></text>
+        <text
+           id="text972-0"
+           y="34.878609"
+           x="32.241367"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           xml:space="preserve"><tspan
+             style="stroke-width:0.26458332"
+             y="34.878609"
+             x="32.241367"
+             id="tspan970-09"
+             sodipodi:role="line">Buis 1</tspan></text>
+        <g
+           transform="translate(-5.2916667,-1.4174142)"
+           id="knop_rook_plus_buis_1">
+          <rect
+             style="opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             id="rect1166-3"
+             width="6.7249479"
+             height="6.1645355"
+             x="33.699871"
+             y="43.135624" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58659458px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.44110808"
+             x="33.971142"
+             y="49.947495"
+             id="text980-2"><tspan
+               sodipodi:role="line"
+               id="tspan978-1"
+               x="33.971142"
+               y="49.947495"
+               style="stroke-width:0.44110808">+</tspan></text>
+        </g>
+        <g
+           transform="translate(-4.7625,-1.4174142)"
+           id="knop_rook_min_buis_1">
+          <rect
+             style="opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             id="rect1168-1"
+             width="6.7249479"
+             height="6.1645355"
+             x="51.041512"
+             y="43.135624" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.63332748px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.65138859"
+             x="40.539139"
+             y="62.327011"
+             id="text984-6"
+             transform="scale(1.2609286,0.79306631)"><tspan
+               sodipodi:role="line"
+               id="tspan982-9"
+               x="40.539139"
+               y="62.327011"
+               style="stroke-width:0.65138859">-</tspan></text>
+        </g>
+      </g>
+      <g
+         id="g1140-7"
+         transform="translate(0.92246924,32.860906)">
+        <path
+           inkscape:connector-curvature="0"
+           id="path979-1-6"
+           d="m 120.23826,40.642748 v 8.315471"
+           style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <text
+           id="rook_stand_buis_2"
+           y="46.446892"
+           x="141.50635"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           xml:space="preserve"><tspan
+             style="stroke-width:0.26458332"
+             y="46.446892"
+             x="141.50635"
+             id="tspan4685-6-7"
+             sodipodi:role="line">a</tspan></text>
+        <text
+           id="text972-6-7"
+           y="34.878613"
+           x="111.75964"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           xml:space="preserve"><tspan
+             style="stroke-width:0.26458332"
+             y="34.878613"
+             x="111.75964"
+             id="tspan970-3-0"
+             sodipodi:role="line">Buis 2</tspan></text>
+        <g
+           transform="translate(74.226647,-1.4174094)"
+           id="knop_rook_plus_buis_2">
+          <rect
+             style="opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             id="knop_licht_plus_buis_1-1-9"
+             width="6.7249479"
+             height="6.1645355"
+             x="33.699871"
+             y="43.135624" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58659458px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.44110808"
+             x="33.971142"
+             y="49.947495"
+             id="text980-4-6"><tspan
+               sodipodi:role="line"
+               id="tspan978-6-7"
+               x="33.971142"
+               y="49.947495"
+               style="stroke-width:0.44110808">+</tspan></text>
+        </g>
+        <g
+           transform="translate(74.755814,-1.4174094)"
+           id="knop_rook_min_buis_2">
+          <rect
+             style="opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             id="rect1170-4"
+             width="6.7249479"
+             height="6.1645355"
+             x="51.041512"
+             y="43.135624" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.63332748px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.65138859"
+             x="40.539139"
+             y="62.327011"
+             id="text984-7-2"
+             transform="scale(1.2609286,0.79306631)"><tspan
+               sodipodi:role="line"
+               id="tspan982-3-5"
+               x="40.539139"
+               y="62.327011"
+               style="stroke-width:0.65138859">-</tspan></text>
+        </g>
+      </g>
+    </g>
+    <g
+       style="display:inline"
+       transform="translate(129.97407,-2.1491548)"
+       id="g5049-7">
+      <text
+         id="text1279-2-9"
+         y="95.732773"
+         x="-5.2666597"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="95.732773"
+           x="-5.2666597"
+           id="tspan1277-6-5"
+           sodipodi:role="line">Spookrijder</tspan><tspan
+           style="stroke-width:0.26458332"
+           y="103.67027"
+           x="-5.2666597"
+           sodipodi:role="line"
+           id="tspan512" /></text>
+      <g
+         id="g5038-0"
+         transform="translate(-32.279168)">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="22.392712"
+           y="103.57674"
+           id="text1283-6-2"><tspan
+             sodipodi:role="line"
+             id="tspan1281-0-2"
+             x="22.392712"
+             y="103.57674"
+             style="stroke-width:0.26458332">Buis 1</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="48.148277"
+           y="103.57674"
+           id="text1287-6-2"><tspan
+             sodipodi:role="line"
+             id="tspan1285-7-5"
+             x="48.148277"
+             y="103.57674"
+             style="stroke-width:0.26458332">Buis 2</tspan></text>
+        <rect
+           style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="knop_sos_spookrijder_buis_1"
+           width="6.7249479"
+           height="6.1645355"
+           x="27.508789"
+           y="107.39643"
+           inkscape:label="#knop_sos_buis_1-5" />
+        <rect
+           style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="knop_sos_spookrijder_buis_2"
+           width="6.7249479"
+           height="6.1645355"
+           x="53.679832"
+           y="107.39644"
+           inkscape:label="#knop_sos_buis_2-9" />
+      </g>
+    </g>
+    <path
+       style="display:inline;fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 0.9449388,151.86224 H 173.68007"
+       id="path1022-0-8"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="64.664795"
+       y="159.03131"
+       id="text968-2"><tspan
+         sodipodi:role="line"
+         id="tspan966-1"
+         x="64.664795"
+         y="159.03131"
+         style="stroke-width:0.26458332">Noodbediening</tspan></text>
+    <rect
+       y="162.67059"
+       x="81.833359"
+       height="6.1645355"
+       width="6.7249479"
+       id="knop_noodbediening"
+       style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       inkscape:label="" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="tabblad_Interactie"
+     inkscape:label="Interactie"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="3.0413561"
+       y="36.204529"
+       id="text845"><tspan
+         sodipodi:role="line"
+         id="tspan843"
+         x="3.0413561"
+         y="36.204529"
+         style="font-size:4.93888903px;stroke-width:0.26458332">Nooddeur</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="65.134964"
+       y="27.884865"
+       id="text1619"><tspan
+         sodipodi:role="line"
+         id="tspan1617"
+         x="65.134964"
+         y="27.884865"
+         style="font-size:5.64444447px;stroke-width:0.26458332">Buis 1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="131.43759"
+       y="27.884865"
+       id="text1623"><tspan
+         sodipodi:role="line"
+         id="tspan1621"
+         x="131.43759"
+         y="27.884865"
+         style="font-size:5.64444447px;stroke-width:0.26458332">Buis 2</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 40.254466,21.271464 V 190.03783"
+       id="path1625"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 106.97256,21.045211 V 190.22682"
+       id="path1627"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 0.26726951,29.453457 H 173.59156"
+       id="path1629"
+       inkscape:connector-curvature="0" />
+    <g
+       id="knop_nooddeur_1_buis_1">
+      <rect
+         y="31.408964"
+         x="41.862045"
+         height="6.1645355"
+         width="6.7249479"
+         id="achtergrond_knop_nooddeur_1_buis_1"
+         style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+      <text
+         id="text1637"
+         y="36.773266"
+         x="43.530296"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="36.773266"
+           x="43.530296"
+           id="tspan1635"
+           sodipodi:role="line">1</tspan></text>
+    </g>
+    <g
+       id="knop_nooddeur_1_buis_2">
+      <rect
+         y="31.408964"
+         x="108.28133"
+         height="6.1645355"
+         width="6.7249479"
+         id="achtergrond_knop_nooddeur_1_buis_2"
+         style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+      <text
+         id="text1641"
+         y="36.773266"
+         x="109.94958"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="36.773266"
+           x="109.94958"
+           id="tspan1639"
+           sodipodi:role="line">1</tspan></text>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 0.43318478,39.513535 H 173.75747"
+       id="path1629-3"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="2.4544685"
+       y="44.568382"
+       id="text1718"><tspan
+         sodipodi:role="line"
+         id="tspan1716"
+         x="2.4544685"
+         y="44.568382"
+         style="font-size:4.93888903px;stroke-width:0.26458332">Hulppostkasten</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.58611107px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="9.5298319"
+       y="51.525822"
+       id="text1722"><tspan
+         sodipodi:role="line"
+         id="tspan1720"
+         x="9.5298319"
+         y="51.525822"
+         style="font-size:4.58611107px;stroke-width:0.26458332">Deur</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29166651px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="9.3618841"
+       y="84.00737"
+       id="text1730"><tspan
+         sodipodi:role="line"
+         id="tspan1728"
+         x="9.3618841"
+         y="84.00737"
+         style="font-size:4.58611107px;stroke-width:0.26458332">Handblusser</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.58611107px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="9.398057"
+       y="96.604698"
+       id="text1734"><tspan
+         sodipodi:role="line"
+         id="tspan1732"
+         x="9.398057"
+         y="96.604698"
+         style="font-size:4.58611107px;stroke-width:0.26458332">Brandslang</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.58611107px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="9.3825541"
+       y="66.866379"
+       id="text1738"><tspan
+         sodipodi:role="line"
+         id="tspan1736"
+         x="9.3825541"
+         y="66.866379"
+         style="font-size:4.58611107px;stroke-width:0.26458332">Noodtelefoon</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 0.50000029,0.49999971 V -7.5526283"
+       id="path1740"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.00000011, 1.00000003, 0.50000001, 1.00000003;stroke-dashoffset:5;stroke-opacity:1"
+       d="M 7.382191,56.682519 H 173.75748"
+       id="path1629-3-1"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.40851969;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:9.80447236, 0.40851968;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 7.3821911,46.571653 1e-7,52.594396"
+       id="path1967"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.00000019, 1.00000005, 0.50000003, 1.00000005;stroke-dashoffset:5;stroke-opacity:1"
+       d="M 7.3821911,73.808332 H 173.75748"
+       id="path1629-3-1-6-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.00000019, 1.00000005, 0.50000003, 1.00000005;stroke-dashoffset:5;stroke-opacity:1"
+       d="M 7.3821911,90.977311 H 173.75748"
+       id="path1629-3-1-6-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <g
+       id="g777"
+       transform="translate(0,-6.9222811)">
+      <g
+         id="knop_open_hulppostkast_a_1_buis_1"
+         transform="translate(0,17.049432)">
+        <rect
+           style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="achtergrond_knop_open_hulppostkast_a_1_buis_1"
+           width="6.7249479"
+           height="6.1645355"
+           x="41.862045"
+           y="31.408964" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="42.475334"
+           y="36.392925"
+           id="text1637-4"><tspan
+             sodipodi:role="line"
+             id="tspan1635-0"
+             x="42.475334"
+             y="36.392925"
+             style="font-size:5.29166651px;stroke-width:0.26458332">A1</tspan></text>
+      </g>
+      <g
+         id="knop_open_hulppostkast_c_1_buis_1"
+         transform="translate(0,24.532979)">
+        <rect
+           style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="achtergrond_knop_open_hulppostkast_c_1_buis_1"
+           width="6.7249479"
+           height="6.1645355"
+           x="41.862045"
+           y="31.408964" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="42.194988"
+           y="36.392925"
+           id="text1637-4-7"><tspan
+             sodipodi:role="line"
+             id="tspan1635-0-9"
+             x="42.194988"
+             y="36.392925"
+             style="font-size:5.29166651px;stroke-width:0.26458332">C1</tspan></text>
+      </g>
+      <g
+         id="knop_noodtelefoon_hulppostkast_a_1_buis_1"
+         transform="translate(-9e-7,33.613972)">
+        <rect
+           style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="achtergrond_knop_noodtelefoon_hulppostkast_a_1_buis_1"
+           width="6.7249479"
+           height="6.1645355"
+           x="41.862045"
+           y="31.408964" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="42.475334"
+           y="36.392925"
+           id="text1637-4-25-5"><tspan
+             sodipodi:role="line"
+             id="tspan1635-0-5-9"
+             x="42.475334"
+             y="36.392925"
+             style="font-size:5.29166651px;stroke-width:0.26458332">A1</tspan></text>
+      </g>
+      <g
+         id="knop_noodtelefoon_hulppostkast_c_1_buis_1"
+         transform="translate(0,41.658785)">
+        <rect
+           style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="achtergrond_knop_noodtelefoon_hulppostkast_c_1_buis_1"
+           width="6.7249479"
+           height="6.1645355"
+           x="41.862045"
+           y="31.408964" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="42.194988"
+           y="36.392925"
+           id="text1637-4-7-0-2"><tspan
+             sodipodi:role="line"
+             id="tspan1635-0-9-3-5"
+             x="42.194988"
+             y="36.392925"
+             style="font-size:5.29166651px;stroke-width:0.26458332">C1</tspan></text>
+      </g>
+      <g
+         id="knop_handblusser_hulppostkast_a_1_buis_1"
+         transform="translate(-1.9e-6,50.782953)">
+        <rect
+           style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="achtergrond_knop_handblusser_hulppostkast_a_1_buis_1"
+           width="6.7249479"
+           height="6.1645355"
+           x="41.862045"
+           y="31.408964" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="42.475334"
+           y="36.392925"
+           id="text1637-4-25-7"><tspan
+             sodipodi:role="line"
+             id="tspan1635-0-5-3"
+             x="42.475334"
+             y="36.392925"
+             style="font-size:5.29166651px;stroke-width:0.26458332">A1</tspan></text>
+      </g>
+      <g
+         id="knop_handblusser_hulppostkast_c_1_buis_1"
+         transform="translate(0,58.827766)">
+        <rect
+           style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="achtergrond_knop_handblusser_hulppostkast_c_1_buis_1"
+           width="6.7249479"
+           height="6.1645355"
+           x="41.862045"
+           y="31.408964" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="42.194988"
+           y="36.392925"
+           id="text1637-4-7-0-9"><tspan
+             sodipodi:role="line"
+             id="tspan1635-0-9-3-52"
+             x="42.194988"
+             y="36.392925"
+             style="font-size:5.29166651px;stroke-width:0.26458332">C1</tspan></text>
+      </g>
+      <g
+         id="knop_brandslang_hulppostkast_a_1_buis_1"
+         transform="translate(-1.4e-6,67.95194)">
+        <rect
+           style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="achtergrond_knop_brandslang_hulppostkast_a_1_buis_1"
+           width="6.7249479"
+           height="6.1645355"
+           x="41.862045"
+           y="31.408964" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="42.475334"
+           y="36.392925"
+           id="text1637-4-25-9"><tspan
+             sodipodi:role="line"
+             id="tspan1635-0-5-99"
+             x="42.475334"
+             y="36.392925"
+             style="font-size:5.29166651px;stroke-width:0.26458332">A1</tspan></text>
+      </g>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:5;stroke-opacity:1"
+       d="M 0.99203122,99.914389 H 173.75748"
+       id="path1629-3-1-6-24"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <g
+       transform="translate(66.436384,-6.9222811)"
+       style="display:inline"
+       id="g777-8">
+      <g
+         id="knop_open_hulppostkast_a_1_buis_2"
+         transform="translate(0,17.049432)">
+        <rect
+           style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="achtergrond_knop_open_hulppostkast_a_1_buis_2"
+           width="6.7249479"
+           height="6.1645355"
+           x="41.862045"
+           y="31.408964" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="42.475334"
+           y="36.392925"
+           id="text1637-4-5"><tspan
+             sodipodi:role="line"
+             id="tspan1635-0-6"
+             x="42.475334"
+             y="36.392925"
+             style="font-size:5.29166651px;stroke-width:0.26458332">A1</tspan></text>
+      </g>
+      <g
+         id="knop_open_hulppostkast_c_1_buis_2"
+         transform="translate(0,24.532979)">
+        <rect
+           style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="achtergrond_knop_open_hulppostkast_c_1_buis_2"
+           width="6.7249479"
+           height="6.1645355"
+           x="41.862045"
+           y="31.408964" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="42.194988"
+           y="36.392925"
+           id="text1637-4-7-5"><tspan
+             sodipodi:role="line"
+             id="tspan1635-0-9-6"
+             x="42.194988"
+             y="36.392925"
+             style="font-size:5.29166651px;stroke-width:0.26458332">C1</tspan></text>
+      </g>
+      <g
+         id="knop_noodtelefoon_hulppostkast_a_1_buis_2"
+         transform="translate(-9e-7,33.613972)">
+        <rect
+           style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="achtergrond_knop_noodtelefoon_hulppostkast_a_1_buis_2"
+           width="6.7249479"
+           height="6.1645355"
+           x="41.862045"
+           y="31.408964" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="42.475334"
+           y="36.392925"
+           id="text1637-4-25-5-31"><tspan
+             sodipodi:role="line"
+             id="tspan1635-0-5-9-4"
+             x="42.475334"
+             y="36.392925"
+             style="font-size:5.29166651px;stroke-width:0.26458332">A1</tspan></text>
+      </g>
+      <g
+         id="knop_noodtelefoon_hulppostkast_c_1_buis_2"
+         transform="translate(0,41.658785)">
+        <rect
+           style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="achtergrond_knop_noodtelefoon_hulppostkast_c_1_buis_2"
+           width="6.7249479"
+           height="6.1645355"
+           x="41.862045"
+           y="31.408964" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="42.194988"
+           y="36.392925"
+           id="text1637-4-7-0-2-1"><tspan
+             sodipodi:role="line"
+             id="tspan1635-0-9-3-5-7"
+             x="42.194988"
+             y="36.392925"
+             style="font-size:5.29166651px;stroke-width:0.26458332">C1</tspan></text>
+      </g>
+      <g
+         id="knop_handblusser_hulppostkast_a_1_buis_2"
+         transform="translate(-1.9e-6,50.782953)">
+        <rect
+           style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="achtergrond_knop_handblusser_hulppostkast_a_1_buis_2"
+           width="6.7249479"
+           height="6.1645355"
+           x="41.862045"
+           y="31.408964" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="42.475334"
+           y="36.392925"
+           id="text1637-4-25-7-9"><tspan
+             sodipodi:role="line"
+             id="tspan1635-0-5-3-3"
+             x="42.475334"
+             y="36.392925"
+             style="font-size:5.29166651px;stroke-width:0.26458332">A1</tspan></text>
+      </g>
+      <g
+         id="knop_handblusser_hulppostkast_c_1_buis_2"
+         transform="translate(0,58.827766)">
+        <rect
+           style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="achtergrond_knop_handblusser_hulppostkast_c_1_buis_2"
+           width="6.7249479"
+           height="6.1645355"
+           x="41.862045"
+           y="31.408964" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="42.194988"
+           y="36.392925"
+           id="text1637-4-7-0-9-4"><tspan
+             sodipodi:role="line"
+             id="tspan1635-0-9-3-52-9"
+             x="42.194988"
+             y="36.392925"
+             style="font-size:5.29166651px;stroke-width:0.26458332">C1</tspan></text>
+      </g>
+      <g
+         id="knop_brandslang_hulppostkast_a_1_buis_2"
+         transform="translate(-1.4e-6,67.95194)">
+        <rect
+           style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="achtergrond_knop_brandslang_hulppostkast_a_1_buis_2"
+           width="6.7249479"
+           height="6.1645355"
+           x="41.862045"
+           y="31.408964" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="42.475334"
+           y="36.392925"
+           id="text1637-4-25-9-1"><tspan
+             sodipodi:role="line"
+             id="tspan1635-0-5-99-7"
+             x="42.475334"
+             y="36.392925"
+             style="font-size:5.29166651px;stroke-width:0.26458332">A1</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g
+     style="display:none"
+     inkscape:label="Disable"
+     id="g632"
+     inkscape:groupmode="layer">
+    <path
+       inkscape:connector-curvature="0"
+       id="path504"
+       d="M 0.50000029,0.49999971 V -7.5526283"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <g
+       id="tabblad_Disable"
+       inkscape:label="#g725">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="3.0413561"
+         y="36.204529"
+         id="text450"><tspan
+           sodipodi:role="line"
+           id="tspan448"
+           x="3.0413561"
+           y="36.204529"
+           style="font-size:4.93888903px;stroke-width:0.26458332">Nooddeur</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="65.134964"
+         y="27.884865"
+         id="text454"><tspan
+           sodipodi:role="line"
+           id="tspan452"
+           x="65.134964"
+           y="27.884865"
+           style="font-size:5.64444447px;stroke-width:0.26458332">Buis 1</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="131.43759"
+         y="27.884865"
+         id="text458"><tspan
+           sodipodi:role="line"
+           id="tspan456"
+           x="131.43759"
+           y="27.884865"
+           style="font-size:5.64444447px;stroke-width:0.26458332">Buis 2</tspan></text>
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 40.254466,21.271464 V 190.03783"
+         id="path460"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 106.97256,21.045211 V 190.22682"
+         id="path462"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 0.26726951,29.453457 H 173.59156"
+         id="path464"
+         inkscape:connector-curvature="0" />
+      <g
+         inkscape:label="#g472"
+         id="KnopDisableNooddeur1Verkeersbuis1">
+        <rect
+           y="31.408964"
+           x="41.862045"
+           height="6.1645355"
+           width="6.7249479"
+           id="rect466"
+           style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+        <text
+           id="text470"
+           y="36.773266"
+           x="43.530296"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           xml:space="preserve"><tspan
+             style="stroke-width:0.26458332"
+             y="36.773266"
+             x="43.530296"
+             id="tspan468"
+             sodipodi:role="line">1</tspan></text>
+      </g>
+      <g
+         inkscape:label="#g480"
+         id="KnopDisableNooddeur1Verkeersbuis2">
+        <rect
+           y="31.408964"
+           x="108.28133"
+           height="6.1645355"
+           width="6.7249479"
+           id="rect474"
+           style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+        <text
+           id="text478"
+           y="36.773266"
+           x="109.94958"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           xml:space="preserve"><tspan
+             style="stroke-width:0.26458332"
+             y="36.773266"
+             x="109.94958"
+             id="tspan476"
+             sodipodi:role="line">1</tspan></text>
+      </g>
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 0.43318478,39.513535 H 173.75747"
+         id="path482"
+         inkscape:connector-curvature="0" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="2.4544685"
+         y="44.568382"
+         id="text486"><tspan
+           sodipodi:role="line"
+           id="tspan484"
+           x="2.4544685"
+           y="44.568382"
+           style="font-size:4.93888903px;stroke-width:0.26458332">Hulppostkasten</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.58611107px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="9.5298319"
+         y="51.525822"
+         id="text490"><tspan
+           sodipodi:role="line"
+           id="tspan488"
+           x="9.5298319"
+           y="51.525822"
+           style="font-size:4.58611107px;stroke-width:0.26458332">Deur</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29166651px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="9.3618841"
+         y="84.00737"
+         id="text494"><tspan
+           sodipodi:role="line"
+           id="tspan492"
+           x="9.3618841"
+           y="84.00737"
+           style="font-size:4.58611107px;stroke-width:0.26458332">Handblusser</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.58611107px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="9.398057"
+         y="96.604698"
+         id="text498"><tspan
+           sodipodi:role="line"
+           id="tspan496"
+           x="9.398057"
+           y="96.604698"
+           style="font-size:4.58611107px;stroke-width:0.26458332">Brandslang</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.58611107px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="9.3825541"
+         y="66.866379"
+         id="text502"><tspan
+           sodipodi:role="line"
+           id="tspan500"
+           x="9.3825541"
+           y="66.866379"
+           style="font-size:4.58611107px;stroke-width:0.26458332">Noodtelefoon</tspan></text>
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.00000011, 1.00000003, 0.50000001, 1.00000003;stroke-dashoffset:5;stroke-opacity:1"
+         d="M 7.382191,56.682519 H 173.75748"
+         id="path506"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.40851969;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:9.80447236, 0.40851968;stroke-dashoffset:0;stroke-opacity:1"
+         d="m 7.3821911,46.571653 1e-7,52.594396"
+         id="path508"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.00000019, 1.00000005, 0.50000003, 1.00000005;stroke-dashoffset:5;stroke-opacity:1"
+         d="M 7.3821911,73.808332 H 173.75748"
+         id="path510"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.00000019, 1.00000005, 0.50000003, 1.00000005;stroke-dashoffset:5;stroke-opacity:1"
+         d="M 7.3821911,90.977311 H 173.75748"
+         id="path512"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc" />
+      <g
+         id="g570"
+         transform="translate(0,-6.9222811)">
+        <g
+           inkscape:label="#g520"
+           id="KnopDisableDeurHulppostkastA1Verkeersbuis1"
+           transform="translate(0,17.049432)">
+          <rect
+             style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             id="rect514"
+             width="6.7249479"
+             height="6.1645355"
+             x="41.862045"
+             y="31.408964" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+             x="42.475334"
+             y="36.392925"
+             id="text518"><tspan
+               sodipodi:role="line"
+               id="tspan516"
+               x="42.475334"
+               y="36.392925"
+               style="font-size:5.29166651px;stroke-width:0.26458332">A1</tspan></text>
+        </g>
+        <g
+           inkscape:label="#g528"
+           id="KnopDisableDeurHulppostkastC1Verkeersbuis1"
+           transform="translate(0,24.532979)">
+          <rect
+             style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             id="rect522"
+             width="6.7249479"
+             height="6.1645355"
+             x="41.862045"
+             y="31.408964" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+             x="42.194988"
+             y="36.392925"
+             id="text526"><tspan
+               sodipodi:role="line"
+               id="tspan524"
+               x="42.194988"
+               y="36.392925"
+               style="font-size:5.29166651px;stroke-width:0.26458332">C1</tspan></text>
+        </g>
+        <g
+           inkscape:label="#g536"
+           id="KnopDisableNoodtelefoonHulppostkastA1Verkeersbuis1"
+           transform="translate(-9e-7,33.613972)">
+          <rect
+             style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             id="rect530"
+             width="6.7249479"
+             height="6.1645355"
+             x="41.862045"
+             y="31.408964" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+             x="42.475334"
+             y="36.392925"
+             id="text534"><tspan
+               sodipodi:role="line"
+               id="tspan532"
+               x="42.475334"
+               y="36.392925"
+               style="font-size:5.29166651px;stroke-width:0.26458332">A1</tspan></text>
+        </g>
+        <g
+           inkscape:label="#g544"
+           id="KnopDisableNoodtelefoonHulppostkastC1Verkeersbuis1"
+           transform="translate(0,41.658785)">
+          <rect
+             style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             id="rect538"
+             width="6.7249479"
+             height="6.1645355"
+             x="41.862045"
+             y="31.408964" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+             x="42.194988"
+             y="36.392925"
+             id="text542"><tspan
+               sodipodi:role="line"
+               id="tspan540"
+               x="42.194988"
+               y="36.392925"
+               style="font-size:5.29166651px;stroke-width:0.26458332">C1</tspan></text>
+        </g>
+        <g
+           inkscape:label="#g552"
+           id="KnopDisableHandblusserHulppostkastA1Verkeersbuis1"
+           transform="translate(-1.9e-6,50.782953)">
+          <rect
+             style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             id="rect546"
+             width="6.7249479"
+             height="6.1645355"
+             x="41.862045"
+             y="31.408964" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+             x="42.475334"
+             y="36.392925"
+             id="text550"><tspan
+               sodipodi:role="line"
+               id="tspan548"
+               x="42.475334"
+               y="36.392925"
+               style="font-size:5.29166651px;stroke-width:0.26458332">A1</tspan></text>
+        </g>
+        <g
+           inkscape:label="#g560"
+           id="KnopDisableHandblusserHulppostkastC1Verkeersbuis1"
+           transform="translate(0,58.827766)">
+          <rect
+             style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             id="rect554"
+             width="6.7249479"
+             height="6.1645355"
+             x="41.862045"
+             y="31.408964" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+             x="42.194988"
+             y="36.392925"
+             id="text558"><tspan
+               sodipodi:role="line"
+               id="tspan556"
+               x="42.194988"
+               y="36.392925"
+               style="font-size:5.29166651px;stroke-width:0.26458332">C1</tspan></text>
+        </g>
+        <g
+           inkscape:label="#g568"
+           id="KnopDisableBrandslangHulppostkastA1Verkeersbuis1"
+           transform="translate(-1.4e-6,67.95194)">
+          <rect
+             style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             id="rect562"
+             width="6.7249479"
+             height="6.1645355"
+             x="41.862045"
+             y="31.408964" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+             x="42.475334"
+             y="36.392925"
+             id="text566"><tspan
+               sodipodi:role="line"
+               id="tspan564"
+               x="42.475334"
+               y="36.392925"
+               style="font-size:5.29166651px;stroke-width:0.26458332">A1</tspan></text>
+        </g>
+      </g>
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:5;stroke-opacity:1"
+         d="M 0.99203122,99.914389 H 173.75748"
+         id="path572"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc" />
+      <g
+         transform="translate(66.436384,-6.9222811)"
+         style="display:inline"
+         id="g630">
+        <g
+           inkscape:label="#g580"
+           id="KnopDisableDeurHulppostkastA1Verkeersbuis2"
+           transform="translate(0,17.049432)">
+          <rect
+             style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             id="rect574"
+             width="6.7249479"
+             height="6.1645355"
+             x="41.862045"
+             y="31.408964" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+             x="42.475334"
+             y="36.392925"
+             id="text578"><tspan
+               sodipodi:role="line"
+               id="tspan576"
+               x="42.475334"
+               y="36.392925"
+               style="font-size:5.29166651px;stroke-width:0.26458332">A1</tspan></text>
+        </g>
+        <g
+           inkscape:label="#g588"
+           id="KnopDisableDeurHulppostkastC1Verkeersbuis2"
+           transform="translate(0,24.532979)">
+          <rect
+             style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             id="rect582"
+             width="6.7249479"
+             height="6.1645355"
+             x="41.862045"
+             y="31.408964" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+             x="42.194988"
+             y="36.392925"
+             id="text586"><tspan
+               sodipodi:role="line"
+               id="tspan584"
+               x="42.194988"
+               y="36.392925"
+               style="font-size:5.29166651px;stroke-width:0.26458332">C1</tspan></text>
+        </g>
+        <g
+           id="KnopDisableNoodtelefoonHulppostkastA1Verkeersbuis2"
+           transform="translate(-9e-7,33.613972)">
+          <rect
+             style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             id="rect590"
+             width="6.7249479"
+             height="6.1645355"
+             x="41.862045"
+             y="31.408964" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+             x="42.475334"
+             y="36.392925"
+             id="text594"><tspan
+               sodipodi:role="line"
+               id="tspan592"
+               x="42.475334"
+               y="36.392925"
+               style="font-size:5.29166651px;stroke-width:0.26458332">A1</tspan></text>
+        </g>
+        <g
+           inkscape:label="#g604"
+           id="KnopDisableNoodtelefoonHulppostkastC1Verkeersbuis2"
+           transform="translate(0,41.658785)">
+          <rect
+             style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             id="rect598"
+             width="6.7249479"
+             height="6.1645355"
+             x="41.862045"
+             y="31.408964" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+             x="42.194988"
+             y="36.392925"
+             id="text602"><tspan
+               sodipodi:role="line"
+               id="tspan600"
+               x="42.194988"
+               y="36.392925"
+               style="font-size:5.29166651px;stroke-width:0.26458332">C1</tspan></text>
+        </g>
+        <g
+           inkscape:label="#g612"
+           id="KnopDisableHandblusserHulppostkastA1Verkeersbuis2"
+           transform="translate(-1.9e-6,50.782953)">
+          <rect
+             style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             id="rect606"
+             width="6.7249479"
+             height="6.1645355"
+             x="41.862045"
+             y="31.408964" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+             x="42.475334"
+             y="36.392925"
+             id="text610"><tspan
+               sodipodi:role="line"
+               id="tspan608"
+               x="42.475334"
+               y="36.392925"
+               style="font-size:5.29166651px;stroke-width:0.26458332">A1</tspan></text>
+        </g>
+        <g
+           inkscape:label="#g620"
+           id="KnopDisableHandblusserHulppostkastC1Verkeersbuis2"
+           transform="translate(0,58.827766)">
+          <rect
+             style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             id="rect614"
+             width="6.7249479"
+             height="6.1645355"
+             x="41.862045"
+             y="31.408964" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+             x="42.194988"
+             y="36.392925"
+             id="text618"><tspan
+               sodipodi:role="line"
+               id="tspan616"
+               x="42.194988"
+               y="36.392925"
+               style="font-size:5.29166651px;stroke-width:0.26458332">C1</tspan></text>
+        </g>
+        <g
+           inkscape:label="#g628"
+           id="KnopDisableBrandslangHulppostkastA1Verkeersbuis2"
+           transform="translate(-1.4e-6,67.95194)">
+          <rect
+             style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             id="rect622"
+             width="6.7249479"
+             height="6.1645355"
+             x="41.862045"
+             y="31.408964" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+             x="42.475334"
+             y="36.392925"
+             id="text626"><tspan
+               sodipodi:role="line"
+               id="tspan624"
+               x="42.475334"
+               y="36.392925"
+               style="font-size:5.29166651px;stroke-width:0.26458332">A1</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Pop up"
+     style="display:none"
+     sodipodi:insensitive="true">
+    <g
+       id="popup_buis_1">
+      <rect
+         y="63.689808"
+         x="47.913368"
+         height="45.970356"
+         width="78.844505"
+         id="rect1121"
+         style="opacity:1;fill:#f1f1f1;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+      <g
+         id="g1227"
+         transform="translate(0,-1.1911277)">
+        <g
+           id="g1136"
+           transform="translate(199.02758,78.066248)">
+          <path
+             inkscape:transform-center-y="-2.4814811"
+             inkscape:transform-center-x="-1.2345238e-006"
+             d="m -111.69196,-3.1120496 8.5961,14.8888866 -17.19221,0 z"
+             inkscape:randomized="0"
+             inkscape:rounded="0"
+             inkscape:flatsided="true"
+             sodipodi:arg2="-0.52359878"
+             sodipodi:arg1="-1.5707963"
+             sodipodi:r2="4.9629622"
+             sodipodi:r1="9.9259243"
+             sodipodi:cy="6.8138747"
+             sodipodi:cx="-111.69196"
+             sodipodi:sides="3"
+             id="path1129"
+             style="opacity:1;fill:#f0ed00;fill-opacity:1;stroke:#000000;stroke-width:1.36500001;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             sodipodi:type="star" />
+          <text
+             id="text1127"
+             y="9.9880428"
+             x="-113.28757"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.3663063px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.44330835;stroke-miterlimit:4;stroke-dasharray:none"
+             xml:space="preserve"><tspan
+               style="stroke-width:2.44330835;stroke-miterlimit:4;stroke-dasharray:none"
+               y="9.9880428"
+               x="-113.28757"
+               id="tspan1125"
+               sodipodi:role="line">!</tspan></text>
+        </g>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="58.667603"
+           y="71.975166"
+           id="text1140"><tspan
+             sodipodi:role="line"
+             id="tspan1138"
+             x="58.667603"
+             y="71.975166"
+             style="stroke-width:0.26458332">Mogelijke Calamiteit </tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="78.857071"
+           y="96.563965"
+           id="locatie_calamiteit_popup_buis_1"><tspan
+             sodipodi:role="line"
+             id="tspan1142"
+             x="78.857071"
+             y="96.563965"
+             style="stroke-width:0.26458332">Buis 1</tspan></text>
+        <g
+           id="knop_akkoord_popup_buis_1"
+           transform="translate(164.76075,45.250475)">
+          <rect
+             y="57.393867"
+             x="-111.18412"
+             height="5.5438828"
+             width="21.782463"
+             id="rect1146"
+             style="opacity:1;fill:#22b900;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+          <text
+             id="text1150"
+             y="61.904549"
+             x="-109.1771"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+             xml:space="preserve"><tspan
+               style="font-size:4.93888903px;stroke-width:0.26458332"
+               y="61.904549"
+               x="-109.1771"
+               id="tspan1148"
+               sodipodi:role="line">Akkoord</tspan></text>
+        </g>
+        <g
+           transform="translate(210.49302,45.183661)"
+           id="knop_afwijzen_popup_buis_1">
+          <rect
+             y="57.393867"
+             x="-111.18412"
+             height="5.6775117"
+             width="21.782463"
+             id="rect1146-9"
+             style="opacity:1;fill:#b90000;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+          <text
+             id="text1150-9"
+             y="61.510754"
+             x="-109.1771"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+             xml:space="preserve"><tspan
+               style="font-size:4.93888903px;stroke-width:0.26458332"
+               y="61.510754"
+               x="-109.1771"
+               id="tspan1148-3"
+               sodipodi:role="line">Afwijzen</tspan></text>
+        </g>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="79.172005"
+           y="107.658"
+           id="tijd_popup_buis_1"><tspan
+             sodipodi:role="line"
+             id="tspan1184"
+             x="79.172005"
+             y="107.658"
+             style="stroke-width:0.26458332">30.00</tspan></text>
+      </g>
+    </g>
+    <g
+       id="popup_buis_2">
+      <rect
+         y="63.689808"
+         x="47.913368"
+         height="45.970356"
+         width="78.844505"
+         id="rect1121-2"
+         style="opacity:1;fill:#f1f1f1;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+      <g
+         id="g1227-0"
+         transform="translate(0,-1.1911277)">
+        <g
+           id="g1136-8"
+           transform="translate(199.02758,78.066248)">
+          <path
+             inkscape:transform-center-y="-2.4814811"
+             inkscape:transform-center-x="-1.2345238e-006"
+             d="m -111.69196,-3.1120496 8.5961,14.8888866 -17.19221,0 z"
+             inkscape:randomized="0"
+             inkscape:rounded="0"
+             inkscape:flatsided="true"
+             sodipodi:arg2="-0.52359878"
+             sodipodi:arg1="-1.5707963"
+             sodipodi:r2="4.9629622"
+             sodipodi:r1="9.9259243"
+             sodipodi:cy="6.8138747"
+             sodipodi:cx="-111.69196"
+             sodipodi:sides="3"
+             id="path1129-6"
+             style="opacity:1;fill:#f0ed00;fill-opacity:1;stroke:#000000;stroke-width:1.36500001;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             sodipodi:type="star" />
+          <text
+             id="text1127-1"
+             y="9.9880428"
+             x="-113.28757"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.3663063px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.44330835;stroke-miterlimit:4;stroke-dasharray:none"
+             xml:space="preserve"><tspan
+               style="stroke-width:2.44330835;stroke-miterlimit:4;stroke-dasharray:none"
+               y="9.9880428"
+               x="-113.28757"
+               id="tspan1125-1"
+               sodipodi:role="line">!</tspan></text>
+        </g>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="58.667603"
+           y="71.975166"
+           id="text1140-1"><tspan
+             sodipodi:role="line"
+             id="tspan1138-2"
+             x="58.667603"
+             y="71.975166"
+             style="stroke-width:0.26458332">Mogelijke Calamiteit </tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="78.857071"
+           y="96.563965"
+           id="locatie_calamiteit_popup_buis_2"><tspan
+             sodipodi:role="line"
+             id="tspan1142-6"
+             x="78.857071"
+             y="96.563965"
+             style="stroke-width:0.26458332">Buis 2</tspan></text>
+        <g
+           id="knop_akkoord_popup_buis_2"
+           transform="translate(164.76075,45.250475)">
+          <rect
+             y="57.393867"
+             x="-111.18412"
+             height="5.5438828"
+             width="21.782463"
+             id="rect1146-0"
+             style="opacity:1;fill:#22b900;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+          <text
+             id="text1150-1"
+             y="61.904549"
+             x="-109.1771"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+             xml:space="preserve"><tspan
+               style="font-size:4.93888903px;stroke-width:0.26458332"
+               y="61.904549"
+               x="-109.1771"
+               id="tspan1148-9"
+               sodipodi:role="line">Akkoord</tspan></text>
+        </g>
+        <g
+           transform="translate(210.49302,45.183661)"
+           id="knop_afwijzen_popup_buis_2">
+          <rect
+             y="57.393867"
+             x="-111.18412"
+             height="5.6775117"
+             width="21.782463"
+             id="rect1146-9-8"
+             style="opacity:1;fill:#b90000;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+          <text
+             id="text1150-9-9"
+             y="61.510754"
+             x="-109.1771"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+             xml:space="preserve"><tspan
+               style="font-size:4.93888903px;stroke-width:0.26458332"
+               y="61.510754"
+               x="-109.1771"
+               id="tspan1148-3-9"
+               sodipodi:role="line">Afwijzen</tspan></text>
+        </g>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="79.172005"
+           y="107.658"
+           id="tijd_popup_buis_2"><tspan
+             sodipodi:role="line"
+             id="tspan1184-1"
+             x="79.172005"
+             y="107.658"
+             style="stroke-width:0.26458332">30.00</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

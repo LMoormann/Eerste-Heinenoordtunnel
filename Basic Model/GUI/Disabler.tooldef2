@@ -1,0 +1,6 @@
+from "lib:cif3" import *;
+
+
+cif3evtdis("5_Supervisor.cif", "-f", "events_supervisory_controller", "-o", "Supervisor_disabled.cif", "-u", "disable");
+
+cif3merge("5_Supervisor.cif", "Supervisor_disabled.cif", "-o", "Supervisor.cif");

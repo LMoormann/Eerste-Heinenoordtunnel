@@ -1,0 +1,23 @@
+group def PushButton(alg bool conditionPush, conditionDone, conditionCancel):
+
+  plant Button:
+    uncontrollable u_push;
+    location:
+    	initial;
+      marked;
+      edge u_push;
+  end
+  plant Observer:
+  	controllable c_done, c_cancel;
+  	monitor Button.u_push;
+  	location unpressed:
+  		initial;
+  		marked;
+  		edge Button.u_push when conditionPush goto pressed;
+  	location pressed:
+  		marked;
+  		edge c_done when conditionDone goto unpressed;
+  		edge c_cancel when conditionCancel goto unpressed;
+  end
+
+end

@@ -1,0 +1,18 @@
+from "lib:cif3" import *;
+
+string sim_path = "Hoofd_Simulatie_Tunnel.cif";   //Location of simulation/hybrid model
+
+// Simulate the supervisor/hybrid plants simulation model.
+outln("Simulating \"%s\"...", sim_path);
+outln();
+
+cif3sim(sim_path,
+        "-i svg",
+        "-a first",
+        "--frame-rate=20",
+        "--speed=2",
+        "--solver-root-maxchk=0.5",
+        "--max-delay=10.0",
+        "--option-dialog=no",
+        "--stateviz=no",
+        "--stateviz-filter=Tunnel_MiddenPompkelder_PompRichting,sim_pompkelders.instroom_HPK1.*,sim_pompkelders.hoofdpompkelder_1.*");

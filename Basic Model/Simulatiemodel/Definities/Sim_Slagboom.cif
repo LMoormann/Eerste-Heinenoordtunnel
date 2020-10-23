@@ -1,0 +1,72 @@
+group def hybride_slagboom(alg bool actuator_op,actuator_neer;
+  event sensor_open_aan,sensor_open_uit,sensor_dicht_aan,sensor_dicht_uit):
+
+  const int hoogte_open = 100,hoogte_dicht = 0;
+  cont hoogte = 100 der if actuator_op and actuator_neer: 0
+                      elif actuator_op:    10
+                      elif actuator_neer: -10
+                      else 0 end;
+
+  plant positie_slagboom_observator:
+      location: initial;
+      edge sensor_open_uit  when hoogte <  hoogte_open;
+      edge sensor_open_aan  when hoogte >= hoogte_open;
+      edge sensor_dicht_uit when hoogte >  hoogte_dicht;
+      edge sensor_dicht_aan when hoogte <= hoogte_dicht;
+  end
+end
+
+group def driebaans_slagboomVisu(hybride_slagboom slagboom;
+  alg string locatie):
+
+  svgout id locatie+"slagboom_drie_baans_open"    attr "opacity" value
+         if slagboom.hoogte > slagboom.hoogte_open-1    : "1" else "0" end;
+  svgout id locatie+"slagboom_drie_baans_dicht_1" attr "opacity" value
+         if slagboom.hoogte < slagboom.hoogte_open      : "1" else "0" end;
+  svgout id locatie+"slagboom_drie_baans_dicht_2" attr "opacity" value
+         if slagboom.hoogte < 0.750*slagboom.hoogte_open: "1" else "0" end;
+  svgout id locatie+"slagboom_drie_baans_dicht_3" attr "opacity" value
+         if slagboom.hoogte < 0.625*slagboom.hoogte_open: "1" else "0" end;
+  svgout id locatie+"slagboom_drie_baans_dicht_4" attr "opacity" value
+         if slagboom.hoogte < 0.500*slagboom.hoogte_open: "1" else "0" end;
+  svgout id locatie+"slagboom_drie_baans_dicht_5" attr "opacity" value
+         if slagboom.hoogte < 0.375*slagboom.hoogte_open: "1" else "0" end;
+  svgout id locatie+"slagboom_drie_baans_dicht_6" attr "opacity" value
+         if slagboom.hoogte < 0.250*slagboom.hoogte_open: "1" else "0" end;
+  svgout id locatie+"slagboom_drie_baans_dicht_7" attr "opacity" value
+         if slagboom.hoogte < 0.125*slagboom.hoogte_open: "1" else "0" end;
+  svgout id locatie+"slagboom_drie_baans_dicht_8" attr "opacity" value
+         if slagboom.hoogte <= slagboom.hoogte_dicht    : "1" else "0" end;
+end
+
+group def tweebaans_slagboomVisu(hybride_slagboom slagboom;
+  alg string locatie):
+
+  svgout id locatie+"slagboom_twee_baans_open"    attr "opacity" value
+           if slagboom.hoogte < slagboom.hoogte_open    : "1" else "0" end;
+  svgout id locatie+"slagboom_twee_baans_dicht_1" attr "opacity" value
+           if slagboom.hoogte < 0.8*slagboom.hoogte_open: "1" else "0" end;
+  svgout id locatie+"slagboom_twee_baans_dicht_2" attr "opacity" value
+           if slagboom.hoogte < 0.6*slagboom.hoogte_open: "1" else "0" end;
+  svgout id locatie+"slagboom_twee_baans_dicht_3" attr "opacity" value
+           if slagboom.hoogte < 0.4*slagboom.hoogte_open: "1" else "0" end;
+  svgout id locatie+"slagboom_twee_baans_dicht_4" attr "opacity" value
+           if slagboom.hoogte < 0.2*slagboom.hoogte_open: "1" else "0" end;
+  svgout id locatie+"slagboom_twee_baans_dicht_5" attr "opacity" value
+           if slagboom.hoogte < slagboom.hoogte_dicht   : "1" else "0" end;
+end
+
+group def vluchtstrook_slagboomVisu(hybride_slagboom slagboom;
+  alg string locatie):
+
+  svgout id locatie+"slagboom_vl_dicht_1" attr "opacity" value
+          if slagboom.hoogte < slagboom.hoogte_open     : "1" else "0" end;
+  svgout id locatie+"slagboom_vl_dicht_2" attr "opacity" value
+          if slagboom.hoogte < 0.75*slagboom.hoogte_open: "1" else "0" end;
+  svgout id locatie+"slagboom_vl_dicht_3" attr "opacity" value
+          if slagboom.hoogte < 0.50*slagboom.hoogte_open: "1" else "0" end;
+  svgout id locatie+"slagboom_vl_dicht_4" attr "opacity" value
+          if slagboom.hoogte < 0.25*slagboom.hoogte_open: "1" else "0" end;
+  svgout id locatie+"slagboom_vl_dicht_5" attr "opacity" value
+          if slagboom.hoogte < slagboom.hoogte_dicht    : "1" else "0" end;
+end

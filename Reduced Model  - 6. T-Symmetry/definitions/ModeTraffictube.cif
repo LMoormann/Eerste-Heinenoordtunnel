@@ -1,0 +1,29 @@
+plant def ModeTraffictube():
+  controllable c_operational, c_emergency, c_recovery, c_support, c_standby, c_evacuation, c_maintenance, c_evacuationEmergency;
+  location operational:
+    initial; marked;
+    edge c_emergency goto emergency;
+    edge c_standby goto standby;
+    edge c_maintenance goto maintenance;
+    edge c_support goto support;
+  location standby:
+    edge c_operational goto operational;
+    edge c_emergency goto emergency;
+    edge c_support goto support;
+  location emergency:
+    edge c_recovery goto recovery;
+    edge c_evacuation goto evacuation;
+  location evacuation:
+    edge c_evacuationEmergency goto emergency;
+  location recovery:
+    edge c_operational goto operational;
+    edge c_emergency goto emergency;
+    edge c_support goto support;
+    edge c_maintenance goto maintenance;
+  location support:
+    edge c_recovery goto recovery;
+  location maintenance:
+    edge c_operational  goto operational;
+    edge c_recovery goto recovery;
+    edge c_support goto support;
+end

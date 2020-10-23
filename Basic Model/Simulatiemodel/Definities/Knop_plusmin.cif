@@ -1,0 +1,11 @@
+plant def Knop_plusmin( alg string plus, minus; alg int nr, initieel):
+  event e_plus, e_minus;
+  monitor;
+  disc int level = initieel;
+  location: initial;
+  edge e_plus  when level < nr do level:=level+1;
+  edge e_minus when level > 0  do level:=level-1;
+
+  svgin  id plus    event e_plus;
+  svgin  id minus   event e_minus;
+end

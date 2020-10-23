@@ -1,0 +1,42 @@
+group def Sim_Bluswatertank(alg bool pomp_aan, uitstroom;
+  alg int volume_uitstroom; event sensor_laagwater_aan,
+  sensor_laagwater_uit, sensor_hoogwater_aan, sensor_hoogwater_uit;
+  alg string locatie):
+
+  alg real volume_instroom = if pomp_aan: 15 else 0 end;
+  const int leeg = 1, laagwater = 100, hoogwater = 500, vol = 600;
+  cont waterniveau = 1 der
+    if   waterniveau >= vol  and (volume_instroom - volume_uitstroom > 0):0
+    elif waterniveau <= leeg and (volume_instroom - volume_uitstroom < 0):0
+    elif pomp_aan  or uitstroom: volume_instroom - volume_uitstroom
+    else 0 end;
+
+  automaton positie_water_observist:
+      location: initial;
+      edge sensor_laagwater_aan when waterniveau >  laagwater;
+      edge sensor_laagwater_uit when waterniveau <= laagwater;
+      edge sensor_hoogwater_aan when waterniveau >  hoogwater;
+      edge sensor_hoogwater_uit when waterniveau <  hoogwater-10
+      /*dit is niet werkelijkheid, maar om het model te laten werken
+      (geen lifelock veroorzaken)*/;
+  end
+
+  svgout id locatie+"water" attr "height" value
+                            scale(waterniveau, 0, vol, 0, 100);
+  svgout id locatie+"uitstroom" attr "fill" value
+                               if uitstroom: "#2c7081" else "#ededed" end;
+  svgout id locatie+"uitstroom_pijp" attr "fill" value
+                               if uitstroom: "#2c7081" else "#ededed" end;
+  svgout id locatie+"brandslang" attr "opacity" value
+                               if uitstroom: "1" else "0.1" end;
+  svgout id locatie+"instroom_water" attr "stroke" value
+                               if pomp_aan: "#2c7081" else "none" end;
+  svgout id locatie+"pomp_achtergrond" attr "fill" value
+                               if pomp_aan: "#2c7081" else "#ededed" end;
+  svgout id locatie+"pomp_achtergrond_stroke" attr "stroke" value
+                               if pomp_aan: "none" else "black" end;
+  svgout id locatie+"pomp_uit" attr "stroke" value
+                               if pomp_aan: "none" else "black" end;
+  svgout id locatie+"pomp_aan" attr "opacity" value
+                               if pomp_aan: "1" else "0" end;
+end

@@ -1,0 +1,40 @@
+from "lib:cif3" import *;
+
+// Input file
+string input_path = "Tunnel.cif";                //Location of simulation/hybrid model
+
+// Output file
+string output_path = "Tunnel_transformed.cif";
+
+// Simulate the supervisor/hybrid plants simulation model.
+outln("Transforming \"%s\"...", input_path);
+outln();
+cif3cif(input_path,
+		"-o", output_path,
+		"-t elim-comp-def-inst"
+		);
+
+outln("Component definitions and instantiations succesfully removed.");
+
+cif3cif(output_path,
+		"-o", output_path,
+		"-t elim-groups"
+		);
+
+outln("Groups succesfully removed.");
+
+cif3cif(output_path,
+		"-o", output_path,
+		"-t lift-events"
+		);
+
+outln("Events succesfully lifted.");
+
+cif3cif(output_path,
+		"-o", output_path,
+		"-t elim-enums"
+		);
+
+outln("Enumerations succesfully removed.");
+outln();
+outln("Transformation finished");

@@ -1,0 +1,37 @@
+import "Sim_Timer.cif";
+
+group def Hybride_verkeerslicht(alg bool knipper,rood,geel;event cuit,
+  cgeel,cknipper,crood,cvrijgave,cvrijgavereset,uvrijgavetimeout;
+  alg string locatie):
+
+  event e_aan,e_uit,e_timeout,e_timeout_geel,e_reset_geel,
+    e_timeout_knipper,e_reset_knipper,e_timeout_rood,e_reset_rood;
+  knipper_timer:     Hybride_wissel_timer(e_aan,e_uit,e_timeout, 0.5);
+  hyb_timer_geel:    Hybride_timer(cgeel,e_reset_geel,e_timeout_geel,6);
+  hyb_timer_knipper: Hybride_timer(cknipper,e_reset_knipper,
+                                    e_timeout_knipper,6);
+  hyb_timer_rood:    Hybride_timer(crood,e_reset_rood,e_timeout_rood,6);
+  hyb_timer_rood_vrijgavesignaal: Hybride_timer(cvrijgave,cvrijgavereset,
+                                                  uvrijgavetimeout,4);
+
+  invariant crood     needs hyb_timer_geel.afgelopen;
+  invariant cgeel     needs hyb_timer_knipper.afgelopen;
+  invariant cuit      needs hyb_timer_knipper.afgelopen;
+  invariant cvrijgave needs hyb_timer_rood.afgelopen;
+
+  invariant e_reset_geel    needs not geel;
+  invariant e_reset_knipper needs not knipper;
+  invariant e_reset_rood    needs not rood;
+
+  invariant e_aan needs knipper;
+  invariant e_uit needs not knipper;
+  invariant e_timeout needs knipper and knipper_timer.t <= 0;
+
+  svgout id locatie + "verkeerslicht_rood_licht" attr "fill" value
+                                         if rood: "red" else "grey" end;
+  svgout id locatie + "verkeerslicht_geel_licht" attr "fill" value
+                                         if geel: "yellow"
+                                         elif knipper_timer.aan_1: "yellow"
+                                         else "grey" end;
+  svgout id locatie + "verkeerslicht_groen_licht" attr "fill" value "grey";
+end

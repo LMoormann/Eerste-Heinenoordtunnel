@@ -1,0 +1,12 @@
+plant def Broadcast():
+  controllable event c_message, c_live, c_suppressed;
+  location message:
+    initial; marked;
+    edge c_live goto live;
+    edge c_suppressed goto suppressed;
+  location live:
+    edge c_message goto message;
+  location suppressed:
+    edge c_message goto message;
+    edge c_live goto live;
+end

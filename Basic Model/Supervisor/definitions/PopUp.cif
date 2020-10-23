@@ -1,0 +1,20 @@
+import "Actuator.cif", "Timer.cif", "PushButton.cif";
+
+group def PopUp(location mode_operational, mode_emergency):
+  Window: Actuator(true,false);
+  Timer: ^Timer();
+  ButtonAccept: PushButton(true, mode_emergency and Window.off, false);
+  ButtonReject: PushButton(true,  mode_operational and Window.off, false);
+  plant Relation:
+  	location:
+  		initial; marked;
+  		edge ButtonAccept.Button.u_push when Window.on;
+  		edge ButtonReject.Button.u_push when Window.on;
+  end
+
+  requirement Window.c_on needs ButtonAccept.Observer.unpressed;
+  requirement Window.c_on needs ButtonReject.Observer.unpressed;
+  requirement Window.c_off needs ButtonAccept.Observer.pressed or ButtonReject.Observer.pressed or Timer.finished;
+  requirement Timer.c_on needs Window.on;
+  requirement Timer.c_reset needs Window.off;
+end

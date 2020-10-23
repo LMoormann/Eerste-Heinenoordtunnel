@@ -1,0 +1,15 @@
+plant def Smokedetection():
+	disc int[0..8] setting = 0;
+  uncontrollable u_0, u_1, u_2, u_3, u_4, u_5, u_6, u_7, u_8;
+  location:
+    initial; marked;
+    edge u_0 when not (setting = 0) do setting:=0;
+    edge u_1 when not (setting = 1) do setting:=1;
+    edge u_2 when not (setting = 2) do setting:=2;
+    edge u_3 when not (setting = 3) do setting:=3;
+    edge u_4 when not (setting = 4) do setting:=4;
+    edge u_5 when not (setting = 5) do setting:=5;
+    edge u_6 when not (setting = 6) do setting:=6;
+    edge u_7 when not (setting = 7) do setting:=7;
+    edge u_8 when not (setting = 8) do setting:=8;
+end

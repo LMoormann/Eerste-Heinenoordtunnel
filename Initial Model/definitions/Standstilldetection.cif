@@ -1,0 +1,14 @@
+plant def Standstilldetection():
+  uncontrollable u_off, u_standstill, u_wrongway;
+  location off:
+  	initial;
+    marked;
+    edge u_standstill goto standstill;
+    edge u_wrongway goto wrongway;
+  location standstill:
+    edge u_off goto off;
+    edge u_wrongway goto wrongway;
+  location wrongway:
+    edge u_off goto off;
+    edge u_standstill goto standstill;
+end

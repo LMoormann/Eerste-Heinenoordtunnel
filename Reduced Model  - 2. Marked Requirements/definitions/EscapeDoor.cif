@@ -1,0 +1,24 @@
+import "Actuator.cif", "Control.cif", "PushButton.cif", "Sensor.cif";
+
+group def EscapeDoor(location switchTimerOff):
+  plant Broadcast:
+  	controllable c_off, c_on, c_suppressed;
+    location off:
+      initial; marked;
+      edge c_on goto on;
+      edge c_suppressed goto suppressed;
+    location on:
+      edge c_off goto off;
+      edge c_suppressed goto suppressed;
+    location suppressed:
+    	edge c_off goto off;
+     	edge c_on goto on;
+  end
+  ControlBroadcast: Control();
+  ButtonBroadcastOff: PushButton(ControlBroadcast.Mode.manual, Broadcast.off and switchTimerOff, ControlBroadcast.Mode.auto);
+  ButtonBroadcastOn: PushButton(ControlBroadcast.Mode.manual, Broadcast.on, ControlBroadcast.Mode.auto);
+  RouteIndication: Actuator(true,false);
+  ControlRouteIndication: Control();
+  ButtonRouteIndicationOff: PushButton(ControlRouteIndication.Mode.manual, RouteIndication.off, ControlRouteIndication.Mode.auto);
+  ButtonRouteIndicationOn: PushButton(ControlRouteIndication.Mode.manual, RouteIndication.on, ControlRouteIndication.Mode.auto);
+end

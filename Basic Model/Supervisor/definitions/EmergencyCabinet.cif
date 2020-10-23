@@ -1,0 +1,14 @@
+import "Sensor.cif";
+
+group def EmergencyCabinetA():
+  SensorOpen: Sensor(true,true,false);
+  Phone: Sensor(true,true,false);
+  HandheldExtinguisher: Sensor(true,true,false);
+  Firehose: Sensor(true,true,false);
+end
+
+group def EmergencyCabinetC():
+  SensorOpen: Sensor(true,true,false);
+  Phone: Sensor(true,true,false);
+  HandheldExtinguisher: Sensor(true,true,false);
+end

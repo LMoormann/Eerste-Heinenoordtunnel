@@ -1,0 +1,171 @@
+import "Boombarrier.cif", "Trafficlight.cif", "J32.cif", "EmergencyCabinet.cif", "PushButton.cif", "Lighting.cif", "Ventilation.cif", "Smokedetection.cif", "EscapeDoor.cif", "Control.cif", "Lightsensor.cif", "CCTV.cif", "PopUp.cif", "Broadcast.cif", "Standstilldetection.cif", "ModeTraffictube.cif";
+
+group def TraffictubeWest():
+  Boombarrier1: Boombarrier();
+  Boombarrier2: Boombarrier();
+  ControlBoombarriers: Control();
+  ButtonStopBoombarriers: PushButton(ControlBoombarriers.Mode.manual, AccessBoombarriers.stopped, ControlBoombarriers.Mode.auto);
+  ButtonOpenBoombarriers: PushButton(ControlBoombarriers.Mode.manual, AccessBoombarriers.opening, ControlBoombarriers.Mode.auto);
+  ButtonCloseBoombarriers: PushButton(ControlBoombarriers.Mode.manual, AccessBoombarriers.closing, ControlBoombarriers.Mode.auto);
+  ButtonCloseUnconditionalBoombarriers: PushButton(ControlBoombarriers.Mode.manual, AccessBoombarriers.closingUnconditionally, ControlBoombarriers.Mode.auto);
+  AccessBoombarriers: AccessBoombarrier(ModeTraffictube.c_emergency, ModeTraffictube.c_support);
+
+  Trafficlight1: Trafficlight();
+  Trafficlight2: Trafficlight();
+  Trafficlight3: Trafficlight();
+  ControlTrafficlights: Control();
+  ButtonRedTrafficlights: PushButton(ControlTrafficlights.Mode.manual, AccessTrafficlights.red, ControlTrafficlights.Mode.auto or ButtonFlashTrafficlights.Observer.pressed or ButtonOffTrafficlights.Observer.pressed);
+  ButtonFlashTrafficlights: PushButton(ControlTrafficlights.Mode.manual, AccessTrafficlights.flash, ControlTrafficlights.Mode.auto or ButtonRedTrafficlights.Observer.pressed or ButtonOffTrafficlights.Observer.pressed);
+  ButtonOffTrafficlights: PushButton(ControlTrafficlights.Mode.manual, AccessTrafficlights.off, ControlTrafficlights.Mode.auto);
+  ButtonPrimaryRedTrafficlights: PushButton(not AccessTrafficlights.red, AccessTrafficlights.red, false);
+  ButtonPrimaryOffTrafficlights: PushButton(not AccessTrafficlights.off, AccessTrafficlights.off, false);AccessTrafficlights: AccessTrafficlight(ModeTraffictube.c_emergency, ModeTraffictube.c_support);
+
+  ButtonPrimaryCloseTraffictube: PushButton(not AccessTrafficlights.red or not AccessBoombarriers.closing, AccessTrafficlights.red and AccessBoombarriers.closing, false);
+  ButtonPrimaryOpenTraffictube: PushButton(not AccessTrafficlights.off or not AccessBoombarriers.opening, AccessTrafficlights.off and AccessBoombarriers.opening, false);
+
+  J32: ^J32();
+  MatrixsignTrafficlight: Actuator(true,false);
+  MatrixsignUnpressed: Actuator(true,false);
+
+  Ventilation1: Ventilation();
+  VentilationDirection: ^VentilationDirection();
+
+  ControlVentilation: Control();
+  ButtonVentilationDrivingDirection: PushButton(ControlVentilation.Mode.manual, VentilationDirection.drivingDirection, ControlVentilation.Mode.auto);
+  ButtonVentilationAgainstDrivingDirection: PushButton(ControlVentilation.Mode.manual, VentilationDirection.againstDrivingDirection, ControlVentilation.Mode.auto);
+  ButtonVentilation0: PushButton(ControlVentilation.Mode.manual, Ventilation1.setting=0, ControlVentilation.Mode.auto);
+  ButtonVentilation1: PushButton(ControlVentilation.Mode.manual, Ventilation1.setting=1, ControlVentilation.Mode.auto);
+
+  Recorder: Actuator(true,false);
+
+  Broadcast1: Broadcast();
+  SwitchTimerAudio: SwitchTimer();
+  ButtonMessage: PushButton(Broadcast1.live , Broadcast1.message and SwitchTimerAudio.off, false);
+  ButtonLive: PushButton(not Broadcast1.live, Broadcast1.live, false);
+
+  EscapeDoor1: EscapeDoor();
+  EscapeDoor2: EscapeDoor();
+  EscapeDoor3: EscapeDoor();
+  EscapeDoor4: EscapeDoor();
+  EscapeDoor5: EscapeDoor();
+  EscapeDoor6: EscapeDoor();
+  EscapeDoor7: EscapeDoor();
+
+  plant EscapeDoorBroadcast:
+    controllable c_off, c_on, c_suppressed;
+    location off:
+      initial; marked;
+      edge c_on goto on;
+      edge c_suppressed goto suppressed;
+    location on:
+      edge c_off goto off;
+      edge c_suppressed goto suppressed;
+    location suppressed:
+      edge c_off goto off;
+      edge c_on goto on;
+  end
+  ControlEscapeDoorBroadcast: Control();
+  ButtonEscapeDoorBroadcastOff: PushButton(ControlEscapeDoorBroadcast.Mode.manual, EscapeDoorBroadcast.off and SwitchTimerAudio.off, ControlEscapeDoorBroadcast.Mode.auto);
+  ButtonEscapeDoorBroadcastOn: PushButton(ControlEscapeDoorBroadcast.Mode.manual, EscapeDoorBroadcast.on, ControlEscapeDoorBroadcast.Mode.auto);
+
+  ModeTraffictube: ^ModeTraffictube();
+
+  PopUp: ^PopUp(ModeTraffictube.operational, ModeTraffictube.emergency);
+  ButtonOperational: PushButton(ModeTraffictube.recovery or ModeTraffictube.standby or ModeTraffictube.maintenance, ModeTraffictube.operational, false);
+  ButtonEmergency: PushButton(not ModeTraffictube.support, PopUp.Window.on or ModeTraffictube.emergency, false);
+  ButtonEvacuation: PushButton(ModeTraffictube.emergency, ModeTraffictube.evacuation and not SwitchTimerAudio.off, false);
+  ButtonRecovery: PushButton(ModeTraffictube.emergency or ModeTraffictube.maintenance, ModeTraffictube.recovery, false);
+  ButtonMaintenance: PushButton(ModeTraffictube.operational or ModeTraffictube.recovery, ModeTraffictube.maintenance, ModeTraffictube.standby or ModeTraffictube.emergency);
+
+  requirement PopUp.Window.c_on needs ButtonEmergency.Observer.pressed or ModeTraffictube.operational;
+  requirement PopUp.Window.c_off needs ModeTraffictube.emergency or ModeTraffictube.support or PopUp.ButtonReject.Observer.pressed;
+  requirement ModeTraffictube.c_operational needs ButtonOperational.Observer.pressed;
+  requirement ModeTraffictube.c_emergency needs PopUp.ButtonAccept.Observer.pressed or PopUp.Timer.finished;
+  requirement ModeTraffictube.c_evacuationEmergency needs ButtonEmergency.Observer.pressed;
+  requirement ModeTraffictube.c_support needs not ModeTraffictube.emergency;
+  requirement ModeTraffictube.c_evacuation needs ButtonEvacuation.Observer.pressed;
+  requirement ModeTraffictube.c_maintenance needs ButtonMaintenance.Observer.pressed;
+  requirement J32.Mode.c_on needs AccessTrafficlights.red or AccessTrafficlights.flash;
+  requirement J32.Mode.c_off needs Trafficlight1.Mode.off;
+  requirement J32.Mode.c_off needs Trafficlight2.Mode.off;
+  requirement J32.Mode.c_off needs Trafficlight3.Mode.off;
+  requirement J32.Mode.c_off needs AccessTrafficlights.off;
+  requirement MatrixsignTrafficlight.c_on needs AccessTrafficlights.red or AccessTrafficlights.flash or (AccessTrafficlights.off and not Trafficlight1.Mode.off and not Trafficlight2.Mode.off and not Trafficlight3.Mode.off);
+  requirement MatrixsignUnpressed.c_on needs AccessTrafficlights.red or AccessTrafficlights.flash;
+  requirement VentilationDirection.c_againstDrivingDirection needs (ControlVentilation.Mode.auto and ModeTraffictube.support) or (ControlVentilation.Mode.manual and ButtonVentilationAgainstDrivingDirection.Observer.pressed);
+  requirement VentilationDirection.c_drivingDirection needs (ControlVentilation.Mode.auto and not ModeTraffictube.support) or (ControlVentilation.Mode.manual and ButtonVentilationDrivingDirection.Observer.pressed);
+  requirement Recorder.c_on needs ModeTraffictube.emergency or ModeTraffictube.evacuation or ModeTraffictube.support;
+  requirement SwitchTimerAudio.c_on needs ButtonEvacuation.Observer.pressed;
+  requirement SwitchTimerAudio.c_off needs not ModeTraffictube.evacuation;
+
+  group def RequirementsBoombarrier(controllable event c_downOn, c_downOffEmergency, c_upOn, c_upOffEmergency):
+    requirement c_downOn needs Trafficlight1.ReleaseSignal.on or AccessBoombarriers.closingUnconditionally;
+    requirement c_downOn needs Trafficlight2.ReleaseSignal.on or AccessBoombarriers.closingUnconditionally;
+    requirement c_downOn needs Trafficlight3.ReleaseSignal.on or AccessBoombarriers.closingUnconditionally;
+    requirement c_downOn needs AccessBoombarriers.closing or AccessBoombarriers.closingUnconditionally;
+    requirement c_downOffEmergency needs AccessBoombarriers.stopped or AccessBoombarriers.opening;
+    requirement c_upOn needs AccessBoombarriers.opening;
+    requirement c_upOffEmergency needs AccessBoombarriers.stopped or AccessBoombarriers.closing;
+  end
+  RequirementsBoombarrier1: RequirementsBoombarrier(Boombarrier1.ActuatorDown.c_on, Boombarrier1.ActuatorDown.c_offEmergency, Boombarrier1.ActuatorUp.c_on, Boombarrier1.ActuatorUp.c_offEmergency);
+  RequirementsBoombarrier2: RequirementsBoombarrier(Boombarrier2.ActuatorDown.c_on, Boombarrier2.ActuatorDown.c_offEmergency, Boombarrier2.ActuatorUp.c_on, Boombarrier2.ActuatorUp.c_offEmergency);
+
+  group def RequirementsTrafficlight(controllable event c_flash, c_off, c_yellow; alg bool red, off):
+    requirement red and not Boombarrier1.open disables c_flash;
+    requirement red and not Boombarrier2.open disables c_flash;
+    requirement J32.Mode.off disables c_flash;
+    requirement off and not J32.TimerReleaseSignal.finished disables c_flash;
+    requirement c_off needs AccessTrafficlights.off;
+    requirement c_flash needs (red and AccessTrafficlights.off) or (off and AccessTrafficlights.red) or AccessTrafficlights.flash;
+    requirement c_yellow needs AccessTrafficlights.red;
+  end
+  RequirementsTrafficlight1: RequirementsTrafficlight(Trafficlight1.Mode.c_flash, Trafficlight1.Mode.c_off, Trafficlight1.Mode.c_yellow, Trafficlight1.Mode.red, Trafficlight1.Mode.off);
+  RequirementsTrafficlight2: RequirementsTrafficlight(Trafficlight2.Mode.c_flash, Trafficlight2.Mode.c_off, Trafficlight2.Mode.c_yellow, Trafficlight2.Mode.red, Trafficlight2.Mode.off);
+  RequirementsTrafficlight3: RequirementsTrafficlight(Trafficlight3.Mode.c_flash, Trafficlight3.Mode.c_off, Trafficlight3.Mode.c_yellow, Trafficlight3.Mode.red, Trafficlight3.Mode.off);
+
+  group def RequirementsBroadcast(controllable event c_message, c_live, c_suppressed):
+    requirement c_message needs EscapeDoorBroadcast.off or EscapeDoorBroadcast.suppressed;
+    requirement c_message needs SwitchTimerAudio.on1 or ButtonMessage.Observer.pressed;
+    requirement c_live needs EscapeDoorBroadcast.off or EscapeDoorBroadcast.suppressed;
+    requirement c_live needs ButtonLive.Observer.pressed;
+    requirement c_suppressed needs SwitchTimerAudio.on2;
+  end
+  RequirementsBroadcast1: RequirementsBroadcast(Broadcast1.c_message, Broadcast1.c_live, Broadcast1.c_suppressed);
+  RequirementsBroadcast2: RequirementsBroadcast(Broadcast1.c_message, Broadcast1.c_live, Broadcast1.c_suppressed);
+  RequirementsBroadcast3: RequirementsBroadcast(Broadcast1.c_message, Broadcast1.c_live, Broadcast1.c_suppressed);
+  RequirementsBroadcast4: RequirementsBroadcast(Broadcast1.c_message, Broadcast1.c_live, Broadcast1.c_suppressed);
+  RequirementsBroadcast5: RequirementsBroadcast(Broadcast1.c_message, Broadcast1.c_live, Broadcast1.c_suppressed);
+  RequirementsBroadcast6: RequirementsBroadcast(Broadcast1.c_message, Broadcast1.c_live, Broadcast1.c_suppressed);
+  RequirementsBroadcast7: RequirementsBroadcast(Broadcast1.c_message, Broadcast1.c_live, Broadcast1.c_suppressed);
+  RequirementsBroadcast8: RequirementsBroadcast(Broadcast1.c_message, Broadcast1.c_live, Broadcast1.c_suppressed);
+  RequirementsBroadcast9: RequirementsBroadcast(Broadcast1.c_message, Broadcast1.c_live, Broadcast1.c_suppressed);
+  RequirementsBroadcast10: RequirementsBroadcast(Broadcast1.c_message, Broadcast1.c_live, Broadcast1.c_suppressed);
+  RequirementsBroadcast11: RequirementsBroadcast(Broadcast1.c_message, Broadcast1.c_live, Broadcast1.c_suppressed);
+  RequirementsBroadcast12: RequirementsBroadcast(Broadcast1.c_message, Broadcast1.c_live, Broadcast1.c_suppressed);
+  RequirementsBroadcast13: RequirementsBroadcast(Broadcast1.c_message, Broadcast1.c_live, Broadcast1.c_suppressed);
+  RequirementsBroadcast14: RequirementsBroadcast(Broadcast1.c_message, Broadcast1.c_live, Broadcast1.c_suppressed);
+  RequirementsBroadcast15: RequirementsBroadcast(Broadcast1.c_message, Broadcast1.c_live, Broadcast1.c_suppressed);
+  RequirementsBroadcast16: RequirementsBroadcast(Broadcast1.c_message, Broadcast1.c_live, Broadcast1.c_suppressed);
+  RequirementsBroadcast17: RequirementsBroadcast(Broadcast1.c_message, Broadcast1.c_live, Broadcast1.c_suppressed);
+  RequirementsBroadcast18: RequirementsBroadcast(Broadcast1.c_message, Broadcast1.c_live, Broadcast1.c_suppressed);
+  RequirementsBroadcast19: RequirementsBroadcast(Broadcast1.c_message, Broadcast1.c_live, Broadcast1.c_suppressed);
+  RequirementsBroadcast20: RequirementsBroadcast(Broadcast1.c_message, Broadcast1.c_live, Broadcast1.c_suppressed);
+  RequirementsBroadcast21: RequirementsBroadcast(Broadcast1.c_message, Broadcast1.c_live, Broadcast1.c_suppressed);
+  RequirementsBroadcast22: RequirementsBroadcast(Broadcast1.c_message, Broadcast1.c_live, Broadcast1.c_suppressed);
+  RequirementsBroadcast23: RequirementsBroadcast(Broadcast1.c_message, Broadcast1.c_live, Broadcast1.c_suppressed);
+
+  requirement EscapeDoorBroadcast.c_on needs (ControlEscapeDoorBroadcast.Mode.auto and SwitchTimerAudio.on2) or (not ControlEscapeDoorBroadcast.Mode.auto and ButtonEscapeDoorBroadcastOn.Observer.pressed);
+  requirement EscapeDoorBroadcast.c_on needs Broadcast1.suppressed;
+  requirement EscapeDoorBroadcast.c_off needs (ControlEscapeDoorBroadcast.Mode.auto and SwitchTimerAudio.off) or (not ControlEscapeDoorBroadcast.Mode.auto and ButtonEscapeDoorBroadcastOff.Observer.pressed);
+  requirement EscapeDoorBroadcast.c_suppressed needs (ControlEscapeDoorBroadcast.Mode.auto and SwitchTimerAudio.on1);
+  group def RequirementsEscapeDoor(controllable event c_routeIndicationOn; alg bool routeIndicationAuto, routeIndicationManual, buttonRouteIndicationOn):
+    requirement c_routeIndicationOn needs (routeIndicationAuto and ModeTraffictube.evacuation) or (routeIndicationManual and buttonRouteIndicationOn);
+  end
+  RequirementsEscapeDoor1: RequirementsEscapeDoor(EscapeDoor1.RouteIndication.c_on, EscapeDoor1.ControlRouteIndication.Mode.auto, EscapeDoor1.ControlRouteIndication.Mode.manual, EscapeDoor1.ButtonRouteIndicationOn.Observer.pressed);
+  RequirementsEscapeDoor2: RequirementsEscapeDoor(EscapeDoor2.RouteIndication.c_on, EscapeDoor2.ControlRouteIndication.Mode.auto, EscapeDoor2.ControlRouteIndication.Mode.manual, EscapeDoor2.ButtonRouteIndicationOn.Observer.pressed);
+  RequirementsEscapeDoor3: RequirementsEscapeDoor(EscapeDoor3.RouteIndication.c_on, EscapeDoor3.ControlRouteIndication.Mode.auto, EscapeDoor3.ControlRouteIndication.Mode.manual, EscapeDoor3.ButtonRouteIndicationOn.Observer.pressed);
+  RequirementsEscapeDoor4: RequirementsEscapeDoor(EscapeDoor4.RouteIndication.c_on, EscapeDoor4.ControlRouteIndication.Mode.auto, EscapeDoor4.ControlRouteIndication.Mode.manual, EscapeDoor4.ButtonRouteIndicationOn.Observer.pressed);
+  RequirementsEscapeDoor5: RequirementsEscapeDoor(EscapeDoor5.RouteIndication.c_on, EscapeDoor5.ControlRouteIndication.Mode.auto, EscapeDoor5.ControlRouteIndication.Mode.manual, EscapeDoor5.ButtonRouteIndicationOn.Observer.pressed);
+  RequirementsEscapeDoor6: RequirementsEscapeDoor(EscapeDoor6.RouteIndication.c_on, EscapeDoor6.ControlRouteIndication.Mode.auto, EscapeDoor6.ControlRouteIndication.Mode.manual, EscapeDoor6.ButtonRouteIndicationOn.Observer.pressed);
+  RequirementsEscapeDoor7: RequirementsEscapeDoor(EscapeDoor7.RouteIndication.c_on, EscapeDoor7.ControlRouteIndication.Mode.auto, EscapeDoor7.ControlRouteIndication.Mode.manual, EscapeDoor7.ButtonRouteIndicationOn.Observer.pressed);
+end

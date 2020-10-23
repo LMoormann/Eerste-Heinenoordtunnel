@@ -1,0 +1,9 @@
+group def Sim_Noodbediening(event noodbediening_aan, noodbediening_uit; alg bool noodbediening):
+  svgfile "../controle_paneel.svg";
+  svgin id "knop_noodbediening" event
+      if noodbediening: noodbediening_uit
+      else noodbediening_aan end;
+  svgout id "knop_noodbediening" attr "fill" value
+      if noodbediening: "#279d35"
+      else "#b72e2e" end;
+end

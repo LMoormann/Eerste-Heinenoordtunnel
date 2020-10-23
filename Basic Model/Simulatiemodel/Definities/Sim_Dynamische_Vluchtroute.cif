@@ -1,0 +1,5 @@
+group def Sim_Dynamische_Vluchtroute(alg string locatie; alg bool aan):
+
+  svgout id "vluchtroute"+locatie attr "opacity" value
+                                  if aan: "1" else "0.1" end;
+end

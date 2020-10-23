@@ -1,0 +1,47 @@
+import "Actuator.cif", "Sensor.cif";
+
+group def Boombarrier():
+  ActuatorUp: ActuatorEmergencystop(true,false);
+  ActuatorDown: ActuatorEmergencystop(true,false);
+  SensorOpen: Sensor(false,false,true);
+  SensorClosed: Sensor(true,true,false);
+  plant PhysicalRelation:
+    location:
+  		initial; marked;
+      edge SensorOpen.u_on when ActuatorUp.on and SensorClosed.off;
+  		edge SensorClosed.u_off when ActuatorUp.on;
+  		edge SensorOpen.u_off when ActuatorDown.on;
+  		edge SensorClosed.u_on when ActuatorDown.on and SensorOpen.off;
+  end
+  ObstacleDetection: Sensor(true,true,false);
+
+  alg bool open = SensorOpen.on and ActuatorUp.off and ActuatorDown.off;
+  alg bool closed = SensorClosed.on and ActuatorUp.off and ActuatorDown.off;
+
+  requirement ActuatorUp.c_on needs ActuatorDown.off;
+  requirement ActuatorUp.c_on needs not open;
+  requirement ActuatorUp.c_off needs SensorOpen.on;
+  requirement ActuatorDown.c_on needs ActuatorUp.off;
+  requirement ActuatorDown.c_on needs not closed;
+  requirement ActuatorDown.c_off needs SensorClosed.on;
+end
+
+plant def AccessBoombarrier(controllable c_emergency, c_support):
+  controllable c_open, c_close, c_closeUnconditionally, c_stop;
+  monitor c_emergency, c_support;
+  location stopped:
+    initial; marked;
+    edge c_open goto opening;
+    edge c_close, c_emergency, c_support goto closing;
+    edge c_closeUnconditionally goto closingUnconditionally;
+  location opening:
+    edge c_close, c_emergency, c_support goto closing;
+    edge c_closeUnconditionally goto closingUnconditionally;
+    edge c_stop goto stopped;
+  location closing:
+    edge c_open goto opening;
+    edge c_stop goto stopped;
+  location closingUnconditionally:
+    edge c_open goto opening;
+    edge c_stop goto stopped;
+end

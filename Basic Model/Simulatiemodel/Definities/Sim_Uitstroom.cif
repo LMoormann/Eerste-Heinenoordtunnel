@@ -1,0 +1,7 @@
+group def Sim_Uitstroom(alg bool regime,br1,br2):
+
+  alg bool uitstroom = regime;
+  alg int volume_uitstroom = if br1 and br2: 20
+                           elif br1 or  br2: 10
+                           else 0 end;
+end

@@ -1,0 +1,24 @@
+plant def Ventilation():
+	disc int[0..8] setting = 0;
+  controllable c_0, c_1, c_2, c_3, c_4, c_5, c_6, c_7, c_8;
+  location:
+    initial; marked;
+    edge c_0 when not (setting = 0) do setting:=0;
+    edge c_1 when not (setting = 1) do setting:=1;
+    edge c_2 when not (setting = 2) do setting:=2;
+    edge c_3 when not (setting = 3) do setting:=3;
+    edge c_4 when not (setting = 4) do setting:=4;
+    edge c_5 when not (setting = 5) do setting:=5;
+    edge c_6 when not (setting = 6) do setting:=6;
+    edge c_7 when not (setting = 7) do setting:=7;
+    edge c_8 when not (setting = 8) do setting:=8;
+end
+
+plant def VentilationDirection():
+  controllable c_drivingDirection, c_againstDrivingDirection;
+  location drivingDirection:
+    initial; marked;
+    edge c_againstDrivingDirection goto againstDrivingDirection;
+  location againstDrivingDirection:
+    edge c_drivingDirection goto drivingDirection;
+end

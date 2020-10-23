@@ -1,0 +1,28 @@
+group def Sim_Vluchtdeur(event sensor_open_aan,sensor_open_uit;
+  alg bool contour_aan,geluid_aan,geluid_onderdrukt, sensor_open;alg string locatie):
+
+  svgout id locatie+"_nooddeur_1_contourverlichting_1" attr "fill" value
+                    if contour_aan: "green" else "black" end;
+  svgout id locatie+"_nooddeur_1_contourverlichting_2" attr "fill" value
+                    if contour_aan: "green" else "black" end;
+  svgout id locatie+"_nooddeur_1_open" attr "opacity" value
+                    if sensor_open: "1" else "0" end;
+  svgout id locatie+"_nooddeur_1_geluidsbaken" attr "opacity" value
+                    if (geluid_aan or geluid_onderdrukt): "1" else "0" end;
+  svgout id locatie+"_nooddeur_1_geluidsbaken_aan" attr "opacity" value
+                    if geluid_aan: "1" else "0" end;
+  svgout id locatie+"_nooddeur_1_geluidsbaken_uit" attr "opacity" value
+                    if geluid_onderdrukt: "1" else "0" end;
+
+  group interactie:
+    svgfile "../controle_paneel.svg";
+    svgin id "knop_nooddeur_1_"+locatie event
+      if sensor_open:
+        sensor_open_uit
+      else sensor_open_aan end;
+
+    svgout id "achtergrond_knop_nooddeur_1_"+locatie attr "fill" value
+      if sensor_open :"#279d35" else "#b72e2e" end;
+  end
+
+end

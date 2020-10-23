@@ -1,0 +1,46 @@
+import "Knop_plusmin.cif";
+group def Sim_Rook(event set_0,set_1,set_2,set_3,set_4,set_5,set_6,set_7,
+  set_8;alg string locatie;alg int stand):
+
+  invariant set_0 needs testcase.knoppen_rook.level = 0;
+  invariant set_1 needs testcase.knoppen_rook.level = 1;
+  invariant set_2 needs testcase.knoppen_rook.level = 2;
+  invariant set_3 needs testcase.knoppen_rook.level = 3;
+  invariant set_4 needs testcase.knoppen_rook.level = 4;
+  invariant set_5 needs testcase.knoppen_rook.level = 5;
+  invariant set_6 needs testcase.knoppen_rook.level = 6;
+  invariant set_7 needs testcase.knoppen_rook.level = 7;
+  invariant set_8 needs testcase.knoppen_rook.level = 8;
+
+  svgout id locatie+"_rook" attr "opacity" value <string>(0.1 + testcase.knoppen_rook.level/10);
+  svgout id locatie+"_rookmelder_achtergrond" attr "fill" value
+                                    if stand > 0: "yellow" else "none" end;
+  svgout id locatie+"_rookmelder_niveau_1" attr "fill" value
+                                    if stand >= 1: "yellow" else "none" end;
+  svgout id locatie+"_rookmelder_niveau_2" attr "fill" value
+                                    if stand >= 2: "yellow" else "none" end;
+  svgout id locatie+"_rookmelder_niveau_3" attr "fill" value
+                                    if stand >= 3: "yellow" else "none" end;
+  svgout id locatie+"_rookmelder_niveau_4" attr "fill" value
+                                    if stand >= 4: "yellow" else "none" end;
+  svgout id locatie+"_rookmelder_niveau_5" attr "fill" value
+                                    if stand >= 5: "yellow" else "none" end;
+  svgout id locatie+"_rookmelder_niveau_6" attr "fill" value
+                                    if stand >= 6: "yellow" else "none" end;
+  svgout id locatie+"_rookmelder_niveau_7" attr "fill" value
+                                    if stand >= 7: "yellow" else "none" end;
+  svgout id locatie+"_rookmelder_niveau_8" attr "fill" value
+                                    if stand >= 8: "yellow" else "none" end;
+
+  group def X():
+  end
+  group testcase:
+    svgfile"../controle_paneel.svg";
+    knoppen_rook: Knop_plusmin(
+      "knop_rook_plus_"+locatie,
+      "knop_rook_min_"+locatie,8,0);
+    svgout id "rook_stand_"+locatie text value fmt("%s",<string>stand);
+  end
+end
+
+

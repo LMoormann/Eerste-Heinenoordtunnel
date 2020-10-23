@@ -1,0 +1,34 @@
+group def Sim_Luidspreker_MTK(alg string locatie; alg bool aan):
+  svgout id locatie+"geluidsbaken_aan" attr "opacity" value
+                                       if aan: "1" else "0" end;
+  svgout id locatie+"geluidsbaken_uit" attr "opacity" value
+                                       if not aan: "1" else "0" end;
+end
+
+group def Sim_Luidspreker_Verkeersbuis(alg string locatie;
+                                       alg bool aan, uit, live):
+  svgout id locatie+"luidspreker_live" attr "opacity" value
+                                    if live: "1" else "0" end;
+  svgout id locatie+"luidspreker" attr "opacity" value
+                                    if not uit: "1" else "0.1" end;
+  svgout id locatie+"luidspreker_aan" attr "opacity" value
+                                    if (aan or live): "1" else "0" end;
+  svgout id locatie+"luidspreker_uit" attr "opacity" value
+                                    if not (aan or live): "1" else "0" end;
+end
+
+group def Sim_Omroep(alg bool cam1, cam2, cam3, cam4, cam5, cam6, omroepCamera, omroepSectie, omroepTunnel;
+                     alg string locatie):
+  svgout id locatie+"_luidspreker_1" attr "visibility" value
+      if (cam1 and omroepCamera) or (cam1 and omroepSectie) or omroepTunnel: "visible" else "hidden" end;
+  svgout id locatie+"_luidspreker_2" attr "visibility" value
+      if (cam2 and omroepCamera) or ((cam2 or cam3) and omroepSectie) or omroepTunnel: "visible" else "hidden" end;
+  svgout id locatie+"_luidspreker_3" attr "visibility" value
+      if (cam3 and omroepCamera) or ((cam2 or cam3) and omroepSectie) or omroepTunnel: "visible" else "hidden" end;
+  svgout id locatie+"_luidspreker_4" attr "visibility" value
+      if (cam4 and omroepCamera) or ((cam4 or cam5) and omroepSectie) or omroepTunnel: "visible" else "hidden" end;
+  svgout id locatie+"_luidspreker_5" attr "visibility" value
+      if (cam5 and omroepCamera) or ((cam4 or cam5) and omroepSectie) or omroepTunnel: "visible" else "hidden" end;
+  svgout id locatie+"_luidspreker_6" attr "visibility" value
+      if (cam6 and omroepCamera) or (cam6 and omroepSectie) or omroepTunnel: "visible" else "hidden" end;
+end

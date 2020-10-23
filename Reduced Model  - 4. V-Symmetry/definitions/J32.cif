@@ -1,0 +1,9 @@
+import "Actuator.cif", "Timer.cif";
+
+group def J32():
+  Mode: Actuator(true,false);
+  TimerReleaseSignal: Timer();
+
+  requirement TimerReleaseSignal.c_on needs Mode.on;
+  requirement TimerReleaseSignal.c_reset needs Mode.off;
+end

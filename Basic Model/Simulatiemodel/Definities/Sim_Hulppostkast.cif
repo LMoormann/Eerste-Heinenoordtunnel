@@ -1,0 +1,91 @@
+import "Sim_Sensor.cif";
+
+group def Sim_Hulppostkast_A(event sensor_open_aan,sensor_open_uit,
+  noodtelefoon_aan,noodtelefoon_uit,handblusser_aan,handblusser_uit,
+  brandslang_aan,brandslang_uit;
+  alg bool sensor_open,noodtelefoon,handblusser,brandslang,sensorOpenEnabled, sensorNoodtelefoonEnabled, sensorHandblusserEnabled, sensorBrandslangEnabled; alg string locatie,locatie2):
+
+  svgout id locatie+"hulppostkast_open" attr "opacity" value
+      if sensor_open and sensorOpenEnabled: "1" else "0" end;
+  svgout id locatie+"hulppostkast_dicht" attr "opacity" value
+      if not sensor_open or not sensorOpenEnabled: "1" else "0" end;
+
+  svgout id locatie+"hulppostkast_noodtelefoon" attr "fill" value
+      if noodtelefoon and sensorNoodtelefoonEnabled: "yellow" else "grey" end;
+  svgout id locatie+"hulppostkast_handblusser" attr "fill" value
+      if handblusser and sensorHandblusserEnabled: "yellow" else "grey" end;
+  svgout id locatie+"hulppostkast_brandslang" attr "fill" value
+      if brandslang and sensorBrandslangEnabled: "yellow" else "grey" end;
+
+  sim_sensor_open: sim_sensor(true, sensorOpenEnabled, sensor_open_uit, sensor_open_aan);
+  sim_sensor_noodtelefoon: sim_sensor(true, sensorNoodtelefoonEnabled, noodtelefoon_uit, noodtelefoon_aan);
+  sim_sensor_handblusser: sim_sensor(true, sensorHandblusserEnabled, handblusser_uit, handblusser_aan);
+  sim_sensor_brandslang: sim_sensor(true, sensorBrandslangEnabled, brandslang_uit, brandslang_aan);
+
+  group interactie:
+    svgfile "../controle_paneel.svg";
+
+    svgin id "knop_open_hulppostkast_a_1_"+locatie2 event if sim_sensor_open.uit: sim_sensor_open.e_aan else sim_sensor_open.e_uit end;
+    svgin id "knop_noodtelefoon_hulppostkast_a_1_"+locatie2 event if sim_sensor_noodtelefoon.uit: sim_sensor_noodtelefoon.e_aan else sim_sensor_noodtelefoon.e_uit end;
+    svgin id "knop_handblusser_hulppostkast_a_1_"+locatie2 event if sim_sensor_handblusser.uit: sim_sensor_handblusser.e_aan else sim_sensor_handblusser.e_uit end;
+    svgin id "knop_brandslang_hulppostkast_a_1_"+locatie2 event if sim_sensor_brandslang.uit: sim_sensor_brandslang.e_aan else sim_sensor_brandslang.e_uit end;
+
+    svgout id "achtergrond_knop_open_hulppostkast_a_1_"+locatie2 attr "fill" value
+        if sim_sensor_open.aan and sensorOpenEnabled: "#279d35"
+        elif sim_sensor_open.aan and not sensorOpenEnabled: "yellow"
+        else "#b72e2e" end;
+    svgout id "achtergrond_knop_noodtelefoon_hulppostkast_a_1_"+locatie2 attr "fill" value
+        if sim_sensor_noodtelefoon.aan and sensorNoodtelefoonEnabled: "#279d35"
+        elif sim_sensor_noodtelefoon.aan and not sensorNoodtelefoonEnabled: "yellow"
+        else "#b72e2e" end;
+    svgout id "achtergrond_knop_handblusser_hulppostkast_a_1_"+locatie2 attr "fill" value
+        if sim_sensor_handblusser.aan and sensorHandblusserEnabled: "#279d35"
+        elif sim_sensor_handblusser.aan and not sensorHandblusserEnabled: "yellow"
+        else "#b72e2e" end;
+    svgout id "achtergrond_knop_brandslang_hulppostkast_a_1_"+locatie2 attr "fill" value
+        if sim_sensor_brandslang.aan and sensorBrandslangEnabled: "#279d35"
+        elif sim_sensor_brandslang.aan and not sensorBrandslangEnabled: "yellow"
+        else "#b72e2e" end;
+  end
+end
+
+
+group def Sim_Hulppostkast_C(event sensor_open_aan,sensor_open_uit,
+  noodtelefoon_aan,noodtelefoon_uit,handblusser_aan,handblusser_uit;
+  alg bool sensor_open,noodtelefoon,handblusser, sensorOpenEnabled, sensorNoodtelefoonEnabled, sensorHandblusserEnabled;alg string locatie,locatie2):
+
+  svgout id locatie+"hulppostkast_open" attr "opacity" value
+      if sensor_open and sensorOpenEnabled: "1" else "0" end;
+  svgout id locatie+"hulppostkast_dicht" attr "opacity" value
+      if not sensor_open or not sensorOpenEnabled: "1" else "0" end;
+
+  svgout id locatie+"hulppostkast_noodtelefoon" attr "fill" value
+      if noodtelefoon and sensorNoodtelefoonEnabled: "yellow" else "grey" end;
+  svgout id locatie+"hulppostkast_handblusser" attr "fill" value
+      if handblusser and sensorHandblusserEnabled: "yellow" else "grey" end;
+
+  sim_sensor_open: sim_sensor(true, sensorOpenEnabled, sensor_open_uit, sensor_open_aan);
+  sim_sensor_noodtelefoon: sim_sensor(true, sensorNoodtelefoonEnabled, noodtelefoon_uit, noodtelefoon_aan);
+  sim_sensor_handblusser: sim_sensor(true, sensorHandblusserEnabled, handblusser_uit, handblusser_aan);
+
+  group interactie:
+    svgfile "../controle_paneel.svg";
+
+    svgin id "knop_open_hulppostkast_c_1_"+locatie2 event if sim_sensor_open.uit: sim_sensor_open.e_aan else sim_sensor_open.e_uit end;
+    svgin id "knop_noodtelefoon_hulppostkast_c_1_"+locatie2 event if sim_sensor_noodtelefoon.uit: sim_sensor_noodtelefoon.e_aan else sim_sensor_noodtelefoon.e_uit end;
+    svgin id "knop_handblusser_hulppostkast_c_1_"+locatie2 event if sim_sensor_handblusser.uit: sim_sensor_handblusser.e_aan else sim_sensor_handblusser.e_uit end;
+
+    svgout id "achtergrond_knop_open_hulppostkast_c_1_"+locatie2 attr "fill" value
+        if sim_sensor_open.aan and sensorOpenEnabled: "#279d35"
+        elif sim_sensor_open.aan and not sensorOpenEnabled: "yellow"
+        else "#b72e2e" end;
+    svgout id "achtergrond_knop_noodtelefoon_hulppostkast_c_1_"+locatie2 attr "fill" value
+        if sim_sensor_noodtelefoon.aan and sensorNoodtelefoonEnabled: "#279d35"
+        elif sim_sensor_noodtelefoon.aan and not sensorNoodtelefoonEnabled: "yellow"
+        else "#b72e2e" end;
+    svgout id "achtergrond_knop_handblusser_hulppostkast_c_1_"+locatie2 attr "fill" value
+        if sim_sensor_handblusser.aan and sensorHandblusserEnabled: "#279d35"
+        elif sim_sensor_handblusser.aan and not sensorHandblusserEnabled: "yellow"
+        else "#b72e2e" end;
+  end
+end

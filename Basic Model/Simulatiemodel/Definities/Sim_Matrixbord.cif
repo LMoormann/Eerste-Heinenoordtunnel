@@ -1,0 +1,5 @@
+group def Sim_Matrixbord(alg bool aan; alg string matrixbord_visu):
+
+  svgout id matrixbord_visu attr "opacity" value if aan: "1" else "0" end;
+
+end

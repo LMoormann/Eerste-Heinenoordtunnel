@@ -1,0 +1,99 @@
+plant def CCTV():
+  controllable c_off1, c_off2, c_off3, c_off4, c_off5, c_off6, c_off7, c_off8, c_off9, c_off10, c_off11, c_off12, c_off13, c_off14, c_off15, c_off16, c_off17, c_off18, c_off19, c_off20, c_off21, c_off22, c_off23,
+               c_on1, c_on2, c_on3, c_on4, c_on5, c_on6, c_on7, c_on8, c_on9, c_on10, c_on11, c_on12, c_on13, c_on14, c_on15, c_on16, c_on17, c_on18, c_on19, c_on20, c_on21, c_on22, c_on23,
+               c_start, c_stop, c_view;
+  location off:
+    initial; marked;
+    edge c_on1, c_start goto camera1;
+    edge c_on2 goto camera2;
+    edge c_on3 goto camera3;
+    edge c_on4 goto camera4;
+    edge c_on5 goto camera5;
+    edge c_on6 goto camera6;
+    edge c_on7 goto camera7;
+    edge c_on8 goto camera8;
+    edge c_on9 goto camera9;
+    edge c_on10 goto camera10;
+    edge c_on11 goto camera11;
+    edge c_on12 goto camera12;
+    edge c_on13 goto camera13;
+    edge c_on14 goto camera14;
+    edge c_on15 goto camera15;
+    edge c_on16 goto camera16;
+    edge c_on17 goto camera17;
+    edge c_on18 goto camera18;
+    edge c_on19 goto camera19;
+    edge c_on20 goto camera20;
+    edge c_on21 goto camera21;
+    edge c_on22 goto camera22;
+    edge c_on23 goto camera23;
+  location camera1:
+    edge c_off1, c_stop goto off;
+    edge c_view goto camera2;
+  location camera2:
+    edge c_off2, c_stop goto off;
+    edge c_view goto camera3;
+  location camera3:
+    edge c_off3, c_stop goto off;
+    edge c_view goto camera4;
+  location camera4:
+    edge c_off4, c_stop goto off;
+    edge c_view goto camera5;
+  location camera5:
+    edge c_off5, c_stop goto off;
+    edge c_view goto camera6;
+  location camera6:
+   	edge c_off6, c_stop goto off;
+   	edge c_view goto camera7;
+  location camera7:
+    edge c_off7, c_stop goto off;
+    edge c_view goto camera8;
+  location camera8:
+    edge c_off8, c_stop goto off;
+    edge c_view goto camera9;
+  location camera9:
+    edge c_off9, c_stop goto off;
+    edge c_view goto camera10;
+  location camera10:
+    edge c_off10, c_stop goto off;
+    edge c_view goto camera11;
+  location camera11:
+    edge c_off11, c_stop goto off;
+    edge c_view goto camera12;
+  location camera12:
+    edge c_off12, c_stop goto off;
+    edge c_view goto camera13;
+  location camera13:
+    edge c_off13, c_stop goto off;
+    edge c_view goto camera14;
+  location camera14:
+    edge c_off14, c_stop goto off;
+    edge c_view goto camera15;
+  location camera15:
+    edge c_off15, c_stop goto off;
+    edge c_view goto camera16;
+  location camera16:
+    edge c_off16, c_stop goto off;
+    edge c_view goto camera17;
+  location camera17:
+    edge c_off17, c_stop goto off;
+    edge c_view goto camera18;
+  location camera18:
+    edge c_off18, c_stop goto off;
+    edge c_view goto camera19;
+  location camera19:
+    edge c_off19, c_stop goto off;
+    edge c_view goto camera20;
+  location camera20:
+    edge c_off20, c_stop goto off;
+    edge c_view goto camera21;
+  location camera21:
+    edge c_off21, c_stop goto off;
+    edge c_view goto camera22;
+  location camera22:
+    edge c_off22, c_stop goto off;
+    edge c_view goto camera23;
+  location camera23:
+    edge c_off23, c_stop goto off;
+    edge c_view goto camera1;
+end

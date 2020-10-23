@@ -1,0 +1,307 @@
+
+event click_tab_rechterbuis;
+event click_tab_linkerbuis;
+event click_tab_verkeer;
+event click_tab_meldingen;
+event e_SluitTabs;
+//uncontrollable sluit_alle_drop_down_menus;
+const string rb= "_rechter_buis";
+const string lb= "_linker_buis";
+
+automaton def DropDownMenu():
+  event e_Open, e_Sluit;
+  location dicht:
+    initial;
+    edge e_Open       goto open;
+  location open:
+    edge e_Sluit      goto dicht;
+    edge e_SluitTabs  goto dicht;
+end
+
+event e_dummy;
+automaton dummy:
+  location:
+    initial;
+    edge e_dummy;
+end
+
+rb_DropDownMenuStates: DropDownMenu();
+lb_drop_down_menu_buis_states: DropDownMenu();
+rb_bedienmenu_voor_verkeerslichtenstanden: DropDownMenu();
+lb_bedienmenu_voor_verkeerslichtenstanden: DropDownMenu();
+
+//plattegrond
+automaton besturing_selectie_tunneldeel_detailplattegrond:
+controllable select_sectie1;
+controllable select_sectie2;
+controllable select_sectie3;
+controllable select_sectie4;
+controllable select_sectie5;
+controllable select_sectie6;
+controllable select_sectie7;
+controllable select_sectie8;
+controllable select_sectie9;
+    location sectie1:
+        initial;
+        edge select_sectie1 goto sectie1;
+        edge select_sectie2 goto sectie2;
+        edge select_sectie3 goto sectie3;
+        edge select_sectie4 goto sectie4;
+        edge select_sectie5 goto sectie5;
+        edge select_sectie6 goto sectie6;
+        edge select_sectie7 goto sectie7;
+        edge select_sectie8 goto sectie8;
+        edge select_sectie9 goto sectie9;
+    location sectie2:
+        edge select_sectie1 goto sectie1;
+        edge select_sectie2 goto sectie2;
+        edge select_sectie3 goto sectie3;
+        edge select_sectie4 goto sectie4;
+        edge select_sectie5 goto sectie5;
+        edge select_sectie6 goto sectie6;
+        edge select_sectie7 goto sectie7;
+        edge select_sectie8 goto sectie8;
+        edge select_sectie9 goto sectie9;
+
+    location sectie3:
+        edge select_sectie1 goto sectie1;
+        edge select_sectie2 goto sectie2;
+        edge select_sectie3 goto sectie3;
+        edge select_sectie4 goto sectie4;
+        edge select_sectie5 goto sectie5;
+        edge select_sectie6 goto sectie6;
+        edge select_sectie7 goto sectie7;
+        edge select_sectie8 goto sectie8;
+        edge select_sectie9 goto sectie9;
+    location sectie4:
+        edge select_sectie1 goto sectie1;
+        edge select_sectie2 goto sectie2;
+        edge select_sectie3 goto sectie3;
+        edge select_sectie4 goto sectie4;
+        edge select_sectie5 goto sectie5;
+        edge select_sectie6 goto sectie6;
+        edge select_sectie7 goto sectie7;
+        edge select_sectie8 goto sectie8;
+        edge select_sectie9 goto sectie9;
+    location sectie5:
+        edge select_sectie1 goto sectie1;
+        edge select_sectie2 goto sectie2;
+        edge select_sectie3 goto sectie3;
+        edge select_sectie4 goto sectie4;
+        edge select_sectie5 goto sectie5;
+        edge select_sectie6 goto sectie6;
+        edge select_sectie7 goto sectie7;
+        edge select_sectie8 goto sectie8;
+        edge select_sectie9 goto sectie9;
+    location sectie6:
+        edge select_sectie1 goto sectie1;
+        edge select_sectie2 goto sectie2;
+        edge select_sectie3 goto sectie3;
+        edge select_sectie4 goto sectie4;
+        edge select_sectie5 goto sectie5;
+        edge select_sectie6 goto sectie6;
+        edge select_sectie7 goto sectie7;
+        edge select_sectie8 goto sectie8;
+        edge select_sectie9 goto sectie9;
+    location sectie7:
+        edge select_sectie1 goto sectie1;
+        edge select_sectie2 goto sectie2;
+        edge select_sectie3 goto sectie3;
+        edge select_sectie4 goto sectie4;
+        edge select_sectie5 goto sectie5;
+        edge select_sectie6 goto sectie6;
+        edge select_sectie7 goto sectie7;
+        edge select_sectie8 goto sectie8;
+        edge select_sectie9 goto sectie9;
+    location sectie8:
+        edge select_sectie1 goto sectie1;
+        edge select_sectie2 goto sectie2;
+        edge select_sectie3 goto sectie3;
+        edge select_sectie4 goto sectie4;
+        edge select_sectie5 goto sectie5;
+        edge select_sectie6 goto sectie6;
+        edge select_sectie7 goto sectie7;
+        edge select_sectie8 goto sectie8;
+        edge select_sectie9 goto sectie9;
+     location sectie9:
+        edge select_sectie1 goto sectie1;
+        edge select_sectie2 goto sectie2;
+        edge select_sectie3 goto sectie3;
+        edge select_sectie4 goto sectie4;
+        edge select_sectie5 goto sectie5;
+        edge select_sectie6 goto sectie6;
+        edge select_sectie7 goto sectie7;
+        edge select_sectie8 goto sectie8;
+        edge select_sectie9 goto sectie9;
+end
+
+//overzicht systemen en detecties
+rb_overzicht_systemen_en_detecties_buis: DropDownMenu();
+rb_overzicht_systemen_en_detecties_vluchtroute: DropDownMenu();
+rb_overzicht_systemen_en_detecties_tunnel: DropDownMenu();
+rb_overzicht_systemen_en_detecties_verkeer: DropDownMenu();
+rb_overzicht_systemen_en_detecties_detecties: DropDownMenu();
+rb_overzicht_systemen_en_detecties_overig: DropDownMenu();
+
+lb_overzicht_systemen_en_detecties_buis: DropDownMenu();
+lb_overzicht_systemen_en_detecties_vluchtroute: DropDownMenu();
+lb_overzicht_systemen_en_detecties_tunnel: DropDownMenu();
+lb_overzicht_systemen_en_detecties_verkeer: DropDownMenu();
+lb_overzicht_systemen_en_detecties_detecties: DropDownMenu();
+lb_overzicht_systemen_en_detecties_overig: DropDownMenu();
+
+//systemen en detecties selecter_sub_blokken
+rb_overzicht_systemen_en_detecties_ventilatie: DropDownMenu();
+rb_overzicht_systemen_en_detecties_ventilatie_dropdown_percentage_stand: DropDownMenu();
+rb_overzicht_systemen_en_detecties_drop_down_richting_ventilatie: DropDownMenu();
+
+rb_overzicht_systemen_en_detecties_verlichting: DropDownMenu();
+rb_overzicht_systemen_en_detecties_verlichting_dropdown_percentage_stand: DropDownMenu();
+
+rb_overzicht_systemen_en_detecties_vluchtdeurindicatie: DropDownMenu();
+rb_overzicht_systemen_en_detecties_vluchtdeurindicatie_dropdown_geluidsbakens_stand: DropDownMenu();
+rb_overzicht_systemen_en_detecties_vluchtdeurindicatie_dropdown_contourverlichting_stand: DropDownMenu();
+
+rb_overzicht_systemen_en_detecties_vluchtdeuren: DropDownMenu();
+
+rb_overzicht_systemen_en_detecties_dynamische_vluchtroute: DropDownMenu();
+rb_overzicht_systemen_en_detecties_dynamische_vluchtroute_dropdown_stand: DropDownMenu();
+
+rb_overzicht_systemen_en_detecties_overdruk_veilige_ruimte: DropDownMenu();
+rb_overzicht_systemen_en_detecties_overdruk_veilige_ruimte_drop_down_stand: DropDownMenu();
+
+rb_overzicht_systemen_en_detecties_verlichting_veilige_ruimte: DropDownMenu();
+rb_overzicht_systemen_en_detecties_verlichting_veilige_ruimte_drop_down_stand: DropDownMenu();
+
+rb_overzicht_systemen_en_detecties_blusvoorziening: DropDownMenu();
+rb_overzicht_systemen_en_detecties_bluswatervoorziening_drop_down_stand: DropDownMenu();
+
+rb_overzicht_systemen_en_detecties_vloeistofafvoer: DropDownMenu();
+overzicht_systemen_en_detecties_drop_down_midden_pomp_kelder_stand_automaton: DropDownMenu();
+overzicht_systemen_en_detecties_drop_down_hoofd_pomp_kelder_1_stand_automaton: DropDownMenu();
+overzicht_systemen_en_detecties_drop_down_hoofd_pomp_kelder_2_stand_automaton: DropDownMenu();
+
+rb_overzicht_systemen_en_detecties_omroep: DropDownMenu();
+
+rb_overzicht_systemen_en_detecties_VRI_en_afsluitboom: DropDownMenu();
+
+rb_overzicht_systemen_en_detecties_SOS: DropDownMenu();
+rb_overzicht_systemen_en_detecties_SOS_enable_drop_down: DropDownMenu();
+rb_overzicht_systemen_en_detecties_SOS_onderdruk_drop_down: DropDownMenu();
+
+rb_overzicht_systemen_en_detecties_hulppost: DropDownMenu();
+rb_overzicht_systemen_en_detecties_hulppostA_drop_down_deur: DropDownMenu();
+rb_overzicht_systemen_en_detecties_hulppostA_drop_down_handblusser: DropDownMenu();
+rb_overzicht_systemen_en_detecties_hulppostA_drop_down_brandslang: DropDownMenu();
+rb_overzicht_systemen_en_detecties_hulppostA_drop_down_noodtelefoon: DropDownMenu();
+rb_overzicht_systemen_en_detecties_hulppostC_drop_down_deur: DropDownMenu();
+rb_overzicht_systemen_en_detecties_hulppostC_drop_down_handblusser: DropDownMenu();
+rb_overzicht_systemen_en_detecties_hulppostC_drop_down_noodtelefoon: DropDownMenu();
+
+rb_overzicht_systemen_en_detecties_deur: DropDownMenu();
+
+rb_overzicht_systemen_en_detecties_blusser: DropDownMenu();
+
+rb_overzicht_systemen_en_detecties_haspel: DropDownMenu();
+
+rb_overzicht_systemen_en_detecties_noodtelefoon: DropDownMenu();
+
+
+
+lb_overzicht_systemen_en_detecties_ventilatie: DropDownMenu();
+lb_overzicht_systemen_en_detecties_ventilatie_dropdown_percentage_stand: DropDownMenu();
+lb_overzicht_systemen_en_detecties_drop_down_richting_ventilatie: DropDownMenu();
+
+lb_overzicht_systemen_en_detecties_verlichting: DropDownMenu();
+lb_overzicht_systemen_en_detecties_verlichting_dropdown_percentage_stand: DropDownMenu();
+
+lb_overzicht_systemen_en_detecties_vluchtdeurindicatie: DropDownMenu();
+lb_overzicht_systemen_en_detecties_vluchtdeurindicatie_dropdown_geluidsbakens_stand: DropDownMenu();
+lb_overzicht_systemen_en_detecties_vluchtdeurindicatie_dropdown_contourverlichting_stand: DropDownMenu();
+
+lb_overzicht_systemen_en_detecties_vluchtdeuren: DropDownMenu();
+
+lb_overzicht_systemen_en_detecties_dynamische_vluchtroute: DropDownMenu();
+lb_overzicht_systemen_en_detecties_dynamische_vluchtroute_dropdown_stand: DropDownMenu();
+
+lb_overzicht_systemen_en_detecties_overdruk_veilige_ruimte: DropDownMenu();
+lb_overzicht_systemen_en_detecties_overdruk_veilige_ruimte_drop_down_stand: DropDownMenu();
+
+lb_overzicht_systemen_en_detecties_verlichting_veilige_ruimte: DropDownMenu();
+lb_overzicht_systemen_en_detecties_verlichting_veilige_ruimte_drop_down_stand: DropDownMenu();
+
+lb_overzicht_systemen_en_detecties_blusvoorziening: DropDownMenu();
+lb_overzicht_systemen_en_detecties_bluswatervoorziening_drop_down_stand: DropDownMenu();
+
+lb_overzicht_systemen_en_detecties_vloeistofafvoer: DropDownMenu();
+
+lb_overzicht_systemen_en_detecties_omroep: DropDownMenu();
+
+lb_overzicht_systemen_en_detecties_VRI_en_afsluitboom: DropDownMenu();
+
+lb_overzicht_systemen_en_detecties_SOS: DropDownMenu();
+lb_overzicht_systemen_en_detecties_SOS_enable_drop_down: DropDownMenu();
+lb_overzicht_systemen_en_detecties_SOS_onderdruk_drop_down: DropDownMenu();
+
+lb_overzicht_systemen_en_detecties_hulppost: DropDownMenu();
+lb_overzicht_systemen_en_detecties_hulppostA_drop_down_deur: DropDownMenu();
+lb_overzicht_systemen_en_detecties_hulppostA_drop_down_handblusser: DropDownMenu();
+lb_overzicht_systemen_en_detecties_hulppostA_drop_down_brandslang: DropDownMenu();
+lb_overzicht_systemen_en_detecties_hulppostA_drop_down_noodtelefoon: DropDownMenu();
+lb_overzicht_systemen_en_detecties_hulppostC_drop_down_deur: DropDownMenu();
+lb_overzicht_systemen_en_detecties_hulppostC_drop_down_handblusser: DropDownMenu();
+lb_overzicht_systemen_en_detecties_hulppostC_drop_down_noodtelefoon: DropDownMenu();
+
+lb_overzicht_systemen_en_detecties_deur: DropDownMenu();
+
+lb_overzicht_systemen_en_detecties_blusser: DropDownMenu();
+
+lb_overzicht_systemen_en_detecties_haspel: DropDownMenu();
+
+lb_overzicht_systemen_en_detecties_noodtelefoon: DropDownMenu();
+
+// Meldingen
+openen_en_sluiten_bevestigde_meldingen: DropDownMenu();
+
+// Onderdrukkingen
+event e_reset_onderdrukkingen;
+plant def Onderdrukking():
+  event e_onderdrukken;
+  location nietOnderdrukt:
+    initial;
+    edge e_onderdrukken goto onderdrukt;
+    edge e_reset_onderdrukkingen;
+  location onderdrukt:
+    edge e_reset_onderdrukkingen goto nietOnderdrukt;
+end
+
+OnderdrukkingVerkeersbuis1SOS: Onderdrukking();
+OnderdrukkingVerkeersbuis1HulppostkastA: Onderdrukking();
+OnderdrukkingVerkeersbuis1HulppostkastC: Onderdrukking();
+OnderdrukkingVerkeersbuis2SOS: Onderdrukking();
+OnderdrukkingVerkeersbuis2HulppostkastA: Onderdrukking();
+OnderdrukkingVerkeersbuis2HulppostkastC: Onderdrukking();
+OnderdrukkingNoodbediening: Onderdrukking();
+
+automaton  geselecteerde_tab_tab_systemen_en_detecties:
+  location geen_tab_geselecteerd:
+    initial;
+    edge click_tab_linkerbuis goto linkerbuis_tab_geselecteerd;
+    edge click_tab_rechterbuis goto rechterbuis_tab_geselecteerd;
+  location rechterbuis_tab_geselecteerd:
+    edge click_tab_rechterbuis goto geen_tab_geselecteerd;
+    edge click_tab_linkerbuis goto linkerbuis_tab_geselecteerd;
+  location linkerbuis_tab_geselecteerd:
+    edge click_tab_linkerbuis goto geen_tab_geselecteerd;
+    edge click_tab_rechterbuis goto rechterbuis_tab_geselecteerd;
+end
+
+automaton  geselecteerde_tab_verkeer_meldingen:
+  location meldingen_tab_geselecteerd:
+    initial;
+    edge click_tab_verkeer goto verkeer_tab_geselecteerd;
+  location verkeer_tab_geselecteerd:
+    edge click_tab_meldingen goto meldingen_tab_geselecteerd;
+end
+
+

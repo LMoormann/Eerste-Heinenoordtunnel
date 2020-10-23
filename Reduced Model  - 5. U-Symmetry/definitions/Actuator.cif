@@ -1,0 +1,22 @@
+plant def Actuator(alg bool offMarked; alg bool onMarked):
+  controllable c_on, c_off;
+  location off:
+    initial;
+    marked offMarked;
+    edge c_on goto on;
+  location on:
+    marked onMarked;
+    edge c_off goto off;
+end
+
+plant def ActuatorEmergencystop(alg bool offMarked; alg bool onMarked):
+  controllable c_on, c_off, c_offEmergency;
+  location off:
+    initial;
+    marked offMarked;
+    edge c_on goto on;
+  location on:
+    marked onMarked;
+    edge c_off goto off;
+    edge c_offEmergency goto off;
+end

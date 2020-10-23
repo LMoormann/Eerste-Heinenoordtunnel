@@ -1,0 +1,24 @@
+group def Sim_Ventilatie(alg int stand;alg string locatie;
+  alg bool richting):
+
+  svgout id locatie+"_stand_1" attr  "fill" value
+                           if stand >= 1: "yellow" else "none" end;
+  svgout id locatie+"_stand_2" attr  "fill" value
+                           if stand >= 2: "yellow" else "none" end;
+  svgout id locatie+"_stand_3" attr  "fill" value
+                           if stand >= 3: "yellow" else "none" end;
+  svgout id locatie+"_stand_4" attr  "fill" value
+                           if stand >= 4: "yellow" else "none" end;
+  svgout id locatie+"_stand_5" attr  "fill" value
+                           if stand >= 5: "yellow" else "none" end;
+  svgout id locatie+"_stand_6" attr  "fill" value
+                           if stand >= 6: "yellow" else "none" end;
+  svgout id locatie+"_stand_7" attr  "fill" value
+                           if stand >= 7: "yellow" else "none" end;
+  svgout id locatie+"_stand_8" attr  "fill" value
+                           if stand >= 8: "yellow" else "none" end;
+  svgout id locatie+"_richting_mee" attr "opacity" value
+                           if stand > 0 and richting: "1" else "0" end;
+  svgout id locatie+"_richting_tegen" attr "opacity" value
+                           if stand > 0 and not richting: "1" else "0" end;
+end

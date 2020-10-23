@@ -1,0 +1,8 @@
+import "Actuator.cif", "Control.cif", "PushButton.cif", "Sensor.cif";
+
+group def EscapeDoor():
+  RouteIndication: Actuator(true,false);
+  ControlRouteIndication: Control();
+  ButtonRouteIndicationOff: PushButton(ControlRouteIndication.Mode.manual, RouteIndication.off, ControlRouteIndication.Mode.auto);
+  ButtonRouteIndicationOn: PushButton(ControlRouteIndication.Mode.manual, RouteIndication.on, ControlRouteIndication.Mode.auto);
+end

@@ -1,0 +1,17 @@
+import "Actuator.cif", "Sensor.cif", "Control.cif";
+
+group def WatercellarFirehoses():
+  Pump: Actuator(true,false);
+  plant Regime:
+  	controllable c_guard, c_extinguish;
+  	location guard:
+  		initial; marked;
+  		edge c_extinguish goto extinguish;
+  	location extinguish:
+  		edge c_guard goto guard;
+  end
+  Control: ^Control();
+  ButtonExtinguish: PushButton(Control.Mode.manual, Regime.extinguish, Control.Mode.auto);
+  ButtonGuard: PushButton(Control.Mode.manual, Regime.guard, Control.Mode.auto);
+  requirement Pump.c_on needs Regime.extinguish or Regime.guard;
+end

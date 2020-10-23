@@ -1,0 +1,46 @@
+import "Sim_Timer.cif";
+
+group def Sim_Kanaal(alg bool cam1, cam2, cam3, cam4, cam5, cam6, rec;
+                     alg string locatie;
+                     event TimerAanEven, TimerResetEven, TimerTimeoutEven, TimerAanOneven, TimerResetOneven, TimerTimeoutOneven):
+
+  TimerSchouwenEven: Hybride_timer(TimerAanEven, TimerResetEven, TimerTimeoutEven, 4);
+  TimerSchouwenOneven: Hybride_timer(TimerAanOneven, TimerResetOneven, TimerTimeoutOneven, 4);
+
+  svgout id locatie+"_camera_1_achtergrond_1" attr "fill" value
+                                    if cam1: "#bfb900" else "#666666" end;
+  svgout id locatie+"_camera_2_achtergrond_1" attr "fill" value
+                                    if cam2: "#bfb900" else "#666666" end;
+  svgout id locatie+"_camera_3_achtergrond_1" attr "fill" value
+                                      if cam3: "#bfb900" else "#666666" end;
+  svgout id locatie+"_camera_4_achtergrond_1" attr "fill" value
+                                    if cam4: "#bfb900" else "#666666" end;
+  svgout id locatie+"_camera_5_achtergrond_1" attr "fill" value
+                                    if cam5: "#bfb900" else "#666666" end;
+  svgout id locatie+"_camera_6_achtergrond_1" attr "fill" value
+                                    if cam6: "#bfb900" else "#666666" end;
+  svgout id locatie+"_camera_1_achtergrond_2" attr "fill" value
+                                    if cam1: "#bfb900" else "#666666" end;
+  svgout id locatie+"_camera_2_achtergrond_2" attr "fill" value
+                                    if cam2: "#bfb900" else "#666666" end;
+  svgout id locatie+"_camera_3_achtergrond_2" attr "fill" value
+                                    if cam3: "#bfb900" else "#666666" end;
+  svgout id locatie+"_camera_4_achtergrond_2" attr "fill" value
+                                    if cam4: "#bfb900" else "#666666" end;
+  svgout id locatie+"_camera_5_achtergrond_2" attr "fill" value
+                                    if cam5: "#bfb900" else "#666666" end;
+  svgout id locatie+"_camera_6_achtergrond_2" attr "fill" value
+                                    if cam6: "#bfb900" else "#666666" end;
+  svgout id locatie+"_camera_1_opnemen" attr "fill" value
+                                        if rec: "#bf0000" else "none" end;
+  svgout id locatie+"_camera_2_opnemen" attr "fill" value
+                                        if rec: "#bf0000" else "none" end;
+  svgout id locatie+"_camera_3_opnemen" attr "fill" value
+                                        if rec: "#bf0000" else "none" end;
+  svgout id locatie+"_camera_4_opnemen" attr "fill" value
+                                        if rec: "#bf0000" else "none" end;
+  svgout id locatie+"_camera_5_opnemen" attr "fill" value
+                                        if rec: "#bf0000" else "none" end;
+  svgout id locatie+"_camera_6_opnemen" attr "fill" value
+                                        if rec: "#bf0000" else "none" end;
+end

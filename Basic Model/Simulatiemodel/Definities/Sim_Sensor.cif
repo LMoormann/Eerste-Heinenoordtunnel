@@ -1,0 +1,28 @@
+plant def sim_sensor(alg bool uitInitieel, enabled; event event_uit, event_aan):
+  event e_aan, e_uit;
+  location uit:
+    initial uitInitieel;
+    edge e_aan goto aan;
+    edge event_uit when enabled;
+  location aan:
+    initial not uitInitieel;
+    edge e_uit goto uit;
+    edge event_aan when enabled;
+end
+
+plant def sim_threestate_sensor(alg bool enabled; event event_uit, event_aan1, event_aan2):
+  event e_aan1, e_aan2, e_uit;
+  location uit:
+    initial;
+    edge e_aan1 goto aan1;
+    edge e_aan2 goto aan2;
+    edge event_uit when enabled;
+  location aan1:
+    edge e_uit goto uit;
+    edge e_aan2 goto aan2;
+    edge event_aan1 when enabled;
+  location aan2:
+    edge e_uit goto uit;
+    edge e_aan1 goto aan1;
+    edge event_aan2 when enabled;
+end

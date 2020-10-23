@@ -1,0 +1,64 @@
+import "Knop_plusmin.cif";
+group def Sim_LichtSensor(event set_0,set_1,set_2,set_3,set_4,set_5,set_6,set_7,
+  set_8;alg string locatie;alg int stand):
+
+  invariant set_0 needs testcase.knoppen_lichtsensor.level = 0;
+  invariant set_1 needs testcase.knoppen_lichtsensor.level = 1;
+  invariant set_2 needs testcase.knoppen_lichtsensor.level = 2;
+  invariant set_3 needs testcase.knoppen_lichtsensor.level = 3;
+  invariant set_4 needs testcase.knoppen_lichtsensor.level = 4;
+  invariant set_5 needs testcase.knoppen_lichtsensor.level = 5;
+  invariant set_6 needs testcase.knoppen_lichtsensor.level = 6;
+  invariant set_7 needs testcase.knoppen_lichtsensor.level = 7;
+  invariant set_8 needs testcase.knoppen_lichtsensor.level = 8;
+
+  svgout id locatie+"_lichtsensor_sterkte_1" attr  "fill" value
+                                   if stand >= 1: "yellow" else "none" end;
+  svgout id locatie+"_lichtsensor_sterkte_2" attr  "fill" value
+                                   if stand >= 2: "yellow" else "none" end;
+  svgout id locatie+"_lichtsensor_sterkte_3" attr  "fill" value
+                                   if stand >= 3: "yellow" else "none" end;
+  svgout id locatie+"_lichtsensor_sterkte_4" attr  "fill" value
+                                   if stand >= 4: "yellow" else "none" end;
+  svgout id locatie+"_lichtsensor_sterkte_5" attr  "fill" value
+                                   if stand >= 5: "yellow" else "none" end;
+  svgout id locatie+"_lichtsensor_sterkte_6" attr  "fill" value
+                                   if stand >= 6: "yellow" else "none" end;
+  svgout id locatie+"_lichtsensor_sterkte_7" attr  "fill" value
+                                   if stand >= 7: "yellow" else "none" end;
+  svgout id locatie+"_lichtsensor_sterkte_8" attr  "fill" value
+                                   if stand >= 8: "yellow" else "none" end;
+//   svgout id locatie+"_lichtsensor_aan" attr "opacity" value
+//                                    if stand > 0: "1" else "0" end;
+  group def X():
+  end
+  group testcase:
+    svgfile"../controle_paneel.svg";
+    knoppen_lichtsensor: Knop_plusmin(
+      "knop_licht_plus_"+locatie,
+      "knop_licht_min_"+locatie,8,3);
+    svgout id "licht_stand_"+locatie text value fmt("%s",<string>stand);
+  end
+end
+
+group def Sim_Verlichting(alg string locatie;alg int stand):
+
+  svgout id locatie+"_lamp_sterkte_1" attr  "fill" value
+                                   if stand >= 1: "yellow" else "none" end;
+  svgout id locatie+"_lamp_sterkte_2" attr  "fill" value
+                                   if stand >= 2: "yellow" else "none" end;
+  svgout id locatie+"_lamp_sterkte_3" attr  "fill" value
+                                   if stand >= 3: "yellow" else "none" end;
+  svgout id locatie+"_lamp_sterkte_4" attr  "fill" value
+                                   if stand >= 4: "yellow" else "none" end;
+  svgout id locatie+"_lamp_sterkte_5" attr  "fill" value
+                                   if stand >= 5: "yellow" else "none" end;
+  svgout id locatie+"_lamp_sterkte_6" attr  "fill" value
+                                   if stand >= 6: "yellow" else "none" end;
+  svgout id locatie+"_lamp_sterkte_7" attr  "fill" value
+                                   if stand >= 7: "yellow" else "none" end;
+  svgout id locatie+"_lamp_sterkte_8" attr  "fill" value
+                                   if stand >= 8: "yellow" else "none" end;
+  svgout id locatie+"_lamp_aan" attr "opacity" value
+                                   if stand > 0: "1" else "0" end;
+end

@@ -1,0 +1,33 @@
+  plant def BroadcastButtons(uncontrollable u_broadcastStop, u_broadcastBothBuizen, u_broadcastTube, u_broadcastOtherTube, u_broadcastSection, u_broadcastOtherSection, u_broadcastCamera, u_broadcastOtherCamera):
+    controllable c_off, c_evacuation;
+    monitor u_broadcastStop, u_broadcastBothBuizen, u_broadcastTube, u_broadcastOtherTube, u_broadcastSection, u_broadcastOtherSection, u_broadcastCamera, u_broadcastOtherCamera;
+    location off:
+      initial; marked;
+      edge c_evacuation goto evacuation;
+      edge u_broadcastTube, u_broadcastBothBuizen goto traffictube;
+      edge u_broadcastSection goto section;
+      edge u_broadcastCamera goto camera;
+    location traffictube:
+      edge u_broadcastStop, u_broadcastOtherTube, u_broadcastOtherSection, u_broadcastOtherCamera goto off;
+      edge c_evacuation goto evacuation;
+      edge u_broadcastTube, u_broadcastBothBuizen goto traffictube;
+      edge u_broadcastSection goto section;
+      edge u_broadcastCamera goto camera;
+    location section:
+      edge u_broadcastStop, u_broadcastOtherTube, u_broadcastOtherSection, u_broadcastOtherCamera goto off;
+      edge c_evacuation goto evacuation;
+      edge u_broadcastTube, u_broadcastBothBuizen goto traffictube;
+      edge u_broadcastSection goto section;
+      edge u_broadcastCamera goto camera;
+    location camera:
+      edge u_broadcastStop, u_broadcastOtherTube, u_broadcastOtherSection, u_broadcastOtherCamera goto off;
+      edge c_evacuation goto evacuation;
+      edge u_broadcastTube, u_broadcastBothBuizen goto traffictube;
+      edge u_broadcastSection goto section;
+      edge u_broadcastCamera goto camera;
+    location evacuation:
+      edge c_off, u_broadcastStop, u_broadcastOtherTube, u_broadcastOtherSection, u_broadcastOtherCamera goto off;
+      edge u_broadcastTube, u_broadcastBothBuizen goto traffictube;
+      edge u_broadcastSection goto section;
+      edge u_broadcastCamera goto camera;
+  end

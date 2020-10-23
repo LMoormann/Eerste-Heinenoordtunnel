@@ -1,0 +1,46 @@
+import "Actuator.cif", "Sensor.cif", "Control.cif";
+
+group def HeadDrainCellar():
+  Sensor1: Sensor(true,true,false);
+  Sensor2: Sensor(true,true,false);
+  Sensor3: Sensor(true,true,false);
+  Sensor4: Sensor(true,true,false);
+  Sensor5: Sensor(true,true,false);
+  Pump1: Actuator(true,false);
+  Pump2: Actuator(true,false);
+  plant PhysicalRelation:
+  	location:
+  		initial; marked;
+  		edge Sensor1.u_off when Sensor2.off and (Pump1.on or Pump2.on);
+  		edge Sensor2.u_off when Sensor3.off and (Pump1.on or Pump2.on);
+  		edge Sensor3.u_off when Sensor4.off and (Pump1.on or Pump2.on);
+  		edge Sensor4.u_off when Sensor5.off and (Pump1.on or Pump2.on);
+  		edge Sensor5.u_off when Pump1.on or Pump2.on;
+  		edge Sensor2.u_on when Sensor1.on;
+  		edge Sensor3.u_on when Sensor2.on;
+  		edge Sensor4.u_on when Sensor3.on;
+  		edge Sensor5.u_on when Sensor4.on;
+  end
+  plant Regime:
+  	controllable c_store, c_empty, c_off;
+  	location emptying:
+  		initial; marked;
+  		edge c_store goto storing;
+  		edge c_off goto off;
+  	location storing:
+  		edge c_empty goto emptying;
+  		edge c_off goto off;
+  	location off:
+  		edge c_store goto storing;
+  		edge c_empty goto emptying;
+  end
+  Control: ^Control();
+  ButtonStoring: PushButton(Control.Mode.manual, Regime.storing, Control.Mode.auto);
+  ButtonEmptying: PushButton(Control.Mode.manual, Regime.emptying, Control.Mode.auto);
+  ButtonOff: PushButton(Control.Mode.manual, Regime.off, Control.Mode.auto);
+
+  requirement Pump1.c_on needs (Regime.storing and Sensor5.on) or (Regime.emptying and Sensor2.on);
+  requirement Pump2.c_on needs (Regime.storing and Sensor5.on) or (Regime.emptying and Sensor3.on);
+  requirement Pump1.c_off needs (Regime.storing and Sensor4.off) or (Regime.emptying and Sensor1.off) or Regime.off;
+  requirement Pump2.c_off needs (Regime.storing and Sensor4.off) or (Regime.emptying and Sensor1.off) or Regime.off;
+end

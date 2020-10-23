@@ -1,0 +1,16 @@
+group def Sim_Obstakel(event sensor_aan, sensor_uit ;alg bool sensor_obstakel;
+  alg string locatie):
+
+  svgout id locatie+"_obstakel" attr "opacity" value if sensor_obstakel: "1" else "0" end;
+
+  group testcase:
+    svgfile "../controle_paneel.svg";
+    svgin id locatie+"_knop_obstakel" event
+      if sensor_obstakel:
+        sensor_uit
+      else sensor_aan end;
+    svgout id locatie+"_knop_obstakel" attr "fill" value
+      if sensor_obstakel: "#279d35"
+      else "#b72e2e" end;
+  end
+end

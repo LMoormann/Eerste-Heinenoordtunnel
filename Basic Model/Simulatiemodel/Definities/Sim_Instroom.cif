@@ -1,0 +1,17 @@
+group def Sim_Instroom_hoofdpompkelder(alg int regen_niveau;
+                                alg bool regenen, pomp1, pomp2, richting):
+  alg bool wel_instroom = regenen or pomp1 or pomp2;
+  alg real volume_regen = regen_niveau*5;
+  alg real volume_pompkelder =
+             if   pomp1 and pomp2 and richting: 30
+             elif (pomp1 or pomp2) and richting: 15
+             else 0 end;
+  alg real volume = volume_regen + volume_pompkelder;
+end
+
+group def Sim_Instroom_middenpompkelder(alg int regen_niveau;
+                                        alg bool regenen):
+  alg bool wel_instroom = regenen;
+  alg real volume_regen = regen_niveau*5;
+  alg real volume = volume_regen;
+end

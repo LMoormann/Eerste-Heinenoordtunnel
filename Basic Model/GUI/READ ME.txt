@@ -1,0 +1,3 @@
+In de folder GUI_EHT bevinden zich alle bestanden die nodig zijn voor het besturen van de GUI. Eerst moet de map als project in Eclips is worden geimporteerd. Vervolgens zal de GUI opstarten bij het runnen van de EHT_simulation.tooldef2. 
+
+Momenteel zijn alleen de events actief die nodig zijn voor het leveren van input via de GUI. De overige events moeten ook actief worden wanneer er getest gaat worden in combinatie met de simulation model. Dit kan gedaan worden door in de events_supervisory_controller bestand een # voor het event te zetten voor het event dat actief moet worden. Sla vervolgens dit bestand op en run Disabler.tooldef2. Dit event is dan actief geworden in de controller

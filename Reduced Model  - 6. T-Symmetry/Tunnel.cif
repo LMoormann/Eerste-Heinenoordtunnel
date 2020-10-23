@@ -1,0 +1,49 @@
+import "definitions/TraffictubeEast.cif", "definitions/TraffictubeWest.cif", "definitions/MiddleTunnelChannel.cif", "definitions/HeadDrainCellar.cif", "definitions/MiddleDrainCellar.cif", "definitions/Control.cif", "definitions/BroadcastButtons.cif";
+
+group Tunnel:
+  uncontrollable u_broadcastStop, u_broadcastBothTubes, u_broadcastTraffictube1, u_broadcastTraffictube2, u_broadcastSection1, u_broadcastSection2, u_broadcastCamera1, u_broadcastCamera2;
+  Traffictube1: TraffictubeEast();
+  BroadcastButtons1: BroadcastButtons(u_broadcastStop, u_broadcastBothTubes, u_broadcastTraffictube1, u_broadcastTraffictube2, u_broadcastSection1, u_broadcastSection2, u_broadcastCamera1, u_broadcastCamera2);
+
+  HeadDrainCellar1: HeadDrainCellar();
+  MiddleTunnelChannel: ^MiddleTunnelChannel();
+  MiddleDrainCellar: ^MiddleDrainCellar();
+  HeadDrainCellar2: HeadDrainCellar();
+
+  Traffictube2: TraffictubeWest();
+
+  requirement Traffictube1.ModeTraffictube.emergency disables {Traffictube2.ModeTraffictube.c_standby, Traffictube2.ModeTraffictube.c_emergency};
+  requirement Traffictube2.ModeTraffictube.emergency disables {Traffictube1.ModeTraffictube.c_standby, Traffictube1.ModeTraffictube.c_emergency};
+  requirement Traffictube1.ModeTraffictube.evacuation disables {Traffictube2.ModeTraffictube.c_standby, Traffictube2.ModeTraffictube.c_emergency};
+  requirement Traffictube2.ModeTraffictube.evacuation disables {Traffictube1.ModeTraffictube.c_standby, Traffictube1.ModeTraffictube.c_emergency};
+  requirement Traffictube1.ModeTraffictube.c_support needs Traffictube2.ModeTraffictube.emergency or Traffictube2.ModeTraffictube.evacuation;
+  requirement Traffictube2.ModeTraffictube.c_support needs Traffictube1.ModeTraffictube.emergency or Traffictube1.ModeTraffictube.evacuation;
+  requirement Traffictube1.ModeTraffictube.c_evacuation needs Traffictube2.ModeTraffictube.support;
+  requirement Traffictube2.ModeTraffictube.c_evacuation needs Traffictube1.ModeTraffictube.support;
+  requirement Traffictube1.ModeTraffictube.c_recovery needs (Traffictube1.ModeTraffictube.emergency and Traffictube1.ButtonRecovery.Observer.pressed) or (Traffictube1.ModeTraffictube.support and Traffictube2.ModeTraffictube.recovery) or (Traffictube1.ModeTraffictube.maintenance and Traffictube1.ButtonRecovery.Observer.pressed);
+  requirement Traffictube2.ModeTraffictube.c_recovery needs (Traffictube2.ModeTraffictube.emergency and Traffictube2.ButtonRecovery.Observer.pressed) or (Traffictube2.ModeTraffictube.support and Traffictube1.ModeTraffictube.recovery) or (Traffictube2.ModeTraffictube.maintenance and Traffictube2.ButtonRecovery.Observer.pressed);
+  requirement BroadcastButtons1.c_evacuation needs Traffictube1.SwitchTimerAudio.on1;
+  requirement MiddleTunnelChannel.Lighting.c_on needs (MiddleTunnelChannel.ControlLighting.Mode.auto and (Traffictube1.ModeTraffictube.standby or Traffictube1.ModeTraffictube.emergency or Traffictube1.ModeTraffictube.evacuation)) or (MiddleTunnelChannel.ControlLighting.Mode.manual and MiddleTunnelChannel.ButtonLightingOn.Observer.pressed);
+  requirement MiddleTunnelChannel.DynamicEscaperouteIndication.c_upward needs (MiddleTunnelChannel.ControlDynamicEscaperouteIndication.Mode.auto and Traffictube1.ModeTraffictube.evacuation) or (MiddleTunnelChannel.ControlDynamicEscaperouteIndication.Mode.manual and MiddleTunnelChannel.ButtonDynamicEscaperouteIndicationUpward.Observer.pressed);
+  requirement MiddleTunnelChannel.DynamicEscaperouteIndication.c_downward needs (MiddleTunnelChannel.ControlDynamicEscaperouteIndication.Mode.manual and MiddleTunnelChannel.ButtonDynamicEscaperouteIndicationDownward.Observer.pressed);
+  requirement MiddleTunnelChannel.Broadcast.c_on needs (Traffictube1.ModeTraffictube.evacuation and Traffictube1.SwitchTimerAudio.on1);
+  requirement MiddleTunnelChannel.Broadcast.c_onManual needs MiddleTunnelChannel.ButtonStartMessage.Observer.pressed;
+  requirement MiddleTunnelChannel.Broadcast.c_suppressed needs Traffictube1.SwitchTimerAudio.on2;
+  requirement MiddleTunnelChannel.Broadcast.c_suppressedManual needs MiddleTunnelChannel.ButtonStopMessage.Observer.pressed;
+  requirement MiddleDrainCellar.PumpDirection.c_headDrainCellar2 needs HeadDrainCellar1.Sensor5.on;
+
+  group def RequirementsPressure(controllable event c_left, c_right):
+    requirement c_left needs (MiddleTunnelChannel.ControlPressure.Mode.auto and (Traffictube1.ModeTraffictube.standby or (not Traffictube1.ModeTraffictube.operational and not Traffictube1.ModeTraffictube.support))) or ( MiddleTunnelChannel.ControlPressure.Mode.manual and MiddleTunnelChannel.ButtonPressureLeft.Observer.pressed);
+    requirement c_right needs ( MiddleTunnelChannel.ControlPressure.Mode.manual and MiddleTunnelChannel.ButtonPressureRight.Observer.pressed);
+  end
+  RequirementsPressure1: RequirementsPressure(MiddleTunnelChannel.Pressure1.c_left, MiddleTunnelChannel.Pressure1.c_right);
+  RequirementsPressure2: RequirementsPressure(MiddleTunnelChannel.Pressure2.c_left, MiddleTunnelChannel.Pressure2.c_right);
+
+  group def RequirementsPompkelder(controllable event c_store, c_off; alg bool control_auto, control_manual, button_store, button_off):
+    requirement c_store needs (control_auto and (Traffictube1.ModeTraffictube.emergency or Traffictube1.ModeTraffictube.evacuation or Traffictube1.ModeTraffictube.recovery)) or (control_manual and button_store);
+    requirement c_off needs control_manual and button_off;
+  end
+  RequirementsMiddleDrainCellar: RequirementsPompkelder(MiddleDrainCellar.Regime.c_store, MiddleDrainCellar.Regime.c_off, MiddleDrainCellar.Control.Mode.auto, MiddleDrainCellar.Control.Mode.manual, MiddleDrainCellar.ButtonStoring.Observer.pressed, MiddleDrainCellar.ButtonOff.Observer.pressed);
+  RequirementsHeadDrainCellar1: RequirementsPompkelder(HeadDrainCellar1.Regime.c_store, HeadDrainCellar1.Regime.c_off, HeadDrainCellar1.Control.Mode.auto, HeadDrainCellar1.Control.Mode.manual, HeadDrainCellar1.ButtonStoring.Observer.pressed, HeadDrainCellar1.ButtonOff.Observer.pressed);
+  RequirementsHeadDrainCellar2: RequirementsPompkelder(HeadDrainCellar2.Regime.c_store, HeadDrainCellar2.Regime.c_off, HeadDrainCellar2.Control.Mode.auto, HeadDrainCellar2.Control.Mode.manual, HeadDrainCellar2.ButtonStoring.Observer.pressed, HeadDrainCellar2.ButtonOff.Observer.pressed);
+end

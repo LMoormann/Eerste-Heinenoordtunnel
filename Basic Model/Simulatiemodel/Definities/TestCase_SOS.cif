@@ -1,0 +1,24 @@
+import "Sim_Sensor.cif";
+
+group def Sim_SOS(event sensor_stilstand, sensor_spookrijder, sensor_uit; alg bool stilstand, spookrijder, sensorEnabled; alg string locatie):
+
+  svgout id locatie+"_sos" attr "opacity" value
+                         if stilstand or spookrijder: "1" else "0.1" end;
+
+  sim_sensor_sos: sim_threestate_sensor(sensorEnabled, sensor_uit, sensor_stilstand, sensor_spookrijder);
+
+  group testcase:
+    svgfile "../controle_paneel.svg";
+    svgin id "knop_sos_stilstand_"+locatie event if sim_sensor_sos.uit or sim_sensor_sos.aan2: sim_sensor_sos.e_aan1 else sim_sensor_sos.e_uit end;
+    svgout id "knop_sos_stilstand_"+locatie attr "fill" value
+        if sim_sensor_sos.aan1 and sensorEnabled: "#279d35"
+        elif sim_sensor_sos.aan1 and not sensorEnabled: "yellow"
+        else "#b72e2e" end;
+    svgin id "knop_sos_spookrijder_"+locatie event if sim_sensor_sos.uit or sim_sensor_sos.aan1: sim_sensor_sos.e_aan2 else sim_sensor_sos.e_uit end;
+    svgout id "knop_sos_spookrijder_"+locatie attr "fill" value
+        if sim_sensor_sos.aan2 and sensorEnabled: "#279d35"
+        elif sim_sensor_sos.aan2 and not sensorEnabled: "yellow"
+        else "#b72e2e" end;
+  end
+end
+

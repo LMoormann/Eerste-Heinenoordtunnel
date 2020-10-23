@@ -1,0 +1,5 @@
+group def Sim_Overdruk(alg string locatie; alg bool aan):
+
+  svgout id locatie attr "opacity" value if aan: "1" else "0" end;
+
+end
