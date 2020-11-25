@@ -1,0 +1,45 @@
+This repository contains the following models of the Eerste Heinenoordtunnel (EHT):
+
+Basic model: model of the EHT in which each component is included once. This model can be used for simulation, see Instructions.txt for further information. Note that this model is in Dutch.
+  [Basic Model/Supervisor/definitions]      All model templates for the basic model of the EHT.
+  [Basic Model/Supervisor/generated_files]  Synthesized supervisor for the basic model of the EHT.
+  [Basic Model/Supervisor/Tunnel.cif]       Plant + Requirement model for the basic model of the EHT.
+  [Basic Model/GUI]                         All models and visualizations of the graphical user interface for the basic model of the EHT for simulations.
+  [Basic Model/Simulatiemodel]              All models and visualizations of the virtual tunnel for the basic model of the EHT for simulations.
+  [Basic Model/TunnelSimulation.cif]        Combination of the discrete plant model and the hybrid plant model for the basic model of the EHT for simulations.
+  [Basic Model/Simulation.tooldef2]         Executable file to start the simulation.
+
+Initial model: model of the EHT in which all components are included.
+  [Initial Model/definitions] All model templates for the initial model of the EHT.
+  [Initial Model/Tunnel.cif]  Plant + Requirement model for the initial model of the EHT.
+  
+Reduced model - 1. Independent vertices: model of the EHT after the first model reduction step.
+  [Reduced Model - 1. Independent Vertices/definitions]     All model templates for the model of the EHT after the first model reduction step.
+  [Reduced Model - 1. Independent Vertices/generated_files] Synthesized supervisor for the model of the EHT after the first model reduction step.
+  [Reduced Model - 1. Independent Vertices/Tunnel.cif]      Plant + Requirement model for the model of the EHT after the first model reduction step.
+  
+Reduced model - 2. Marked requirements: model of the EHT after the second model reduction step.
+  [Reduced Model - 2. Marked Requirements/definitions]      All model templates for the model of the EHT after the second model reduction step.
+  [Reduced Model - 2. Marked Requirements/generated_files]  Synthesized supervisor for the model of the EHT after the second model reduction step.
+  [Reduced Model - 2. Marked Requirements/Tunnel.cif]       Plant + Requirement model for the model of the EHT after the second model reduction step.
+  
+Reduced model - 3. Internal symmetry: model of the EHT after the third model reduction step.
+  [Reduced Model - 3. Internal Symmetry/definitions]      All model templates for the model of the EHT after the third model reduction step.
+  [Reduced Model - 3. Internal Symmetry/generated_files]  Synthesized supervisor for the model of the EHT after the third model reduction step.
+  [Reduced Model - 3. Internal Symmetry/Tunnel.cif]       Plant + Requirement model for the model of the EHT after the third model reduction step.
+  
+Reduced model - 4. V-symmetry: model of the EHT after the fourth model reduction step.
+  [Reduced Model - 4. V-Symmetry/definitions]      All model templates for the model of the EHT after the fourth model reduction step.
+  [Reduced Model - 4. V-Symmetry/generated_files]  Synthesized supervisor for the model of the EHT after the fourth model reduction step.
+  [Reduced Model - 4. V-Symmetry/Tunnel.cif]       Plant + Requirement model for the model of the EHT after the fourth model reduction step.
+  
+Reduced model - 5. U-symmetry: model of the EHT after the fifth model reduction step.
+  [Reduced Model - 5. U-Symmetry/definitions]      All model templates for the model of the EHT after the fifth model reduction step.
+  [Reduced Model - 5. U-Symmetry/generated_files]  Synthesized supervisor for the model of the EHT after the fifth model reduction step.
+  [Reduced Model - 5. U-Symmetry/Tunnel.cif]       Plant + Requirement model for the model of the EHT after the fifth model reduction step.
+  
+Reduced model - 6. T-symmetry: model of the EHT after the sixth model reduction step.
+  [Reduced Model - 6. T-Symmetry/definitions]      All model templates for the model of the EHT after the sixth model reduction step.
+  [Reduced Model - 6. T-Symmetry/generated_files]  Synthesized supervisor for the model of the EHT after the sixth model reduction step.
+  [Reduced Model - 6. T-Symmetry/Tunnel.cif]       Plant + Requirement model for the model of the EHT after the sixth model reduction step.
+  
