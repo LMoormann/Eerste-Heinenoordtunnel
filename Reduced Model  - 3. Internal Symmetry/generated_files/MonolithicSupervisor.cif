@@ -4503,6 +4503,13 @@ group sup:
       requirement invariant .Tunnel.Traffictube1.ModeTraffictube.c_support needs not ModeTraffictube.emergency;
       requirement invariant .Tunnel.Traffictube1.ModeTraffictube.c_evacuation needs ButtonEvacuation.Observer.pressed;
       requirement invariant .Tunnel.Traffictube1.ModeTraffictube.c_maintenance needs ButtonMaintenance.Observer.pressed;
+      requirement invariant .Tunnel.Traffictube1.AccessBoombarriers.c_open needs ControlBoombarriers.Mode.manual and ButtonOpenBoombarriers.Observer.pressed or ButtonPrimaryOpenTraffictube.Observer.pressed;
+      requirement invariant .Tunnel.Traffictube1.AccessBoombarriers.c_close needs ControlBoombarriers.Mode.manual and ButtonCloseBoombarriers.Observer.pressed or ButtonPrimaryCloseTraffictube.Observer.pressed;
+      requirement invariant .Tunnel.Traffictube1.AccessBoombarriers.c_closeUnconditionally needs ControlBoombarriers.Mode.manual and ButtonCloseUnconditionalBoombarriers.Observer.pressed;
+      requirement invariant .Tunnel.Traffictube1.AccessBoombarriers.c_stop needs ControlBoombarriers.Mode.manual and ButtonStopBoombarriers.Observer.pressed or not AccessBoombarriers.closingUnconditionally;
+      requirement invariant .Tunnel.Traffictube1.AccessTrafficlights.c_off needs ControlTrafficlights.Mode.manual and ButtonOffTrafficlights.Observer.pressed or ButtonPrimaryOffTrafficlights.Observer.pressed or ButtonPrimaryOpenTraffictube.Observer.pressed;
+      requirement invariant .Tunnel.Traffictube1.AccessTrafficlights.c_flash needs ControlTrafficlights.Mode.manual and ButtonFlashTrafficlights.Observer.pressed;
+      requirement invariant .Tunnel.Traffictube1.AccessTrafficlights.c_red needs ControlTrafficlights.Mode.manual and ButtonRedTrafficlights.Observer.pressed or ButtonPrimaryRedTrafficlights.Observer.pressed or ButtonPrimaryCloseTraffictube.Observer.pressed;
       requirement invariant .Tunnel.Traffictube1.J32.Mode.c_on needs AccessTrafficlights.red or AccessTrafficlights.flash;
       requirement invariant .Tunnel.Traffictube1.J32.Mode.c_off needs Trafficlight1.Mode.off;
       requirement invariant .Tunnel.Traffictube1.J32.Mode.c_off needs Trafficlight2.Mode.off;
@@ -8091,6 +8098,13 @@ group sup:
       requirement invariant .Tunnel.Traffictube2.ModeTraffictube.c_support needs not ModeTraffictube.emergency;
       requirement invariant .Tunnel.Traffictube2.ModeTraffictube.c_evacuation needs ButtonEvacuation.Observer.pressed;
       requirement invariant .Tunnel.Traffictube2.ModeTraffictube.c_maintenance needs ButtonMaintenance.Observer.pressed;
+      requirement invariant .Tunnel.Traffictube2.AccessBoombarriers.c_open needs ControlBoombarriers.Mode.manual and ButtonOpenBoombarriers.Observer.pressed or ButtonPrimaryOpenTraffictube.Observer.pressed;
+      requirement invariant .Tunnel.Traffictube2.AccessBoombarriers.c_close needs ControlBoombarriers.Mode.manual and ButtonCloseBoombarriers.Observer.pressed or ButtonPrimaryCloseTraffictube.Observer.pressed;
+      requirement invariant .Tunnel.Traffictube2.AccessBoombarriers.c_closeUnconditionally needs ControlBoombarriers.Mode.manual and ButtonCloseUnconditionalBoombarriers.Observer.pressed;
+      requirement invariant .Tunnel.Traffictube2.AccessBoombarriers.c_stop needs ControlBoombarriers.Mode.manual and ButtonStopBoombarriers.Observer.pressed or not AccessBoombarriers.closingUnconditionally;
+      requirement invariant .Tunnel.Traffictube2.AccessTrafficlights.c_off needs ControlTrafficlights.Mode.manual and ButtonOffTrafficlights.Observer.pressed or ButtonPrimaryOffTrafficlights.Observer.pressed or ButtonPrimaryOpenTraffictube.Observer.pressed;
+      requirement invariant .Tunnel.Traffictube2.AccessTrafficlights.c_flash needs ControlTrafficlights.Mode.manual and ButtonFlashTrafficlights.Observer.pressed;
+      requirement invariant .Tunnel.Traffictube2.AccessTrafficlights.c_red needs ControlTrafficlights.Mode.manual and ButtonRedTrafficlights.Observer.pressed or ButtonPrimaryRedTrafficlights.Observer.pressed or ButtonPrimaryCloseTraffictube.Observer.pressed;
       requirement invariant .Tunnel.Traffictube2.J32.Mode.c_on needs AccessTrafficlights.red or AccessTrafficlights.flash;
       requirement invariant .Tunnel.Traffictube2.J32.Mode.c_off needs Trafficlight1.Mode.off;
       requirement invariant .Tunnel.Traffictube2.J32.Mode.c_off needs Trafficlight2.Mode.off;

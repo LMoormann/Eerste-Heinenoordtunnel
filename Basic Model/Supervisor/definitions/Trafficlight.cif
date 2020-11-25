@@ -28,4 +28,17 @@ group def Trafficlight():
   requirement TimerReleaseSignal.c_reset needs not Mode.red;
 end
 
-
+plant def AccessTrafficlight(controllable c_emergency, c_support):
+  controllable c_off, c_flash, c_red;
+  monitor c_emergency, c_support;
+  location off:
+    initial; marked;
+    edge c_red, c_emergency, c_support goto red;
+    edge c_flash goto flash;
+  location flash:
+    edge c_red, c_emergency, c_support goto red;
+    edge c_off goto off;
+  location red:
+    edge c_off goto off;
+    edge c_flash goto flash;
+end

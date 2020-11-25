@@ -12,7 +12,7 @@ import "Definities/Sim_Slagboom.cif", "Definities/Sim_Verkeerslicht.cif",
   "Definities/Sim_Bluswatertank.cif", "Definities/Sim_Kanaal.cif";
 
 // import "../Supervisor/generated_files/5_Supervisor.cif";
-import "../Supervisor.cif";
+import "../Supervisor/generated_files/MonolithicSupervisor.cif";
 
 group sim_model:
 
@@ -106,188 +106,185 @@ group sim_model:
                        if Brandblusinstallatie: "#a7a7a7" else "#f1f1f1" end;
   end
 
-  Noodbediening: Sim_Noodbediening(Tunnel_Noodbediening_u_aan, Tunnel_Noodbediening_u_uit, Tunnel_Noodbediening.aan);
+//   Noodbediening: Sim_Noodbediening(Tunnel.Noodbediening_u_on, Tunnel.Noodbediening_u_off, Tunnel.Noodbediening.on);
 
   group sim_buis_1:
 
     hyb_wissel_timer: Hybride_wissel_timer(
-      Tunnel_Verkeersbuis1_WisselTimerAudio_c_aan,
-      Tunnel_Verkeersbuis1_WisselTimerAudio_c_uit,
-      Tunnel_Verkeersbuis1_WisselTimerAudio_u_timeout,
+      Tunnel.Traffictube1.SwitchTimerAudio.c_on,
+      Tunnel.Traffictube1.SwitchTimerAudio.c_off,
+      Tunnel.Traffictube1.SwitchTimerAudio.u_timeout,
       5);
 
     cameras: Sim_Kanaal(
-      Tunnel_Verkeersbuis1_Kanaal.camera1,
-      Tunnel_Verkeersbuis1_Kanaal.camera2,
-      Tunnel_Verkeersbuis1_Kanaal.camera3,
-      Tunnel_Verkeersbuis1_Kanaal.camera4,
-      Tunnel_Verkeersbuis1_Kanaal.camera5,
-      Tunnel_Verkeersbuis1_Kanaal.camera6,
-      Tunnel_Verkeersbuis1_Recorder.aan,
+      Tunnel.Traffictube1.CCTV.camera1,
+      Tunnel.Traffictube1.CCTV.camera2,
+      Tunnel.Traffictube1.CCTV.camera3,
+      Tunnel.Traffictube1.CCTV.camera4,
+      Tunnel.Traffictube1.CCTV.camera5,
+      Tunnel.Traffictube1.CCTV.camera6,
+      Tunnel.Traffictube1.Recorder.on,
       "buis_1",
-      Tunnel_Verkeersbuis1_TimerCameraSchouwenEven_c_aan,
-      Tunnel_Verkeersbuis1_TimerCameraSchouwenEven_c_reset,
-      Tunnel_Verkeersbuis1_TimerCameraSchouwenEven_u_timeout,
-      Tunnel_Verkeersbuis1_TimerCameraSchouwenOneven_c_aan,
-      Tunnel_Verkeersbuis1_TimerCameraSchouwenOneven_c_reset,
-      Tunnel_Verkeersbuis1_TimerCameraSchouwenOneven_u_timeout);
+      Tunnel.Traffictube1.TimerCameraViewEven.c_on,
+      Tunnel.Traffictube1.TimerCameraViewEven.c_reset,
+      Tunnel.Traffictube1.TimerCameraViewEven.u_timeout,
+      Tunnel.Traffictube1.TimerCameraViewUneven.c_on,
+      Tunnel.Traffictube1.TimerCameraViewUneven.c_reset,
+      Tunnel.Traffictube1.TimerCameraViewUneven.u_timeout);
 
     omroep: Sim_Omroep(
-      Tunnel_Verkeersbuis1_Kanaal.camera1,
-      Tunnel_Verkeersbuis1_Kanaal.camera2,
-      Tunnel_Verkeersbuis1_Kanaal.camera3,
-      Tunnel_Verkeersbuis1_Kanaal.camera4,
-      Tunnel_Verkeersbuis1_Kanaal.camera5,
-      Tunnel_Verkeersbuis1_Kanaal.camera6,
-      Tunnel_Verkeersbuis1_OmroepKnoppen.camera,
-      Tunnel_Verkeersbuis1_OmroepKnoppen.sectie,
-      Tunnel_Verkeersbuis1_OmroepKnoppen.verkeersbuis,
+      Tunnel.Traffictube1.CCTV.camera1,
+      Tunnel.Traffictube1.CCTV.camera2,
+      Tunnel.Traffictube1.CCTV.camera3,
+      Tunnel.Traffictube1.CCTV.camera4,
+      Tunnel.Traffictube1.CCTV.camera5,
+      Tunnel.Traffictube1.CCTV.camera6,
+      Tunnel.BroadcastButtons1.camera,
+      Tunnel.BroadcastButtons1.section,
+      Tunnel.BroadcastButtons1.traffictube,
       "buis_1");
 
     ventilatie_ingang: Sim_Ventilatie(
-      Tunnel_Verkeersbuis1_VentilatieIngang.stand,
+      Tunnel.Traffictube1.VentilationEntrance.setting,
       "buis_1_ventilatie_1",
-      Tunnel_Verkeersbuis1_VentilatieRichting.Rijrichting);
+      Tunnel.Traffictube1.VentilationDirection.drivingDirection);
     ventilatie_1: Sim_Ventilatie(
-      Tunnel_Verkeersbuis1_Ventilatie.stand,
+      Tunnel.Traffictube1.Ventilation.setting,
       "buis_1_ventilatie_2",
-      Tunnel_Verkeersbuis1_VentilatieRichting.Rijrichting);
+      Tunnel.Traffictube1.VentilationDirection.drivingDirection);
     ventilatie_2: Sim_Ventilatie(
-      Tunnel_Verkeersbuis1_Ventilatie.stand,
+      Tunnel.Traffictube1.Ventilation.setting,
       "buis_1_ventilatie_3",
-      Tunnel_Verkeersbuis1_VentilatieRichting.Rijrichting);
+      Tunnel.Traffictube1.VentilationDirection.drivingDirection);
 
     sos:Sim_SOS(
-      Tunnel_Verkeersbuis1_SOS_u_stilstand,
-      Tunnel_Verkeersbuis1_SOS_u_spookrijder,
-      Tunnel_Verkeersbuis1_SOS_u_uit,
-      Tunnel_Verkeersbuis1_SOS.stilstand,
-      Tunnel_Verkeersbuis1_SOS.spookrijder,
-      Tunnel_Verkeersbuis1_SOSEnabled.aan,
+      Tunnel.Traffictube1.Standstilldetection.u_standstill,
+      Tunnel.Traffictube1.Standstilldetection.u_wrongway,
+      Tunnel.Traffictube1.Standstilldetection.u_off,
+      Tunnel.Traffictube1.Standstilldetection.standstill,
+      Tunnel.Traffictube1.Standstilldetection.wrongway,
+      true,
       "buis_1");
 
     rook: Sim_Rook(
-      Tunnel_Verkeersbuis1_Rookdetectie_u_0,
-      Tunnel_Verkeersbuis1_Rookdetectie_u_1,
-      Tunnel_Verkeersbuis1_Rookdetectie_u_2,
-      Tunnel_Verkeersbuis1_Rookdetectie_u_3,
-      Tunnel_Verkeersbuis1_Rookdetectie_u_4,
-      Tunnel_Verkeersbuis1_Rookdetectie_u_5,
-      Tunnel_Verkeersbuis1_Rookdetectie_u_6,
-      Tunnel_Verkeersbuis1_Rookdetectie_u_7,
-      Tunnel_Verkeersbuis1_Rookdetectie_u_8,
+      Tunnel.Traffictube1.Smokedetection.u_0,
+      Tunnel.Traffictube1.Smokedetection.u_1,
+      Tunnel.Traffictube1.Smokedetection.u_2,
+      Tunnel.Traffictube1.Smokedetection.u_3,
+      Tunnel.Traffictube1.Smokedetection.u_4,
+      Tunnel.Traffictube1.Smokedetection.u_5,
+      Tunnel.Traffictube1.Smokedetection.u_6,
+      Tunnel.Traffictube1.Smokedetection.u_7,
+      Tunnel.Traffictube1.Smokedetection.u_8,
       "buis_1",
-      Tunnel_Verkeersbuis1_Rookdetectie.stand);
+      Tunnel.Traffictube1.Smokedetection.setting);
 
     lichtsensor_1: Sim_LichtSensor(
-      Tunnel_Verkeersbuis1_Lichtsensor_u_0,
-      Tunnel_Verkeersbuis1_Lichtsensor_u_1,
-      Tunnel_Verkeersbuis1_Lichtsensor_u_2,
-      Tunnel_Verkeersbuis1_Lichtsensor_u_3,
-      Tunnel_Verkeersbuis1_Lichtsensor_u_4,
-      Tunnel_Verkeersbuis1_Lichtsensor_u_5,
-      Tunnel_Verkeersbuis1_Lichtsensor_u_6,
-      Tunnel_Verkeersbuis1_Lichtsensor_u_7,
-      Tunnel_Verkeersbuis1_Lichtsensor_u_8,
+      Tunnel.Traffictube1.Lightsensor.u_0,
+      Tunnel.Traffictube1.Lightsensor.u_1,
+      Tunnel.Traffictube1.Lightsensor.u_2,
+      Tunnel.Traffictube1.Lightsensor.u_3,
+      Tunnel.Traffictube1.Lightsensor.u_4,
+      Tunnel.Traffictube1.Lightsensor.u_5,
+      Tunnel.Traffictube1.Lightsensor.u_6,
+      Tunnel.Traffictube1.Lightsensor.u_7,
+      Tunnel.Traffictube1.Lightsensor.u_8,
       "buis_1",
-      Tunnel_Verkeersbuis1_Lichtsensor.stand);
+      Tunnel.Traffictube1.Lightsensor.setting);
 
     verlichting_1: Sim_Verlichting(
       "buis_1",
-      Tunnel_Verkeersbuis1_Verlichting.stand);
+      Tunnel.Traffictube1.Lighting.setting);
 
     vluchtdeur_1: Sim_Vluchtdeur(
-      Tunnel_Verkeersbuis1_Vluchtdeur_SensorOpen_u_aan,
-      Tunnel_Verkeersbuis1_Vluchtdeur_SensorOpen_u_uit,
-      Tunnel_Verkeersbuis1_Vluchtdeur_ContourVerlichting.aan,
-      Tunnel_Verkeersbuis1_Vluchtdeur_Geluidsbaken.aan,
-      Tunnel_Verkeersbuis1_Vluchtdeur_Geluidsbaken.onderdrukt,
-      Tunnel_Verkeersbuis1_Vluchtdeur_SensorOpen.aan,
+      Tunnel.Traffictube1.EscapeDoor.RouteIndication.on,
+      Tunnel.Traffictube1.EscapeDoor.Broadcast.on,
+      Tunnel.Traffictube1.EscapeDoor.Broadcast.suppressed,
       "buis_1");
 
     matrixbord_mv_1: Sim_Matrixbord(
-      Tunnel_Verkeersbuis1_MatrixbordVerkeerslicht.aan,
+      Tunnel.Traffictube1.MatrixsignTrafficlight.on,
       "buis_1_rijstrook_1_matrixbord_mv_tekst");
     matrixbord_mv_2: Sim_Matrixbord(
-      Tunnel_Verkeersbuis1_MatrixbordVerkeerslicht.aan,
+      Tunnel.Traffictube1.MatrixsignTrafficlight.on,
       "buis_1_rijstrook_2_matrixbord_mv_tekst");
     matrixbord_mv_3: Sim_Matrixbord(
-      Tunnel_Verkeersbuis1_MatrixbordVerkeerslicht.aan,
+      Tunnel.Traffictube1.MatrixsignTrafficlight.on,
       "buis_1_rijstrook_3_matrixbord_mv_tekst");
     matrixbord_zv_1: Sim_Matrixbord(
-      Tunnel_Verkeersbuis1_MatrixbordLos.aan,
+      Tunnel.Traffictube1.MatrixsignUnpressed.on,
       "buis_1_rijstrook_1_matrixbord_zv_tekst");
     matrixbord_zv_2: Sim_Matrixbord(
-      Tunnel_Verkeersbuis1_MatrixbordLos.aan,
+      Tunnel.Traffictube1.MatrixsignUnpressed.on,
       "buis_1_rijstrook_2_matrixbord_zv_tekst");
     matrixbord_zv_3: Sim_Matrixbord(
-      Tunnel_Verkeersbuis1_MatrixbordLos.aan,
+      Tunnel.Traffictube1.MatrixsignUnpressed.on,
       "buis_1_rijstrook_3_matrixbord_zv_tekst");
 
     j32_1: Sim_J32(
-      Tunnel_Verkeersbuis1_J32_Stand.aan,
-      Tunnel_Verkeersbuis1_J32_TimerVrijgavesignaal_c_aan,
-      Tunnel_Verkeersbuis1_J32_TimerVrijgavesignaal_c_reset,
-      Tunnel_Verkeersbuis1_J32_TimerVrijgavesignaal_u_timeout,
+      Tunnel.Traffictube1.J32.Mode.on,
+      Tunnel.Traffictube1.J32.TimerReleaseSignal.c_on,
+      Tunnel.Traffictube1.J32.TimerReleaseSignal.c_reset,
+      Tunnel.Traffictube1.J32.TimerReleaseSignal.u_timeout,
       "buis_1_rijstrook_1_2_j32_licht");
     j32_2: Sim_J32(
-      Tunnel_Verkeersbuis1_J32_Stand.aan,
-      Tunnel_Verkeersbuis1_J32_TimerVrijgavesignaal_c_aan,
-      Tunnel_Verkeersbuis1_J32_TimerVrijgavesignaal_c_reset,
-      Tunnel_Verkeersbuis1_J32_TimerVrijgavesignaal_u_timeout,
+      Tunnel.Traffictube1.J32.Mode.on,
+      Tunnel.Traffictube1.J32.TimerReleaseSignal.c_on,
+      Tunnel.Traffictube1.J32.TimerReleaseSignal.c_reset,
+      Tunnel.Traffictube1.J32.TimerReleaseSignal.u_timeout,
       "buis_1_rijstrook_2_3_j32_licht");
 
     verkeerslicht_1: Hybride_verkeerslicht(
-      Tunnel_Verkeersbuis1_Verkeerslicht1_Stand.knipper,
-      Tunnel_Verkeersbuis1_Verkeerslicht1_Stand.rood,
-      Tunnel_Verkeersbuis1_Verkeerslicht1_Stand.geel,
-      Tunnel_Verkeersbuis1_Verkeerslicht1_Stand_c_uit,
-      Tunnel_Verkeersbuis1_Verkeerslicht1_Stand_c_geel,
-      Tunnel_Verkeersbuis1_Verkeerslicht1_Stand_c_knipper,
-      Tunnel_Verkeersbuis1_Verkeerslicht1_Stand_c_rood,
-      Tunnel_Verkeersbuis1_Verkeerslicht1_TimerVrijgavesignaal_c_aan,
-      Tunnel_Verkeersbuis1_Verkeerslicht1_TimerVrijgavesignaal_c_reset,
-      Tunnel_Verkeersbuis1_Verkeerslicht1_TimerVrijgavesignaal_u_timeout,
+      Tunnel.Traffictube1.Trafficlight1.Mode.flash,
+      Tunnel.Traffictube1.Trafficlight1.Mode.red,
+      Tunnel.Traffictube1.Trafficlight1.Mode.yellow,
+      Tunnel.Traffictube1.Trafficlight1.Mode.c_off,
+      Tunnel.Traffictube1.Trafficlight1.Mode.c_yellow,
+      Tunnel.Traffictube1.Trafficlight1.Mode.c_flash,
+      Tunnel.Traffictube1.Trafficlight1.Mode.c_red,
+      Tunnel.Traffictube1.Trafficlight1.TimerReleaseSignal.c_on,
+      Tunnel.Traffictube1.Trafficlight1.TimerReleaseSignal.c_reset,
+      Tunnel.Traffictube1.Trafficlight1.TimerReleaseSignal.u_timeout,
       "buis_1_rijstrook_1_");
     verkeerslicht_2: Hybride_verkeerslicht(
-      Tunnel_Verkeersbuis1_Verkeerslicht2_Stand.knipper,
-      Tunnel_Verkeersbuis1_Verkeerslicht2_Stand.rood,
-      Tunnel_Verkeersbuis1_Verkeerslicht2_Stand.geel,
-      Tunnel_Verkeersbuis1_Verkeerslicht2_Stand_c_uit,
-      Tunnel_Verkeersbuis1_Verkeerslicht2_Stand_c_geel,
-      Tunnel_Verkeersbuis1_Verkeerslicht2_Stand_c_knipper,
-      Tunnel_Verkeersbuis1_Verkeerslicht2_Stand_c_rood,
-      Tunnel_Verkeersbuis1_Verkeerslicht2_TimerVrijgavesignaal_c_aan,
-      Tunnel_Verkeersbuis1_Verkeerslicht2_TimerVrijgavesignaal_c_reset,
-      Tunnel_Verkeersbuis1_Verkeerslicht2_TimerVrijgavesignaal_u_timeout,
+      Tunnel.Traffictube1.Trafficlight2.Mode.flash,
+      Tunnel.Traffictube1.Trafficlight2.Mode.red,
+      Tunnel.Traffictube1.Trafficlight2.Mode.yellow,
+      Tunnel.Traffictube1.Trafficlight2.Mode.c_off,
+      Tunnel.Traffictube1.Trafficlight2.Mode.c_yellow,
+      Tunnel.Traffictube1.Trafficlight2.Mode.c_flash,
+      Tunnel.Traffictube1.Trafficlight2.Mode.c_red,
+      Tunnel.Traffictube1.Trafficlight2.TimerReleaseSignal.c_on,
+      Tunnel.Traffictube1.Trafficlight2.TimerReleaseSignal.c_reset,
+      Tunnel.Traffictube1.Trafficlight2.TimerReleaseSignal.u_timeout,
       "buis_1_rijstrook_2_");
     verkeerslicht_3: Hybride_verkeerslicht(
-      Tunnel_Verkeersbuis1_Verkeerslicht3_Stand.knipper,
-      Tunnel_Verkeersbuis1_Verkeerslicht3_Stand.rood,
-      Tunnel_Verkeersbuis1_Verkeerslicht3_Stand.geel,
-      Tunnel_Verkeersbuis1_Verkeerslicht3_Stand_c_uit,
-      Tunnel_Verkeersbuis1_Verkeerslicht3_Stand_c_geel,
-      Tunnel_Verkeersbuis1_Verkeerslicht3_Stand_c_knipper,
-      Tunnel_Verkeersbuis1_Verkeerslicht3_Stand_c_rood,
-      Tunnel_Verkeersbuis1_Verkeerslicht3_TimerVrijgavesignaal_c_aan,
-      Tunnel_Verkeersbuis1_Verkeerslicht3_TimerVrijgavesignaal_c_reset,
-      Tunnel_Verkeersbuis1_Verkeerslicht3_TimerVrijgavesignaal_u_timeout,
+      Tunnel.Traffictube1.Trafficlight3.Mode.flash,
+      Tunnel.Traffictube1.Trafficlight3.Mode.red,
+      Tunnel.Traffictube1.Trafficlight3.Mode.yellow,
+      Tunnel.Traffictube1.Trafficlight3.Mode.c_off,
+      Tunnel.Traffictube1.Trafficlight3.Mode.c_yellow,
+      Tunnel.Traffictube1.Trafficlight3.Mode.c_flash,
+      Tunnel.Traffictube1.Trafficlight3.Mode.c_red,
+      Tunnel.Traffictube1.Trafficlight3.TimerReleaseSignal.c_on,
+      Tunnel.Traffictube1.Trafficlight3.TimerReleaseSignal.c_reset,
+      Tunnel.Traffictube1.Trafficlight3.TimerReleaseSignal.u_timeout,
       "buis_1_rijstrook_3_");
 
     slagboom_rijbanen:     hybride_slagboom(
-      Tunnel_Verkeersbuis1_Afsluitboom1_ActuatorOp.aan,
-      Tunnel_Verkeersbuis1_Afsluitboom1_ActuatorNeer.aan,
-      Tunnel_Verkeersbuis1_Afsluitboom1_SensorOpen_u_aan,
-      Tunnel_Verkeersbuis1_Afsluitboom1_SensorOpen_u_uit,
-      Tunnel_Verkeersbuis1_Afsluitboom1_SensorDicht_u_aan,
-      Tunnel_Verkeersbuis1_Afsluitboom1_SensorDicht_u_uit);
+      Tunnel.Traffictube1.Boombarrier1.ActuatorUp.on,
+      Tunnel.Traffictube1.Boombarrier1.ActuatorDown.on,
+      Tunnel.Traffictube1.Boombarrier1.SensorOpen.u_on,
+      Tunnel.Traffictube1.Boombarrier1.SensorOpen.u_off,
+      Tunnel.Traffictube1.Boombarrier1.SensorClosed.u_on,
+      Tunnel.Traffictube1.Boombarrier1.SensorClosed.u_off);
     slagboom_vluchtstrook: hybride_slagboom(
-      Tunnel_Verkeersbuis1_Afsluitboom2_ActuatorOp.aan,
-      Tunnel_Verkeersbuis1_Afsluitboom2_ActuatorNeer.aan,
-      Tunnel_Verkeersbuis1_Afsluitboom2_SensorOpen_u_aan,
-      Tunnel_Verkeersbuis1_Afsluitboom2_SensorOpen_u_uit,
-      Tunnel_Verkeersbuis1_Afsluitboom2_SensorDicht_u_aan,
-      Tunnel_Verkeersbuis1_Afsluitboom2_SensorDicht_u_uit);
+      Tunnel.Traffictube1.Boombarrier2.ActuatorUp.on,
+      Tunnel.Traffictube1.Boombarrier2.ActuatorDown.on,
+      Tunnel.Traffictube1.Boombarrier2.SensorOpen.u_on,
+      Tunnel.Traffictube1.Boombarrier2.SensorOpen.u_off,
+      Tunnel.Traffictube1.Boombarrier2.SensorClosed.u_on,
+      Tunnel.Traffictube1.Boombarrier2.SensorClosed.u_off);
 
     slagboom_rijbanen_visu: driebaans_slagboomVisu(
       slagboom_rijbanen,
@@ -297,240 +294,237 @@ group sim_model:
       "buis_1_");
 
     obstakel_rijbanen: Sim_Obstakel(
-      Tunnel_Verkeersbuis1_Afsluitboom1_ObstakelDetectie_u_aan,
-      Tunnel_Verkeersbuis1_Afsluitboom1_ObstakelDetectie_u_uit,
-      Tunnel_Verkeersbuis1_Afsluitboom1_ObstakelDetectie.aan,
+      Tunnel.Traffictube1.Boombarrier1.ObstacleDetection.u_on,
+      Tunnel.Traffictube1.Boombarrier1.ObstacleDetection.u_off,
+      Tunnel.Traffictube1.Boombarrier1.ObstacleDetection.on,
       "buis_1_rijstrook");
     obstakel_vluchtstrook: Sim_Obstakel(
-      Tunnel_Verkeersbuis1_Afsluitboom2_ObstakelDetectie_u_aan,
-      Tunnel_Verkeersbuis1_Afsluitboom2_ObstakelDetectie_u_uit,
-      Tunnel_Verkeersbuis1_Afsluitboom2_ObstakelDetectie.aan,
+      Tunnel.Traffictube1.Boombarrier2.ObstacleDetection.u_on,
+      Tunnel.Traffictube1.Boombarrier2.ObstacleDetection.u_off,
+      Tunnel.Traffictube1.Boombarrier2.ObstacleDetection.on,
       "buis_1_vluchtstrook");
 
     hulppostkast_a_1: Sim_Hulppostkast_A(
-      Tunnel_Verkeersbuis1_HulppostkastA_SensorOpen_u_aan,
-      Tunnel_Verkeersbuis1_HulppostkastA_SensorOpen_u_uit,
-      Tunnel_Verkeersbuis1_HulppostkastA_Noodtelefoon_u_aan,
-      Tunnel_Verkeersbuis1_HulppostkastA_Noodtelefoon_u_uit,
-      Tunnel_Verkeersbuis1_HulppostkastA_Handblusser_u_aan,
-      Tunnel_Verkeersbuis1_HulppostkastA_Handblusser_u_uit,
-      Tunnel_Verkeersbuis1_HulppostkastA_Brandslang_u_aan,
-      Tunnel_Verkeersbuis1_HulppostkastA_Brandslang_u_uit,
+      Tunnel.Traffictube1.EmergencyCabinetA.SensorOpen.u_on,
+      Tunnel.Traffictube1.EmergencyCabinetA.SensorOpen.u_off,
+      Tunnel.Traffictube1.EmergencyCabinetA.Phone.u_on,
+      Tunnel.Traffictube1.EmergencyCabinetA.Phone.u_off,
+      Tunnel.Traffictube1.EmergencyCabinetA.HandheldExtinguisher.u_on,
+      Tunnel.Traffictube1.EmergencyCabinetA.HandheldExtinguisher.u_off,
+      Tunnel.Traffictube1.EmergencyCabinetA.Firehose.u_on,
+      Tunnel.Traffictube1.EmergencyCabinetA.Firehose.u_off,
 //       e_dummy,
-      Tunnel_Verkeersbuis1_HulppostkastA_SensorOpen.aan,
-      Tunnel_Verkeersbuis1_HulppostkastA_Noodtelefoon.aan,
-      Tunnel_Verkeersbuis1_HulppostkastA_Handblusser.aan,
-      Tunnel_Verkeersbuis1_HulppostkastA_Brandslang.aan,
-      Tunnel_Verkeersbuis1_HulppostkastA_SensorOpenEnabled.aan,
-      Tunnel_Verkeersbuis1_HulppostkastA_SensorNoodtelefoonEnabled.aan,
-      Tunnel_Verkeersbuis1_HulppostkastA_SensorHandblusserEnabled.aan,
-      Tunnel_Verkeersbuis1_HulppostkastA_SensorBrandslangEnabled.aan,
+      Tunnel.Traffictube1.EmergencyCabinetA.SensorOpen.on,
+      Tunnel.Traffictube1.EmergencyCabinetA.Phone.on,
+      Tunnel.Traffictube1.EmergencyCabinetA.HandheldExtinguisher.on,
+      Tunnel.Traffictube1.EmergencyCabinetA.Firehose.on,
+      true,
+      true,
+      true,
+      true,
       "buis_1_a_1_",
       "buis_1");
 
     hulppostkast_c_1: Sim_Hulppostkast_C(
-      Tunnel_Verkeersbuis1_HulppostkastC_SensorOpen_u_aan,
-      Tunnel_Verkeersbuis1_HulppostkastC_SensorOpen_u_uit,
-      Tunnel_Verkeersbuis1_HulppostkastC_Noodtelefoon_u_aan,
-      Tunnel_Verkeersbuis1_HulppostkastC_Noodtelefoon_u_uit,
-      Tunnel_Verkeersbuis1_HulppostkastC_Handblusser_u_aan,
-      Tunnel_Verkeersbuis1_HulppostkastC_Handblusser_u_uit,
+      Tunnel.Traffictube1.EmergencyCabinetC.SensorOpen.u_on,
+      Tunnel.Traffictube1.EmergencyCabinetC.SensorOpen.u_off,
+      Tunnel.Traffictube1.EmergencyCabinetC.Phone.u_on,
+      Tunnel.Traffictube1.EmergencyCabinetC.Phone.u_off,
+      Tunnel.Traffictube1.EmergencyCabinetC.HandheldExtinguisher.u_on,
+      Tunnel.Traffictube1.EmergencyCabinetC.HandheldExtinguisher.u_off,
 //       e_dummy,
-      Tunnel_Verkeersbuis1_HulppostkastC_SensorOpen.aan,
-      Tunnel_Verkeersbuis1_HulppostkastC_Noodtelefoon.aan,
-      Tunnel_Verkeersbuis1_HulppostkastC_Handblusser.aan,
-      Tunnel_Verkeersbuis1_HulppostkastC_SensorOpenEnabled.aan,
-      Tunnel_Verkeersbuis1_HulppostkastC_SensorNoodtelefoonEnabled.aan,
-      Tunnel_Verkeersbuis1_HulppostkastC_SensorHandblusserEnabled.aan,
+      Tunnel.Traffictube1.EmergencyCabinetC.SensorOpen.on,
+      Tunnel.Traffictube1.EmergencyCabinetC.Phone.on,
+      Tunnel.Traffictube1.EmergencyCabinetC.HandheldExtinguisher.on,
+      true,
+      true,
+      true,
       "buis_1_c_1_",
       "buis_1");
 
     luidspreker: Sim_Luidspreker_Verkeersbuis(
       "buis_1_",
-      Tunnel_Verkeersbuis1_Luidspreker.boodschap and not Tunnel_Verkeersbuis1_OmroepKnoppen.uit,
-      Tunnel_Verkeersbuis1_OmroepKnoppen.uit,
-      Tunnel_Verkeersbuis1_Luidspreker.live and not Tunnel_Verkeersbuis1_OmroepKnoppen.uit);
+      Tunnel.Traffictube1.Broadcast.message and not Tunnel.BroadcastButtons1.off,
+      Tunnel.BroadcastButtons1.off,
+      Tunnel.Traffictube1.Broadcast.live and not Tunnel.BroadcastButtons1.off);
   end
 
   group sim_buis_2:
     hyb_wissel_timer: Hybride_wissel_timer(
-      Tunnel_Verkeersbuis2_WisselTimerAudio_c_aan,
-      Tunnel_Verkeersbuis2_WisselTimerAudio_c_uit,
-      Tunnel_Verkeersbuis2_WisselTimerAudio_u_timeout,
+      Tunnel.Traffictube2.SwitchTimerAudio.c_on,
+      Tunnel.Traffictube2.SwitchTimerAudio.c_off,
+      Tunnel.Traffictube2.SwitchTimerAudio.u_timeout,
       5);
 
     cameras: Sim_Kanaal(
-      Tunnel_Verkeersbuis2_Kanaal.camera1,
-      Tunnel_Verkeersbuis2_Kanaal.camera2,
-      Tunnel_Verkeersbuis2_Kanaal.camera3,
-      Tunnel_Verkeersbuis2_Kanaal.camera4,
-      Tunnel_Verkeersbuis2_Kanaal.camera5,
-      Tunnel_Verkeersbuis2_Kanaal.camera6,
-      Tunnel_Verkeersbuis2_Recorder.aan,
+      Tunnel.Traffictube2.CCTV.camera1,
+      Tunnel.Traffictube2.CCTV.camera2,
+      Tunnel.Traffictube2.CCTV.camera3,
+      Tunnel.Traffictube2.CCTV.camera4,
+      Tunnel.Traffictube2.CCTV.camera5,
+      Tunnel.Traffictube2.CCTV.camera6,
+      Tunnel.Traffictube2.Recorder.on,
       "buis_2",
-      Tunnel_Verkeersbuis2_TimerCameraSchouwenEven_c_aan,
-      Tunnel_Verkeersbuis2_TimerCameraSchouwenEven_c_reset,
-      Tunnel_Verkeersbuis2_TimerCameraSchouwenEven_u_timeout,
-      Tunnel_Verkeersbuis2_TimerCameraSchouwenOneven_c_aan,
-      Tunnel_Verkeersbuis2_TimerCameraSchouwenOneven_c_reset,
-      Tunnel_Verkeersbuis2_TimerCameraSchouwenOneven_u_timeout);
+      Tunnel.Traffictube2.TimerCameraViewEven.c_on,
+      Tunnel.Traffictube2.TimerCameraViewEven.c_reset,
+      Tunnel.Traffictube2.TimerCameraViewEven.u_timeout,
+      Tunnel.Traffictube2.TimerCameraViewUneven.c_on,
+      Tunnel.Traffictube2.TimerCameraViewUneven.c_reset,
+      Tunnel.Traffictube2.TimerCameraViewUneven.u_timeout);
 
     omroep: Sim_Omroep(
-      Tunnel_Verkeersbuis2_Kanaal.camera1,
-      Tunnel_Verkeersbuis2_Kanaal.camera2,
-      Tunnel_Verkeersbuis2_Kanaal.camera3,
-      Tunnel_Verkeersbuis2_Kanaal.camera4,
-      Tunnel_Verkeersbuis2_Kanaal.camera5,
-      Tunnel_Verkeersbuis2_Kanaal.camera6,
-      Tunnel_Verkeersbuis2_OmroepKnoppen.camera,
-      Tunnel_Verkeersbuis2_OmroepKnoppen.sectie,
-      Tunnel_Verkeersbuis2_OmroepKnoppen.verkeersbuis,
+      Tunnel.Traffictube2.CCTV.camera1,
+      Tunnel.Traffictube2.CCTV.camera2,
+      Tunnel.Traffictube2.CCTV.camera3,
+      Tunnel.Traffictube2.CCTV.camera4,
+      Tunnel.Traffictube2.CCTV.camera5,
+      Tunnel.Traffictube2.CCTV.camera6,
+      Tunnel.BroadcastButtons2.camera,
+      Tunnel.BroadcastButtons2.section,
+      Tunnel.BroadcastButtons2.traffictube,
       "buis_2");
 
     ventilatie_ingang: Sim_Ventilatie(
-      Tunnel_Verkeersbuis2_VentilatieIngang.stand,
+      Tunnel.Traffictube2.VentilationEntrance.setting,
       "buis_2_ventilatie_1",
-      Tunnel_Verkeersbuis2_VentilatieRichting.Rijrichting);
+      Tunnel.Traffictube2.VentilationDirection.drivingDirection);
     ventilatie_1: Sim_Ventilatie(
-      Tunnel_Verkeersbuis2_Ventilatie.stand,
+      Tunnel.Traffictube2.Ventilation.setting,
       "buis_2_ventilatie_2",
-      Tunnel_Verkeersbuis2_VentilatieRichting.Rijrichting);
+      Tunnel.Traffictube2.VentilationDirection.drivingDirection);
     ventilatie_2: Sim_Ventilatie(
-      Tunnel_Verkeersbuis2_Ventilatie.stand,
+      Tunnel.Traffictube2.Ventilation.setting,
       "buis_2_ventilatie_3",
-      Tunnel_Verkeersbuis2_VentilatieRichting.Rijrichting);
+      Tunnel.Traffictube2.VentilationDirection.drivingDirection);
 
     sos:Sim_SOS(
-      Tunnel_Verkeersbuis2_SOS_u_stilstand,
-      Tunnel_Verkeersbuis2_SOS_u_spookrijder,
-      Tunnel_Verkeersbuis2_SOS_u_uit,
-      Tunnel_Verkeersbuis2_SOS.stilstand,
-      Tunnel_Verkeersbuis2_SOS.spookrijder,
-      Tunnel_Verkeersbuis2_SOSEnabled.aan,
+      Tunnel.Traffictube2.Standstilldetection.u_standstill,
+      Tunnel.Traffictube2.Standstilldetection.u_wrongway,
+      Tunnel.Traffictube2.Standstilldetection.u_off,
+      Tunnel.Traffictube2.Standstilldetection.standstill,
+      Tunnel.Traffictube2.Standstilldetection.wrongway,
+      true,
       "buis_2");
 
     rook: Sim_Rook(
-      Tunnel_Verkeersbuis2_Rookdetectie_u_0,
-      Tunnel_Verkeersbuis2_Rookdetectie_u_1,
-      Tunnel_Verkeersbuis2_Rookdetectie_u_2,
-      Tunnel_Verkeersbuis2_Rookdetectie_u_3,
-      Tunnel_Verkeersbuis2_Rookdetectie_u_4,
-      Tunnel_Verkeersbuis2_Rookdetectie_u_5,
-      Tunnel_Verkeersbuis2_Rookdetectie_u_6,
-      Tunnel_Verkeersbuis2_Rookdetectie_u_7,
-      Tunnel_Verkeersbuis2_Rookdetectie_u_8,
+      Tunnel.Traffictube2.Smokedetection.u_0,
+      Tunnel.Traffictube2.Smokedetection.u_1,
+      Tunnel.Traffictube2.Smokedetection.u_2,
+      Tunnel.Traffictube2.Smokedetection.u_3,
+      Tunnel.Traffictube2.Smokedetection.u_4,
+      Tunnel.Traffictube2.Smokedetection.u_5,
+      Tunnel.Traffictube2.Smokedetection.u_6,
+      Tunnel.Traffictube2.Smokedetection.u_7,
+      Tunnel.Traffictube2.Smokedetection.u_8,
       "buis_2",
-      Tunnel_Verkeersbuis2_Rookdetectie.stand);
+      Tunnel.Traffictube2.Smokedetection.setting);
 
     lichtsensor_1: Sim_LichtSensor(
-      Tunnel_Verkeersbuis2_Lichtsensor_u_0,
-      Tunnel_Verkeersbuis2_Lichtsensor_u_1,
-      Tunnel_Verkeersbuis2_Lichtsensor_u_2,
-      Tunnel_Verkeersbuis2_Lichtsensor_u_3,
-      Tunnel_Verkeersbuis2_Lichtsensor_u_4,
-      Tunnel_Verkeersbuis2_Lichtsensor_u_5,
-      Tunnel_Verkeersbuis2_Lichtsensor_u_6,
-      Tunnel_Verkeersbuis2_Lichtsensor_u_7,
-      Tunnel_Verkeersbuis2_Lichtsensor_u_8,
+      Tunnel.Traffictube2.Lightsensor.u_0,
+      Tunnel.Traffictube2.Lightsensor.u_1,
+      Tunnel.Traffictube2.Lightsensor.u_2,
+      Tunnel.Traffictube2.Lightsensor.u_3,
+      Tunnel.Traffictube2.Lightsensor.u_4,
+      Tunnel.Traffictube2.Lightsensor.u_5,
+      Tunnel.Traffictube2.Lightsensor.u_6,
+      Tunnel.Traffictube2.Lightsensor.u_7,
+      Tunnel.Traffictube2.Lightsensor.u_8,
       "buis_2",
-      Tunnel_Verkeersbuis2_Lichtsensor.stand);
+      Tunnel.Traffictube2.Lightsensor.setting);
 
     verlichting_1: Sim_Verlichting(
       "buis_2",
-      Tunnel_Verkeersbuis2_Verlichting.stand);
+      Tunnel.Traffictube2.Lighting.setting);
 
     vluchtdeur_1: Sim_Vluchtdeur(
-      Tunnel_Verkeersbuis2_Vluchtdeur_SensorOpen_u_aan,
-      Tunnel_Verkeersbuis2_Vluchtdeur_SensorOpen_u_uit,
-      Tunnel_Verkeersbuis2_Vluchtdeur_ContourVerlichting.aan,
-      Tunnel_Verkeersbuis2_Vluchtdeur_Geluidsbaken.aan,
-      Tunnel_Verkeersbuis2_Vluchtdeur_Geluidsbaken.onderdrukt,
-      Tunnel_Verkeersbuis2_Vluchtdeur_SensorOpen.aan,
+      Tunnel.Traffictube2.EscapeDoor.RouteIndication.on,
+      Tunnel.Traffictube2.EscapeDoor.Broadcast.on,
+      Tunnel.Traffictube2.EscapeDoor.Broadcast.suppressed,
       "buis_2");
 
     matrixbord_mv_1: Sim_Matrixbord(
-      Tunnel_Verkeersbuis2_MatrixbordVerkeerslicht.aan,
+      Tunnel.Traffictube2.MatrixsignTrafficlight.on,
       "buis_2_rijstrook_1_matrixbord_mv_tekst");
     matrixbord_mv_2: Sim_Matrixbord(
-      Tunnel_Verkeersbuis2_MatrixbordVerkeerslicht.aan,
+      Tunnel.Traffictube2.MatrixsignTrafficlight.on,
       "buis_2_rijstrook_2_matrixbord_mv_tekst");
     matrixbord_mv_3: Sim_Matrixbord(
-      Tunnel_Verkeersbuis2_MatrixbordVerkeerslicht.aan,
+      Tunnel.Traffictube2.MatrixsignTrafficlight.on,
       "buis_2_rijstrook_3_matrixbord_mv_tekst");
     matrixbord_zv_1: Sim_Matrixbord(
-      Tunnel_Verkeersbuis2_MatrixbordLos.aan,
+      Tunnel.Traffictube2.MatrixsignUnpressed.on,
       "buis_2_rijstrook_1_matrixbord_zv_tekst");
     matrixbord_zv_2: Sim_Matrixbord(
-      Tunnel_Verkeersbuis2_MatrixbordLos.aan,
+      Tunnel.Traffictube2.MatrixsignUnpressed.on,
       "buis_2_rijstrook_2_matrixbord_zv_tekst");
     matrixbord_zv_3: Sim_Matrixbord(
-      Tunnel_Verkeersbuis2_MatrixbordLos.aan,
+      Tunnel.Traffictube2.MatrixsignUnpressed.on,
       "buis_2_rijstrook_3_matrixbord_zv_tekst");
 
     j32_1: Sim_J32(
-      Tunnel_Verkeersbuis2_J32_Stand.aan,
-      Tunnel_Verkeersbuis2_J32_TimerVrijgavesignaal_c_aan,
-      Tunnel_Verkeersbuis2_J32_TimerVrijgavesignaal_c_reset,
-      Tunnel_Verkeersbuis2_J32_TimerVrijgavesignaal_u_timeout,
+      Tunnel.Traffictube2.J32.Mode.on,
+      Tunnel.Traffictube2.J32.TimerReleaseSignal.c_on,
+      Tunnel.Traffictube2.J32.TimerReleaseSignal.c_reset,
+      Tunnel.Traffictube2.J32.TimerReleaseSignal.u_timeout,
       "buis_2_rijstrook_1_2_j32_licht");
     j32_2: Sim_J32(
-      Tunnel_Verkeersbuis2_J32_Stand.aan,
-      Tunnel_Verkeersbuis2_J32_TimerVrijgavesignaal_c_aan,
-      Tunnel_Verkeersbuis2_J32_TimerVrijgavesignaal_c_reset,
-      Tunnel_Verkeersbuis2_J32_TimerVrijgavesignaal_u_timeout,
+      Tunnel.Traffictube2.J32.Mode.on,
+      Tunnel.Traffictube2.J32.TimerReleaseSignal.c_on,
+      Tunnel.Traffictube2.J32.TimerReleaseSignal.c_reset,
+      Tunnel.Traffictube2.J32.TimerReleaseSignal.u_timeout,
       "buis_2_rijstrook_2_3_j32_licht");
 
     verkeerslicht_1: Hybride_verkeerslicht(
-      Tunnel_Verkeersbuis2_Verkeerslicht1_Stand.knipper,
-      Tunnel_Verkeersbuis2_Verkeerslicht1_Stand.rood,
-      Tunnel_Verkeersbuis2_Verkeerslicht1_Stand.geel,
-      Tunnel_Verkeersbuis2_Verkeerslicht1_Stand_c_uit,
-      Tunnel_Verkeersbuis2_Verkeerslicht1_Stand_c_geel,
-      Tunnel_Verkeersbuis2_Verkeerslicht1_Stand_c_knipper,
-      Tunnel_Verkeersbuis2_Verkeerslicht1_Stand_c_rood,
-      Tunnel_Verkeersbuis2_Verkeerslicht1_TimerVrijgavesignaal_c_aan,
-      Tunnel_Verkeersbuis2_Verkeerslicht1_TimerVrijgavesignaal_c_reset,
-      Tunnel_Verkeersbuis2_Verkeerslicht1_TimerVrijgavesignaal_u_timeout,
+      Tunnel.Traffictube2.Trafficlight1.Mode.flash,
+      Tunnel.Traffictube2.Trafficlight1.Mode.red,
+      Tunnel.Traffictube2.Trafficlight1.Mode.yellow,
+      Tunnel.Traffictube2.Trafficlight1.Mode.c_off,
+      Tunnel.Traffictube2.Trafficlight1.Mode.c_yellow,
+      Tunnel.Traffictube2.Trafficlight1.Mode.c_flash,
+      Tunnel.Traffictube2.Trafficlight1.Mode.c_red,
+      Tunnel.Traffictube2.Trafficlight1.TimerReleaseSignal.c_on,
+      Tunnel.Traffictube2.Trafficlight1.TimerReleaseSignal.c_reset,
+      Tunnel.Traffictube2.Trafficlight1.TimerReleaseSignal.u_timeout,
       "buis_2_rijstrook_1_");
     verkeerslicht_2: Hybride_verkeerslicht(
-      Tunnel_Verkeersbuis2_Verkeerslicht2_Stand.knipper,
-      Tunnel_Verkeersbuis2_Verkeerslicht2_Stand.rood,
-      Tunnel_Verkeersbuis2_Verkeerslicht2_Stand.geel,
-      Tunnel_Verkeersbuis2_Verkeerslicht2_Stand_c_uit,
-      Tunnel_Verkeersbuis2_Verkeerslicht2_Stand_c_geel,
-      Tunnel_Verkeersbuis2_Verkeerslicht2_Stand_c_knipper,
-      Tunnel_Verkeersbuis2_Verkeerslicht2_Stand_c_rood,
-      Tunnel_Verkeersbuis2_Verkeerslicht2_TimerVrijgavesignaal_c_aan,
-      Tunnel_Verkeersbuis2_Verkeerslicht2_TimerVrijgavesignaal_c_reset,
-      Tunnel_Verkeersbuis2_Verkeerslicht2_TimerVrijgavesignaal_u_timeout,
+      Tunnel.Traffictube2.Trafficlight2.Mode.flash,
+      Tunnel.Traffictube2.Trafficlight2.Mode.red,
+      Tunnel.Traffictube2.Trafficlight2.Mode.yellow,
+      Tunnel.Traffictube2.Trafficlight2.Mode.c_off,
+      Tunnel.Traffictube2.Trafficlight2.Mode.c_yellow,
+      Tunnel.Traffictube2.Trafficlight2.Mode.c_flash,
+      Tunnel.Traffictube2.Trafficlight2.Mode.c_red,
+      Tunnel.Traffictube2.Trafficlight2.TimerReleaseSignal.c_on,
+      Tunnel.Traffictube2.Trafficlight2.TimerReleaseSignal.c_reset,
+      Tunnel.Traffictube2.Trafficlight2.TimerReleaseSignal.u_timeout,
       "buis_2_rijstrook_2_");
     verkeerslicht_3: Hybride_verkeerslicht(
-      Tunnel_Verkeersbuis2_Verkeerslicht3_Stand.knipper,
-      Tunnel_Verkeersbuis2_Verkeerslicht3_Stand.rood,
-      Tunnel_Verkeersbuis2_Verkeerslicht3_Stand.geel,
-      Tunnel_Verkeersbuis2_Verkeerslicht3_Stand_c_uit,
-      Tunnel_Verkeersbuis2_Verkeerslicht3_Stand_c_geel,
-      Tunnel_Verkeersbuis2_Verkeerslicht3_Stand_c_knipper,
-      Tunnel_Verkeersbuis2_Verkeerslicht3_Stand_c_rood,
-      Tunnel_Verkeersbuis2_Verkeerslicht3_TimerVrijgavesignaal_c_aan,
-      Tunnel_Verkeersbuis2_Verkeerslicht3_TimerVrijgavesignaal_c_reset,
-      Tunnel_Verkeersbuis2_Verkeerslicht3_TimerVrijgavesignaal_u_timeout,
+      Tunnel.Traffictube2.Trafficlight3.Mode.flash,
+      Tunnel.Traffictube2.Trafficlight3.Mode.red,
+      Tunnel.Traffictube2.Trafficlight3.Mode.yellow,
+      Tunnel.Traffictube2.Trafficlight3.Mode.c_off,
+      Tunnel.Traffictube2.Trafficlight3.Mode.c_yellow,
+      Tunnel.Traffictube2.Trafficlight3.Mode.c_flash,
+      Tunnel.Traffictube2.Trafficlight3.Mode.c_red,
+      Tunnel.Traffictube2.Trafficlight3.TimerReleaseSignal.c_on,
+      Tunnel.Traffictube2.Trafficlight3.TimerReleaseSignal.c_reset,
+      Tunnel.Traffictube2.Trafficlight3.TimerReleaseSignal.u_timeout,
       "buis_2_rijstrook_3_");
 
     slagboom_rijbanen:     hybride_slagboom(
-      Tunnel_Verkeersbuis2_Afsluitboom1_ActuatorOp.aan,
-      Tunnel_Verkeersbuis2_Afsluitboom1_ActuatorNeer.aan,
-      Tunnel_Verkeersbuis2_Afsluitboom1_SensorOpen_u_aan,
-      Tunnel_Verkeersbuis2_Afsluitboom1_SensorOpen_u_uit,
-      Tunnel_Verkeersbuis2_Afsluitboom1_SensorDicht_u_aan,
-      Tunnel_Verkeersbuis2_Afsluitboom1_SensorDicht_u_uit);
+      Tunnel.Traffictube2.Boombarrier1.ActuatorUp.on,
+      Tunnel.Traffictube2.Boombarrier1.ActuatorDown.on,
+      Tunnel.Traffictube2.Boombarrier1.SensorOpen.u_on,
+      Tunnel.Traffictube2.Boombarrier1.SensorOpen.u_off,
+      Tunnel.Traffictube2.Boombarrier1.SensorClosed.u_on,
+      Tunnel.Traffictube2.Boombarrier1.SensorClosed.u_off);
     slagboom_vluchtstrook: hybride_slagboom(
-      Tunnel_Verkeersbuis2_Afsluitboom2_ActuatorOp.aan,
-      Tunnel_Verkeersbuis2_Afsluitboom2_ActuatorNeer.aan,
-      Tunnel_Verkeersbuis2_Afsluitboom2_SensorOpen_u_aan,
-      Tunnel_Verkeersbuis2_Afsluitboom2_SensorOpen_u_uit,
-      Tunnel_Verkeersbuis2_Afsluitboom2_SensorDicht_u_aan,
-      Tunnel_Verkeersbuis2_Afsluitboom2_SensorDicht_u_uit);
+      Tunnel.Traffictube2.Boombarrier2.ActuatorUp.on,
+      Tunnel.Traffictube2.Boombarrier2.ActuatorDown.on,
+      Tunnel.Traffictube2.Boombarrier2.SensorOpen.u_on,
+      Tunnel.Traffictube2.Boombarrier2.SensorOpen.u_off,
+      Tunnel.Traffictube2.Boombarrier2.SensorClosed.u_on,
+      Tunnel.Traffictube2.Boombarrier2.SensorClosed.u_off);
 
     slagboom_rijbanen_visu: driebaans_slagboomVisu(
       slagboom_rijbanen,
@@ -540,80 +534,80 @@ group sim_model:
       "buis_2_");
 
     obstakel_rijbanen: Sim_Obstakel(
-      Tunnel_Verkeersbuis2_Afsluitboom1_ObstakelDetectie_u_aan,
-      Tunnel_Verkeersbuis2_Afsluitboom1_ObstakelDetectie_u_uit,
-      Tunnel_Verkeersbuis2_Afsluitboom1_ObstakelDetectie.aan,
+      Tunnel.Traffictube2.Boombarrier1.ObstacleDetection.u_on,
+      Tunnel.Traffictube2.Boombarrier1.ObstacleDetection.u_off,
+      Tunnel.Traffictube2.Boombarrier1.ObstacleDetection.on,
       "buis_2_rijstrook");
     obstakel_vluchtstrook: Sim_Obstakel(
-      Tunnel_Verkeersbuis2_Afsluitboom2_ObstakelDetectie_u_aan,
-      Tunnel_Verkeersbuis2_Afsluitboom2_ObstakelDetectie_u_uit,
-      Tunnel_Verkeersbuis2_Afsluitboom2_ObstakelDetectie.aan,
+      Tunnel.Traffictube2.Boombarrier2.ObstacleDetection.u_on,
+      Tunnel.Traffictube2.Boombarrier2.ObstacleDetection.u_off,
+      Tunnel.Traffictube2.Boombarrier2.ObstacleDetection.on,
       "buis_2_vluchtstrook");
 
     hulppostkast_a_1: Sim_Hulppostkast_A(
-      Tunnel_Verkeersbuis2_HulppostkastA_SensorOpen_u_aan,
-      Tunnel_Verkeersbuis2_HulppostkastA_SensorOpen_u_uit,
-      Tunnel_Verkeersbuis2_HulppostkastA_Noodtelefoon_u_aan,
-      Tunnel_Verkeersbuis2_HulppostkastA_Noodtelefoon_u_uit,
-      Tunnel_Verkeersbuis2_HulppostkastA_Handblusser_u_aan,
-      Tunnel_Verkeersbuis2_HulppostkastA_Handblusser_u_uit,
-      Tunnel_Verkeersbuis2_HulppostkastA_Brandslang_u_aan,
-      Tunnel_Verkeersbuis2_HulppostkastA_Brandslang_u_uit,
+      Tunnel.Traffictube2.EmergencyCabinetA.SensorOpen.u_on,
+      Tunnel.Traffictube2.EmergencyCabinetA.SensorOpen.u_off,
+      Tunnel.Traffictube2.EmergencyCabinetA.Phone.u_on,
+      Tunnel.Traffictube2.EmergencyCabinetA.Phone.u_off,
+      Tunnel.Traffictube2.EmergencyCabinetA.HandheldExtinguisher.u_on,
+      Tunnel.Traffictube2.EmergencyCabinetA.HandheldExtinguisher.u_off,
+      Tunnel.Traffictube2.EmergencyCabinetA.Firehose.u_on,
+      Tunnel.Traffictube2.EmergencyCabinetA.Firehose.u_off,
 //       e_dummy,
-      Tunnel_Verkeersbuis2_HulppostkastA_SensorOpen.aan,
-      Tunnel_Verkeersbuis2_HulppostkastA_Noodtelefoon.aan,
-      Tunnel_Verkeersbuis2_HulppostkastA_Handblusser.aan,
-      Tunnel_Verkeersbuis2_HulppostkastA_Brandslang.aan,
-      Tunnel_Verkeersbuis2_HulppostkastA_SensorOpenEnabled.aan,
-      Tunnel_Verkeersbuis2_HulppostkastA_SensorNoodtelefoonEnabled.aan,
-      Tunnel_Verkeersbuis2_HulppostkastA_SensorHandblusserEnabled.aan,
-      Tunnel_Verkeersbuis2_HulppostkastA_SensorBrandslangEnabled.aan,
+      Tunnel.Traffictube2.EmergencyCabinetA.SensorOpen.on,
+      Tunnel.Traffictube2.EmergencyCabinetA.Phone.on,
+      Tunnel.Traffictube2.EmergencyCabinetA.HandheldExtinguisher.on,
+      Tunnel.Traffictube2.EmergencyCabinetA.Firehose.on,
+      true,
+      true,
+      true,
+      true,
       "buis_2_a_1_",
       "buis_2");
 
     hulppostkast_c_1: Sim_Hulppostkast_C(
-      Tunnel_Verkeersbuis2_HulppostkastC_SensorOpen_u_aan,
-      Tunnel_Verkeersbuis2_HulppostkastC_SensorOpen_u_uit,
-      Tunnel_Verkeersbuis2_HulppostkastC_Noodtelefoon_u_aan,
-      Tunnel_Verkeersbuis2_HulppostkastC_Noodtelefoon_u_uit,
-      Tunnel_Verkeersbuis2_HulppostkastC_Handblusser_u_aan,
-      Tunnel_Verkeersbuis2_HulppostkastC_Handblusser_u_uit,
+      Tunnel.Traffictube2.EmergencyCabinetC.SensorOpen.u_on,
+      Tunnel.Traffictube2.EmergencyCabinetC.SensorOpen.u_off,
+      Tunnel.Traffictube2.EmergencyCabinetC.Phone.u_on,
+      Tunnel.Traffictube2.EmergencyCabinetC.Phone.u_off,
+      Tunnel.Traffictube2.EmergencyCabinetC.HandheldExtinguisher.u_on,
+      Tunnel.Traffictube2.EmergencyCabinetC.HandheldExtinguisher.u_off,
 //       e_dummy,
-      Tunnel_Verkeersbuis2_HulppostkastC_SensorOpen.aan,
-      Tunnel_Verkeersbuis2_HulppostkastC_Noodtelefoon.aan,
-      Tunnel_Verkeersbuis2_HulppostkastC_Handblusser.aan,
-      Tunnel_Verkeersbuis2_HulppostkastC_SensorOpenEnabled.aan,
-      Tunnel_Verkeersbuis2_HulppostkastC_SensorNoodtelefoonEnabled.aan,
-      Tunnel_Verkeersbuis2_HulppostkastC_SensorHandblusserEnabled.aan,
+      Tunnel.Traffictube2.EmergencyCabinetC.SensorOpen.on,
+      Tunnel.Traffictube2.EmergencyCabinetC.Phone.on,
+      Tunnel.Traffictube2.EmergencyCabinetC.HandheldExtinguisher.on,
+      true,
+      true,
+      true,
       "buis_2_c_1_",
       "buis_2");
 
     luidspreker: Sim_Luidspreker_Verkeersbuis(
       "buis_2_",
-      Tunnel_Verkeersbuis2_Luidspreker.boodschap and not Tunnel_Verkeersbuis2_OmroepKnoppen.uit,
-      Tunnel_Verkeersbuis2_OmroepKnoppen.uit,
-      Tunnel_Verkeersbuis2_Luidspreker.live and not Tunnel_Verkeersbuis2_OmroepKnoppen.uit);
+      Tunnel.Traffictube2.Broadcast.message and not Tunnel.BroadcastButtons2.off,
+      Tunnel.BroadcastButtons2.off,
+      Tunnel.Traffictube2.Broadcast.live and not Tunnel.BroadcastButtons2.off);
   end
 
   group sim_middentunnelkanaal:
     licht: Sim_Licht_MTK(
       "middentunnelkanaal_",
-      Tunnel_MiddenTunnelKanaal_Verlichting.aan);
+      Tunnel.MiddleTunnelChannel.Lighting.on);
     geluid: Sim_Luidspreker_MTK(
       "middentunnelkanaal_",
-      Tunnel_MiddenTunnelKanaal_Luidspreker.aan);
+      Tunnel.MiddleTunnelChannel.Broadcast.on);
     dynamische_vluchtroute_R1: Sim_Dynamische_Vluchtroute(
       "_R1",
-      Tunnel_MiddenTunnelKanaal_DynamischeVluchtrouteIndicatie.oplopend);
+      Tunnel.MiddleTunnelChannel.DynamicEscaperouteIndication.upward);
     dynamische_vluchtroute_L1: Sim_Dynamische_Vluchtroute(
       "_L1",
-      Tunnel_MiddenTunnelKanaal_DynamischeVluchtrouteIndicatie.aflopend);
+      Tunnel.MiddleTunnelChannel.DynamicEscaperouteIndication.downward);
     overdruk_1_buis_1: Sim_Overdruk(
       "buis_1_overdruk_1",
-      Tunnel_MiddenTunnelKanaal_Overdruk.links);
+      Tunnel.MiddleTunnelChannel.Pressure.left);
     overdruk_1_buis_2: Sim_Overdruk(
       "buis_2_overdruk_1",
-      Tunnel_MiddenTunnelKanaal_Overdruk.rechts);
+      Tunnel.MiddleTunnelChannel.Pressure.right);
   end
 
   group sim_pompkelders:
@@ -627,91 +621,91 @@ group sim_model:
     instroom_HPK1: Sim_Instroom_hoofdpompkelder(
       regen.regen_niveau.level,
       regen.regenen,
-      Tunnel_MiddenPompkelder_Pomp1.aan,
-      Tunnel_MiddenPompkelder_Pomp2.aan,
-      Tunnel_MiddenPompkelder_PompRichting.hoofdPompkelder1);
+      Tunnel.MiddleDrainCellar.Pump1.on,
+      Tunnel.MiddleDrainCellar.Pump2.on,
+      Tunnel.MiddleDrainCellar.PumpDirection.headDrainCellar1);
     instroom_HPK2: Sim_Instroom_hoofdpompkelder(
       regen.regen_niveau.level,
       regen.regenen,
-      Tunnel_MiddenPompkelder_Pomp1.aan,
-      Tunnel_MiddenPompkelder_Pomp2.aan,
-      Tunnel_MiddenPompkelder_PompRichting.hoofdPompkelder2);
+      Tunnel.MiddleDrainCellar.Pump1.on,
+      Tunnel.MiddleDrainCellar.Pump2.on,
+      Tunnel.MiddleDrainCellar.PumpDirection.headDrainCellar2);
 
     middenpompkelder:  Sim_Pompkelder_dubbel(
-      Tunnel_MiddenPompkelder_Pomp1.aan,
-      Tunnel_MiddenPompkelder_Pomp2.aan,
-      Tunnel_MiddenPompkelder_PompRichting.hoofdPompkelder1,
+      Tunnel.MiddleDrainCellar.Pump1.on,
+      Tunnel.MiddleDrainCellar.Pump2.on,
+      Tunnel.MiddleDrainCellar.PumpDirection.headDrainCellar1,
       instroom_MPK.wel_instroom,
       regen.regenen,
       instroom_MPK.volume,
       instroom_MPK.volume_regen,
-      Tunnel_MiddenPompkelder_SensorLaagwater_u_aan,
-      Tunnel_MiddenPompkelder_SensorLaagwater_u_uit,
-      Tunnel_MiddenPompkelder_SensorStartwater_u_aan,
-      Tunnel_MiddenPompkelder_SensorStartwater_u_uit,
-      Tunnel_MiddenPompkelder_SensorMaxstartwater_u_aan,
-      Tunnel_MiddenPompkelder_SensorMaxstartwater_u_uit,
-      Tunnel_MiddenPompkelder_SensorLaaghoogwater_u_aan,
-      Tunnel_MiddenPompkelder_SensorLaaghoogwater_u_uit,
-      Tunnel_MiddenPompkelder_SensorHooghoogwater_u_aan,
-      Tunnel_MiddenPompkelder_SensorHooghoogwater_u_uit,
+      Tunnel.MiddleDrainCellar.Sensor1.u_on,
+      Tunnel.MiddleDrainCellar.Sensor1.u_off,
+      Tunnel.MiddleDrainCellar.Sensor2.u_on,
+      Tunnel.MiddleDrainCellar.Sensor2.u_off,
+      Tunnel.MiddleDrainCellar.Sensor3.u_on,
+      Tunnel.MiddleDrainCellar.Sensor3.u_off,
+      Tunnel.MiddleDrainCellar.Sensor4.u_on,
+      Tunnel.MiddleDrainCellar.Sensor4.u_off,
+      Tunnel.MiddleDrainCellar.Sensor5.u_on,
+      Tunnel.MiddleDrainCellar.Sensor5.u_off,
       "MPK_",
       "MPKnaarHPK1_",
       "MPKnaarHPK2_");
     hoofdpompkelder_1: Sim_Pompkelder_enkel(
-      Tunnel_HoofdPompkelder1_Pomp1.aan,
-      Tunnel_HoofdPompkelder1_Pomp2.aan,
+      Tunnel.HeadDrainCellar1.Pump1.on,
+      Tunnel.HeadDrainCellar1.Pump2.on,
       instroom_HPK1.wel_instroom,
       regen.regenen,
       instroom_HPK1.volume,
       instroom_HPK1.volume_regen,
-      Tunnel_HoofdPompkelder1_SensorLaagwater_u_aan,
-      Tunnel_HoofdPompkelder1_SensorLaagwater_u_uit,
-      Tunnel_HoofdPompkelder1_SensorStartwater_u_aan,
-      Tunnel_HoofdPompkelder1_SensorStartwater_u_uit,
-      Tunnel_HoofdPompkelder1_SensorMaxstartwater_u_aan,
-      Tunnel_HoofdPompkelder1_SensorMaxstartwater_u_uit,
-      Tunnel_HoofdPompkelder1_SensorLaaghoogwater_u_aan,
-      Tunnel_HoofdPompkelder1_SensorLaaghoogwater_u_uit,
-      Tunnel_HoofdPompkelder1_SensorHooghoogwater_u_aan,
-      Tunnel_HoofdPompkelder1_SensorHooghoogwater_u_uit,
+      Tunnel.HeadDrainCellar1.Sensor1.u_on,
+      Tunnel.HeadDrainCellar1.Sensor1.u_off,
+      Tunnel.HeadDrainCellar1.Sensor2.u_on,
+      Tunnel.HeadDrainCellar1.Sensor2.u_off,
+      Tunnel.HeadDrainCellar1.Sensor3.u_on,
+      Tunnel.HeadDrainCellar1.Sensor3.u_off,
+      Tunnel.HeadDrainCellar1.Sensor4.u_on,
+      Tunnel.HeadDrainCellar1.Sensor4.u_off,
+      Tunnel.HeadDrainCellar1.Sensor5.u_on,
+      Tunnel.HeadDrainCellar1.Sensor5.u_off,
       "HPK1_",
       "HPK1naarOudeMaas_");
     hoofdpompkelder_2: Sim_Pompkelder_enkel(
-      Tunnel_HoofdPompkelder2_Pomp1.aan,
-      Tunnel_HoofdPompkelder2_Pomp2.aan,
+      Tunnel.HeadDrainCellar2.Pump1.on,
+      Tunnel.HeadDrainCellar2.Pump2.on,
       instroom_HPK2.wel_instroom,
       regen.regenen,
       instroom_HPK2.volume,
       instroom_HPK2.volume_regen,
-      Tunnel_HoofdPompkelder2_SensorLaagwater_u_aan,
-      Tunnel_HoofdPompkelder2_SensorLaagwater_u_uit,
-      Tunnel_HoofdPompkelder2_SensorStartwater_u_aan,
-      Tunnel_HoofdPompkelder2_SensorStartwater_u_uit,
-      Tunnel_HoofdPompkelder2_SensorMaxstartwater_u_aan,
-      Tunnel_HoofdPompkelder2_SensorMaxstartwater_u_uit,
-      Tunnel_HoofdPompkelder2_SensorLaaghoogwater_u_aan,
-      Tunnel_HoofdPompkelder2_SensorLaaghoogwater_u_uit,
-      Tunnel_HoofdPompkelder2_SensorHooghoogwater_u_aan,
-      Tunnel_HoofdPompkelder2_SensorHooghoogwater_u_uit,
+      Tunnel.HeadDrainCellar2.Sensor1.u_on,
+      Tunnel.HeadDrainCellar2.Sensor1.u_off,
+      Tunnel.HeadDrainCellar2.Sensor2.u_on,
+      Tunnel.HeadDrainCellar2.Sensor2.u_off,
+      Tunnel.HeadDrainCellar2.Sensor3.u_on,
+      Tunnel.HeadDrainCellar2.Sensor3.u_off,
+      Tunnel.HeadDrainCellar2.Sensor4.u_on,
+      Tunnel.HeadDrainCellar2.Sensor4.u_off,
+      Tunnel.HeadDrainCellar2.Sensor5.u_on,
+      Tunnel.HeadDrainCellar2.Sensor5.u_off,
       "HPK2_",
       "HPK2naarOudeMaas_");
   end
 
   group sim_brandblusinstallatie:
     uitstroom: Sim_Uitstroom(
-      Tunnel_BrandBlusInstallatie_Regime.blussen,
-      Tunnel_Verkeersbuis1_HulppostkastA_Brandslang.aan,
-      Tunnel_Verkeersbuis2_HulppostkastA_Brandslang.aan);
+      Tunnel.WatercellarFirehoses.Regime.extinguish,
+      Tunnel.Traffictube1.EmergencyCabinetA.Firehose.on,
+      Tunnel.Traffictube2.EmergencyCabinetA.Firehose.on);
 
     brandblusintallatie: Sim_Bluswatertank(
-      Tunnel_BrandBlusInstallatie_Pomp.aan,
+      Tunnel.WatercellarFirehoses.Pump.on,
       uitstroom.uitstroom,
       uitstroom.volume_uitstroom,
-      Tunnel_BrandBlusInstallatie_SensorLaag_u_aan,
-      Tunnel_BrandBlusInstallatie_SensorLaag_u_uit,
-      Tunnel_BrandBlusInstallatie_SensorHoog_u_aan,
-      Tunnel_BrandBlusInstallatie_SensorHoog_u_uit,
+      Tunnel.WatercellarFirehoses.SensorLow.u_on,
+      Tunnel.WatercellarFirehoses.SensorLow.u_off,
+      Tunnel.WatercellarFirehoses.SensorHigh.u_on,
+      Tunnel.WatercellarFirehoses.SensorHigh.u_off,
       "brandblusinstallatie_1_");
   end
 

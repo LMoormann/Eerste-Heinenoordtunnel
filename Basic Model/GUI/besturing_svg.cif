@@ -18,12 +18,12 @@ automaton def DropDownMenu():
     edge e_SluitTabs  goto dicht;
 end
 
-event e_dummy;
-automaton dummy:
-  location:
-    initial;
-    edge e_dummy;
-end
+// event e_dummy;
+// automaton dummy:
+//   location:
+//     initial;
+//     edge e_dummy;
+// end
 
 rb_DropDownMenuStates: DropDownMenu();
 lb_drop_down_menu_buis_states: DropDownMenu();
@@ -186,17 +186,17 @@ rb_overzicht_systemen_en_detecties_omroep: DropDownMenu();
 rb_overzicht_systemen_en_detecties_VRI_en_afsluitboom: DropDownMenu();
 
 rb_overzicht_systemen_en_detecties_SOS: DropDownMenu();
-rb_overzicht_systemen_en_detecties_SOS_enable_drop_down: DropDownMenu();
-rb_overzicht_systemen_en_detecties_SOS_onderdruk_drop_down: DropDownMenu();
+// rb_overzicht_systemen_en_detecties_SOS_enable_drop_down: DropDownMenu();
+// rb_overzicht_systemen_en_detecties_SOS_onderdruk_drop_down: DropDownMenu();
 
 rb_overzicht_systemen_en_detecties_hulppost: DropDownMenu();
-rb_overzicht_systemen_en_detecties_hulppostA_drop_down_deur: DropDownMenu();
-rb_overzicht_systemen_en_detecties_hulppostA_drop_down_handblusser: DropDownMenu();
-rb_overzicht_systemen_en_detecties_hulppostA_drop_down_brandslang: DropDownMenu();
-rb_overzicht_systemen_en_detecties_hulppostA_drop_down_noodtelefoon: DropDownMenu();
-rb_overzicht_systemen_en_detecties_hulppostC_drop_down_deur: DropDownMenu();
-rb_overzicht_systemen_en_detecties_hulppostC_drop_down_handblusser: DropDownMenu();
-rb_overzicht_systemen_en_detecties_hulppostC_drop_down_noodtelefoon: DropDownMenu();
+// rb_overzicht_systemen_en_detecties_hulppostA_drop_down_deur: DropDownMenu();
+// rb_overzicht_systemen_en_detecties_hulppostA_drop_down_handblusser: DropDownMenu();
+// rb_overzicht_systemen_en_detecties_hulppostA_drop_down_brandslang: DropDownMenu();
+// rb_overzicht_systemen_en_detecties_hulppostA_drop_down_noodtelefoon: DropDownMenu();
+// rb_overzicht_systemen_en_detecties_hulppostC_drop_down_deur: DropDownMenu();
+// rb_overzicht_systemen_en_detecties_hulppostC_drop_down_handblusser: DropDownMenu();
+// rb_overzicht_systemen_en_detecties_hulppostC_drop_down_noodtelefoon: DropDownMenu();
 
 rb_overzicht_systemen_en_detecties_deur: DropDownMenu();
 
@@ -240,17 +240,17 @@ lb_overzicht_systemen_en_detecties_omroep: DropDownMenu();
 lb_overzicht_systemen_en_detecties_VRI_en_afsluitboom: DropDownMenu();
 
 lb_overzicht_systemen_en_detecties_SOS: DropDownMenu();
-lb_overzicht_systemen_en_detecties_SOS_enable_drop_down: DropDownMenu();
-lb_overzicht_systemen_en_detecties_SOS_onderdruk_drop_down: DropDownMenu();
+// lb_overzicht_systemen_en_detecties_SOS_enable_drop_down: DropDownMenu();
+// lb_overzicht_systemen_en_detecties_SOS_onderdruk_drop_down: DropDownMenu();
 
 lb_overzicht_systemen_en_detecties_hulppost: DropDownMenu();
-lb_overzicht_systemen_en_detecties_hulppostA_drop_down_deur: DropDownMenu();
-lb_overzicht_systemen_en_detecties_hulppostA_drop_down_handblusser: DropDownMenu();
-lb_overzicht_systemen_en_detecties_hulppostA_drop_down_brandslang: DropDownMenu();
-lb_overzicht_systemen_en_detecties_hulppostA_drop_down_noodtelefoon: DropDownMenu();
-lb_overzicht_systemen_en_detecties_hulppostC_drop_down_deur: DropDownMenu();
-lb_overzicht_systemen_en_detecties_hulppostC_drop_down_handblusser: DropDownMenu();
-lb_overzicht_systemen_en_detecties_hulppostC_drop_down_noodtelefoon: DropDownMenu();
+// lb_overzicht_systemen_en_detecties_hulppostA_drop_down_deur: DropDownMenu();
+// lb_overzicht_systemen_en_detecties_hulppostA_drop_down_handblusser: DropDownMenu();
+// lb_overzicht_systemen_en_detecties_hulppostA_drop_down_brandslang: DropDownMenu();
+// lb_overzicht_systemen_en_detecties_hulppostA_drop_down_noodtelefoon: DropDownMenu();
+// lb_overzicht_systemen_en_detecties_hulppostC_drop_down_deur: DropDownMenu();
+// lb_overzicht_systemen_en_detecties_hulppostC_drop_down_handblusser: DropDownMenu();
+// lb_overzicht_systemen_en_detecties_hulppostC_drop_down_noodtelefoon: DropDownMenu();
 
 lb_overzicht_systemen_en_detecties_deur: DropDownMenu();
 
@@ -261,27 +261,27 @@ lb_overzicht_systemen_en_detecties_haspel: DropDownMenu();
 lb_overzicht_systemen_en_detecties_noodtelefoon: DropDownMenu();
 
 // Meldingen
-openen_en_sluiten_bevestigde_meldingen: DropDownMenu();
+// openen_en_sluiten_bevestigde_meldingen: DropDownMenu();
 
 // Onderdrukkingen
-event e_reset_onderdrukkingen;
-plant def Onderdrukking():
-  event e_onderdrukken;
-  location nietOnderdrukt:
-    initial;
-    edge e_onderdrukken goto onderdrukt;
-    edge e_reset_onderdrukkingen;
-  location onderdrukt:
-    edge e_reset_onderdrukkingen goto nietOnderdrukt;
-end
+// event e_reset_onderdrukkingen;
+// plant def Onderdrukking():
+//   event e_onderdrukken;
+//   location nietOnderdrukt:
+//     initial;
+//     edge e_onderdrukken goto onderdrukt;
+//     edge e_reset_onderdrukkingen;
+//   location onderdrukt:
+//     edge e_reset_onderdrukkingen goto nietOnderdrukt;
+// end
 
-OnderdrukkingVerkeersbuis1SOS: Onderdrukking();
-OnderdrukkingVerkeersbuis1HulppostkastA: Onderdrukking();
-OnderdrukkingVerkeersbuis1HulppostkastC: Onderdrukking();
-OnderdrukkingVerkeersbuis2SOS: Onderdrukking();
-OnderdrukkingVerkeersbuis2HulppostkastA: Onderdrukking();
-OnderdrukkingVerkeersbuis2HulppostkastC: Onderdrukking();
-OnderdrukkingNoodbediening: Onderdrukking();
+// OnderdrukkingVerkeersbuis1SOS: Onderdrukking();
+// OnderdrukkingVerkeersbuis1HulppostkastA: Onderdrukking();
+// OnderdrukkingVerkeersbuis1HulppostkastC: Onderdrukking();
+// OnderdrukkingVerkeersbuis2SOS: Onderdrukking();
+// OnderdrukkingVerkeersbuis2HulppostkastA: Onderdrukking();
+// OnderdrukkingVerkeersbuis2HulppostkastC: Onderdrukking();
+// OnderdrukkingNoodbediening: Onderdrukking();
 
 automaton  geselecteerde_tab_tab_systemen_en_detecties:
   location geen_tab_geselecteerd:

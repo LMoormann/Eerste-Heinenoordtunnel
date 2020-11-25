@@ -1,9 +1,12 @@
-import "definitions/Traffictube.cif", "definitions/MiddleTunnelChannel.cif", "definitions/HeadDrainCellar.cif", "definitions/MiddleDrainCellar.cif", "definitions/WatercellarFirehoses.cif", "definitions/Control.cif";
+import "definitions/Traffictube.cif", "definitions/MiddleTunnelChannel.cif", "definitions/HeadDrainCellar.cif", "definitions/MiddleDrainCellar.cif", "definitions/WatercellarFirehoses.cif", "definitions/Control.cif", "definitions/BroadcastButtons.cif";
 
 group Tunnel:
   uncontrollable u_broadcastStop, u_broadcastBothTubes, u_broadcastTraffictube1, u_broadcastTraffictube2, u_broadcastSection1, u_broadcastSection2, u_broadcastCamera1, u_broadcastCamera2;
-  Traffictube1: Traffictube(u_broadcastStop, u_broadcastBothTubes, u_broadcastTraffictube1, u_broadcastTraffictube2, u_broadcastSection1, u_broadcastSection2, u_broadcastCamera1, u_broadcastCamera2);
-  Traffictube2: Traffictube(u_broadcastStop, u_broadcastBothTubes, u_broadcastTraffictube2, u_broadcastTraffictube1, u_broadcastSection2, u_broadcastSection1, u_broadcastCamera2, u_broadcastCamera1);
+  Traffictube1: Traffictube();
+  Traffictube2: Traffictube();
+
+  BroadcastButtons1: BroadcastButtons(u_broadcastStop, u_broadcastBothTubes, u_broadcastTraffictube1, u_broadcastTraffictube2, u_broadcastSection1, u_broadcastSection2, u_broadcastCamera1, u_broadcastCamera2);
+  BroadcastButtons2: BroadcastButtons(u_broadcastStop, u_broadcastBothTubes, u_broadcastTraffictube2, u_broadcastTraffictube1, u_broadcastSection2, u_broadcastSection1, u_broadcastCamera2, u_broadcastCamera1);
 
   MiddleTunnelChannel: ^MiddleTunnelChannel();
   WatercellarFirehoses: ^WatercellarFirehoses();
@@ -11,38 +14,44 @@ group Tunnel:
   HeadDrainCellar1: HeadDrainCellar();
   HeadDrainCellar2: HeadDrainCellar();
 
-  requirement Traffictube1.ModeTraffictube.emergency disables {Traffictube2.Standby.c_on, Traffictube2.ModeTraffictube.c_emergency};
-  requirement Traffictube2.ModeTraffictube.emergency disables {Traffictube1.Standby.c_on, Traffictube1.ModeTraffictube.c_emergency};
-  requirement Traffictube1.ModeTraffictube.c_support needs Traffictube2.ModeTraffictube.emergency;
-  requirement Traffictube2.ModeTraffictube.c_support needs Traffictube1.ModeTraffictube.emergency;
-  requirement Traffictube1.Evacuation.c_on needs Traffictube2.ModeTraffictube.support;
-  requirement Traffictube2.Evacuation.c_on needs Traffictube1.ModeTraffictube.support;
-  requirement Traffictube1.ModeTraffictube.c_recovery needs (Traffictube1.ModeTraffictube.emergency and Traffictube1.ButtonRecovery.Observer.pressed) or (Traffictube1.ModeTraffictube.support and Traffictube2.ModeTraffictube.recovery) or (Traffictube1.Maintenance.on and Traffictube1.ButtonRecovery.Observer.pressed);
-  requirement Traffictube2.ModeTraffictube.c_recovery needs (Traffictube2.ModeTraffictube.emergency and Traffictube2.ButtonRecovery.Observer.pressed) or (Traffictube2.ModeTraffictube.support and Traffictube1.ModeTraffictube.recovery) or (Traffictube2.Maintenance.on and Traffictube2.ButtonRecovery.Observer.pressed);
-  requirement MiddleTunnelChannel.Lighting.c_on needs (MiddleTunnelChannel.ControlLighting.Mode.auto and (Traffictube1.Standby.on or Traffictube1.ModeTraffictube.emergency or Traffictube2.Standby.on or Traffictube2.ModeTraffictube.emergency))                                                                                                  or (MiddleTunnelChannel.ControlLighting.Mode.manual and MiddleTunnelChannel.ButtonLightingOn.Observer.pressed);
-  requirement MiddleTunnelChannel.Lighting.c_off needs (MiddleTunnelChannel.ControlLighting.Mode.auto and (Traffictube1.Standby.off and Traffictube2.Standby.off and (Traffictube1.ModeTraffictube.operational or Traffictube1.ModeTraffictube.recovery) and (Traffictube2.ModeTraffictube.operational or Traffictube2.ModeTraffictube.recovery))) or (MiddleTunnelChannel.ControlLighting.Mode.manual and MiddleTunnelChannel.ButtonLightingOff.Observer.pressed);
-  requirement MiddleTunnelChannel.DynamicEscaperouteIndication.c_upward needs (MiddleTunnelChannel.ControlDynamicEscaperouteIndication.Mode.auto and Traffictube1.Evacuation.on)                                 or (MiddleTunnelChannel.ControlDynamicEscaperouteIndication.Mode.manual and MiddleTunnelChannel.ButtonDynamicEscaperouteIndicationUpward.Observer.pressed);
-  requirement MiddleTunnelChannel.DynamicEscaperouteIndication.c_downward needs (MiddleTunnelChannel.ControlDynamicEscaperouteIndication.Mode.auto and Traffictube2.Evacuation.on)                                 or (MiddleTunnelChannel.ControlDynamicEscaperouteIndication.Mode.manual and MiddleTunnelChannel.ButtonDynamicEscaperouteIndicationDownward.Observer.pressed);
-  requirement MiddleTunnelChannel.DynamicEscaperouteIndication.c_off needs (MiddleTunnelChannel.ControlDynamicEscaperouteIndication.Mode.auto and Traffictube1.Evacuation.off and Traffictube2.Evacuation.off) or (MiddleTunnelChannel.ControlDynamicEscaperouteIndication.Mode.manual and MiddleTunnelChannel.ButtonDynamicEscaperouteIndicationOff.Observer.pressed);
-  requirement MiddleTunnelChannel.Broadcast.c_on needs (Traffictube1.Evacuation.on and Traffictube1.SwitchTimerAudio.on1) or (Traffictube2.Evacuation.on and Traffictube2.SwitchTimerAudio.on1) ;
+  requirement Traffictube1.ModeTraffictube.emergency disables {Traffictube2.ModeTraffictube.c_standby, Traffictube2.ModeTraffictube.c_emergency};
+  requirement Traffictube2.ModeTraffictube.emergency disables {Traffictube1.ModeTraffictube.c_standby, Traffictube1.ModeTraffictube.c_emergency};
+  requirement Traffictube1.ModeTraffictube.evacuation disables {Traffictube2.ModeTraffictube.c_standby, Traffictube2.ModeTraffictube.c_emergency};
+  requirement Traffictube2.ModeTraffictube.evacuation disables {Traffictube1.ModeTraffictube.c_standby, Traffictube1.ModeTraffictube.c_emergency};
+  requirement Traffictube1.ModeTraffictube.c_support needs Traffictube2.ModeTraffictube.emergency or Traffictube2.ModeTraffictube.evacuation;
+  requirement Traffictube2.ModeTraffictube.c_support needs Traffictube1.ModeTraffictube.emergency or Traffictube1.ModeTraffictube.evacuation;
+  requirement Traffictube1.ModeTraffictube.c_evacuation needs Traffictube2.ModeTraffictube.support;
+  requirement Traffictube2.ModeTraffictube.c_evacuation needs Traffictube1.ModeTraffictube.support;
+  requirement Traffictube1.ModeTraffictube.c_recovery needs (Traffictube1.ModeTraffictube.emergency and Traffictube1.ButtonRecovery.Observer.pressed) or (Traffictube1.ModeTraffictube.support and Traffictube2.ModeTraffictube.recovery) or (Traffictube1.ModeTraffictube.maintenance and Traffictube1.ButtonRecovery.Observer.pressed);
+  requirement Traffictube2.ModeTraffictube.c_recovery needs (Traffictube2.ModeTraffictube.emergency and Traffictube2.ButtonRecovery.Observer.pressed) or (Traffictube2.ModeTraffictube.support and Traffictube1.ModeTraffictube.recovery) or (Traffictube2.ModeTraffictube.maintenance and Traffictube2.ButtonRecovery.Observer.pressed);
+  requirement BroadcastButtons1.c_off needs Traffictube1.SwitchTimerAudio.off;
+  requirement BroadcastButtons1.c_evacuation needs Traffictube1.SwitchTimerAudio.on1;
+  requirement BroadcastButtons2.c_off needs Traffictube2.SwitchTimerAudio.off;
+  requirement BroadcastButtons2.c_evacuation needs Traffictube2.SwitchTimerAudio.on1;
+  requirement MiddleTunnelChannel.Lighting.c_on needs (MiddleTunnelChannel.ControlLighting.Mode.auto and (Traffictube1.ModeTraffictube.standby or Traffictube1.ModeTraffictube.emergency or Traffictube1.ModeTraffictube.evacuation or Traffictube2.ModeTraffictube.standby or Traffictube2.ModeTraffictube.emergency or Traffictube2.ModeTraffictube.evacuation)) or (MiddleTunnelChannel.ControlLighting.Mode.manual and MiddleTunnelChannel.ButtonLightingOn.Observer.pressed);
+  requirement MiddleTunnelChannel.Lighting.c_off needs (MiddleTunnelChannel.ControlLighting.Mode.auto and ((Traffictube1.ModeTraffictube.operational or Traffictube1.ModeTraffictube.recovery) and (Traffictube2.ModeTraffictube.operational or Traffictube2.ModeTraffictube.recovery))) or (MiddleTunnelChannel.ControlLighting.Mode.manual and MiddleTunnelChannel.ButtonLightingOff.Observer.pressed);
+  requirement MiddleTunnelChannel.DynamicEscaperouteIndication.c_upward needs (MiddleTunnelChannel.ControlDynamicEscaperouteIndication.Mode.auto and Traffictube1.ModeTraffictube.evacuation) or (MiddleTunnelChannel.ControlDynamicEscaperouteIndication.Mode.manual and MiddleTunnelChannel.ButtonDynamicEscaperouteIndicationUpward.Observer.pressed);
+  requirement MiddleTunnelChannel.DynamicEscaperouteIndication.c_downward needs (MiddleTunnelChannel.ControlDynamicEscaperouteIndication.Mode.auto and Traffictube2.ModeTraffictube.evacuation) or (MiddleTunnelChannel.ControlDynamicEscaperouteIndication.Mode.manual and MiddleTunnelChannel.ButtonDynamicEscaperouteIndicationDownward.Observer.pressed);
+  requirement MiddleTunnelChannel.DynamicEscaperouteIndication.c_off needs (MiddleTunnelChannel.ControlDynamicEscaperouteIndication.Mode.auto and not Traffictube1.ModeTraffictube.evacuation and not Traffictube2.ModeTraffictube.evacuation) or (MiddleTunnelChannel.ControlDynamicEscaperouteIndication.Mode.manual and MiddleTunnelChannel.ButtonDynamicEscaperouteIndicationOff.Observer.pressed);
+  requirement MiddleTunnelChannel.Broadcast.c_on needs (Traffictube1.ModeTraffictube.evacuation and Traffictube1.SwitchTimerAudio.on1) or (Traffictube2.ModeTraffictube.evacuation and Traffictube2.SwitchTimerAudio.on1);
   requirement MiddleTunnelChannel.Broadcast.c_onManual needs MiddleTunnelChannel.ButtonStartMessage.Observer.pressed;
   requirement MiddleTunnelChannel.Broadcast.c_suppressed needs Traffictube1.SwitchTimerAudio.on2 or Traffictube2.SwitchTimerAudio.on2;
   requirement MiddleTunnelChannel.Broadcast.c_suppressedManual needs MiddleTunnelChannel.ButtonStopMessage.Observer.pressed;
-  requirement MiddleTunnelChannel.Broadcast.c_off needs (Traffictube1.Evacuation.off and Traffictube2.Evacuation.off);
-  requirement WatercellarFirehoses.Regime.c_extinguish needs (WatercellarFirehoses.Control.Mode.auto and (Traffictube1.EmergencyCabinetA.Firehose.on or Traffictube2.EmergencyCabinetA.Firehose.on or Traffictube1.ModeTraffictube.emergency or Traffictube2.ModeTraffictube.emergency))          or (WatercellarFirehoses.Control.Mode.manual and WatercellarFirehoses.ButtonExtinguish.Observer.pressed);
-  requirement WatercellarFirehoses.Regime.c_guard needs (WatercellarFirehoses.Control.Mode.auto and Traffictube1.EmergencyCabinetA.Firehose.off and Traffictube2.EmergencyCabinetA.Firehose.off and not Traffictube1.ModeTraffictube.emergency and not Traffictube2.ModeTraffictube.emergency) or (WatercellarFirehoses.Control.Mode.manual and WatercellarFirehoses.ButtonGuard.Observer.pressed);
+  requirement MiddleTunnelChannel.Broadcast.c_off needs (not Traffictube1.ModeTraffictube.evacuation and not Traffictube2.ModeTraffictube.evacuation);
+  requirement WatercellarFirehoses.Regime.c_extinguish needs (WatercellarFirehoses.Control.Mode.auto and (Traffictube1.EmergencyCabinetA.Firehose.on or Traffictube2.EmergencyCabinetA.Firehose.on or Traffictube1.ModeTraffictube.emergency or Traffictube1.ModeTraffictube.evacuation or Traffictube2.ModeTraffictube.emergency or Traffictube2.ModeTraffictube.evacuation)) or (WatercellarFirehoses.Control.Mode.manual and WatercellarFirehoses.ButtonExtinguish.Observer.pressed);
+  requirement WatercellarFirehoses.Regime.c_guard needs (WatercellarFirehoses.Control.Mode.auto and Traffictube1.EmergencyCabinetA.Firehose.off and Traffictube2.EmergencyCabinetA.Firehose.off and not Traffictube1.ModeTraffictube.emergency and not Traffictube1.ModeTraffictube.evacuation and not Traffictube2.ModeTraffictube.emergency and not Traffictube2.ModeTraffictube.evacuation) or (WatercellarFirehoses.Control.Mode.manual and WatercellarFirehoses.ButtonGuard.Observer.pressed);
   requirement MiddleDrainCellar.PumpDirection.c_headDrainCellar2 needs HeadDrainCellar1.Sensor5.on;
   requirement MiddleDrainCellar.PumpDirection.c_headDrainCellar1 needs HeadDrainCellar1.Sensor4.off;
 
   group def RequirementsPressure(controllable event c_left, c_right, c_off):
-    requirement c_left needs (MiddleTunnelChannel.ControlPressure.Mode.auto and (Traffictube1.Standby.on or (not Traffictube1.ModeTraffictube.operational and not Traffictube1.ModeTraffictube.support))) or (MiddleTunnelChannel.ControlPressure.Mode.manual and MiddleTunnelChannel.ButtonPressureLeft.Observer.pressed);
-    requirement c_right needs (MiddleTunnelChannel.ControlPressure.Mode.auto and (Traffictube2.Standby.on or (not Traffictube2.ModeTraffictube.operational and not Traffictube2.ModeTraffictube.support))) or (MiddleTunnelChannel.ControlPressure.Mode.manual and MiddleTunnelChannel.ButtonPressureRight.Observer.pressed);
-    requirement c_off needs (MiddleTunnelChannel.ControlPressure.Mode.auto and Traffictube1.ModeTraffictube.operational and Traffictube2.ModeTraffictube.operational and Traffictube1.Standby.off and Traffictube2.Standby.off) or (MiddleTunnelChannel.ControlPressure.Mode.manual and MiddleTunnelChannel.ButtonPressureOff.Observer.pressed);
+    requirement c_left needs (MiddleTunnelChannel.ControlPressure.Mode.auto and (Traffictube1.ModeTraffictube.standby or (not Traffictube1.ModeTraffictube.operational and not Traffictube1.ModeTraffictube.support))) or ( MiddleTunnelChannel.ControlPressure.Mode.manual and MiddleTunnelChannel.ButtonPressureLeft.Observer.pressed);
+    requirement c_right needs (MiddleTunnelChannel.ControlPressure.Mode.auto and (Traffictube2.ModeTraffictube.standby or (not Traffictube2.ModeTraffictube.operational and not Traffictube2.ModeTraffictube.support))) or ( MiddleTunnelChannel.ControlPressure.Mode.manual and MiddleTunnelChannel.ButtonPressureRight.Observer.pressed);
+    requirement c_off needs (MiddleTunnelChannel.ControlPressure.Mode.auto and Traffictube1.ModeTraffictube.operational and Traffictube2.ModeTraffictube.operational) or ( MiddleTunnelChannel.ControlPressure.Mode.manual and MiddleTunnelChannel.ButtonPressureOff.Observer.pressed);
   end
   RequirementsPressure1: RequirementsPressure(MiddleTunnelChannel.Pressure.c_left, MiddleTunnelChannel.Pressure.c_right, MiddleTunnelChannel.Pressure.c_off);
 
   group def RequirementsPompkelder(controllable event c_store, c_empty, c_off; alg bool control_auto, control_manual, button_store, button_empty, button_off):
-    requirement c_store needs (control_auto and (Traffictube1.ModeTraffictube.emergency or Traffictube1.ModeTraffictube.recovery or Traffictube2.ModeTraffictube.emergency or Traffictube2.ModeTraffictube.recovery)) or (control_manual and button_store);
+    requirement c_store needs (control_auto and (Traffictube1.ModeTraffictube.emergency or Traffictube1.ModeTraffictube.evacuation or Traffictube1.ModeTraffictube.recovery or Traffictube2.ModeTraffictube.emergency or Traffictube2.ModeTraffictube.evacuation or Traffictube2.ModeTraffictube.recovery)) or (control_manual and button_store);
     requirement c_empty needs (control_auto and (Traffictube1.ModeTraffictube.operational and Traffictube2.ModeTraffictube.operational)) or (control_manual and button_empty);
     requirement c_off needs control_manual and button_off;
   end

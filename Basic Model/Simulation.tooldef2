@@ -1,7 +1,7 @@
 from "lib:cif3" import *;
 
 // Input files
-string sim_path = "TunnelSimulatieGUI.cif";    //Location of supervisor & simulation/hybrid merged
+string sim_path = "TunnelSimulation.cif";    //Location of supervisor & simulation/hybrid merged
 
 // Simulate the supervisor/hybrid plants simulation model.
 outln("Simulating \"%s\"...", sim_path);
@@ -16,5 +16,4 @@ cif3sim(sim_path,
         "--max-delay=10.0",
         "--option-dialog=no",
         "--stateviz=no",
-        "-o trans-minimal",
-        "--stateviz-filter=Tunnel_MiddenPompkelder_PompRichting,sim_pompkelders.instroom_HPK1.*,sim_pompkelders.hoofdpompkelder_1.*");
+        );

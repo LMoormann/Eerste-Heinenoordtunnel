@@ -25,3 +25,23 @@ group def Boombarrier():
   requirement ActuatorDown.c_on needs not closed;
   requirement ActuatorDown.c_off needs SensorClosed.on;
 end
+
+plant def AccessBoombarrier(controllable c_emergency, c_support):
+  controllable c_open, c_close, c_closeUnconditionally, c_stop;
+  monitor c_emergency, c_support;
+  location stopped:
+    initial; marked;
+    edge c_open goto opening;
+    edge c_close, c_emergency, c_support goto closing;
+    edge c_closeUnconditionally goto closingUnconditionally;
+  location opening:
+    edge c_close, c_emergency, c_support goto closing;
+    edge c_closeUnconditionally goto closingUnconditionally;
+    edge c_stop goto stopped;
+  location closing:
+    edge c_open goto opening;
+    edge c_stop goto stopped;
+  location closingUnconditionally:
+    edge c_open goto opening;
+    edge c_stop goto stopped;
+end

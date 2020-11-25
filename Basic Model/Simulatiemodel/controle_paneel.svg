@@ -26,10 +26,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.99999996"
-     inkscape:cx="238.13595"
-     inkscape:cy="354.96803"
+     inkscape:cx="229.37257"
+     inkscape:cy="394.89299"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="tabblad_Interactie"
      showgrid="false"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
@@ -105,7 +105,7 @@
          id="tspan2125"
          x="61.607765"
          y="25.710686"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:arial;-inkscape-font-specification:arial;stroke-width:0.26458332">Controle paneel</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:arial;-inkscape-font-specification:arial;stroke-width:0.26458332">Control panel</tspan></text>
     <g
        id="knop_Disable"
        inkscape:label="#knop_Bediening"
@@ -160,7 +160,7 @@
            y="35.132935"
            x="143.34921"
            id="tspan1608"
-           sodipodi:role="line">Interactie</tspan></text>
+           sodipodi:role="line">Interaction</tspan></text>
     </g>
   </g>
   <g
@@ -749,14 +749,14 @@
       <text
          id="text964"
          y="27.994217"
-         x="72.224922"
+         x="69.843674"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
          xml:space="preserve"><tspan
            style="stroke-width:0.26458332"
            y="27.994217"
-           x="72.224922"
+           x="69.843674"
            id="tspan962"
-           sodipodi:role="line">Buitenlicht</tspan></text>
+           sodipodi:role="line">Outside Light</tspan></text>
       <g
          transform="translate(0.57266443)"
          id="g1155">
@@ -786,7 +786,7 @@
              id="tspan970"
              x="32.241367"
              y="34.878609"
-             style="stroke-width:0.26458332">Buis 1</tspan></text>
+             style="stroke-width:0.26458332">Tube 1</tspan></text>
         <g
            id="knop_licht_plus_buis_1"
            transform="translate(-5.2916667,-1.4174142)">
@@ -862,7 +862,7 @@
              id="tspan970-3"
              x="111.75964"
              y="34.878613"
-             style="stroke-width:0.26458332">Buis 2</tspan></text>
+             style="stroke-width:0.26458332">Tube 2</tspan></text>
         <g
            id="knop_licht_plus_buis_2"
            transform="translate(74.226647,-1.4174094)">
@@ -939,7 +939,7 @@
            y="34.878609"
            x="32.241367"
            id="tspan970-0"
-           sodipodi:role="line">Regen</tspan></text>
+           sodipodi:role="line">Rain</tspan></text>
       <g
          transform="translate(-5.2916667,-1.4174142)"
          id="knop_regen_plus">
@@ -1001,10 +1001,10 @@
          id="tspan966"
          x="74.634071"
          y="120.83474"
-         style="stroke-width:0.26458332">Obstakel</tspan></text>
+         style="stroke-width:0.26458332">Obstacle</tspan></text>
     <g
        id="g1356"
-       transform="translate(-0.94983546,31.750013)">
+       transform="translate(-3.3310855,31.750013)">
       <text
          id="text1279"
          y="95.732773"
@@ -1015,18 +1015,18 @@
            y="95.732773"
            x="34.909054"
            id="tspan1277"
-           sodipodi:role="line">Buis 1</tspan></text>
+           sodipodi:role="line">Tube 1</tspan></text>
       <text
          id="text1283"
          y="104.25068"
-         x="12.85119"
+         x="4.9136891"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
          xml:space="preserve"><tspan
            style="stroke-width:0.26458332"
            y="104.25068"
-           x="12.85119"
+           x="4.9136891"
            id="tspan1281"
-           sodipodi:role="line">Rijstrook</tspan></text>
+           sodipodi:role="line">Driving lane</tspan></text>
       <text
          id="text1287"
          y="104.25068"
@@ -1037,7 +1037,7 @@
            y="104.25068"
            x="43.845238"
            id="tspan1285"
-           sodipodi:role="line">Vluchtstrook</tspan></text>
+           sodipodi:role="line">Emergency lane</tspan></text>
       <rect
          y="109.73505"
          x="22.084846"
@@ -1055,7 +1055,7 @@
     </g>
     <g
        id="g1520"
-       transform="translate(0,1.5875139)">
+       transform="translate(0,1.7198056)">
       <text
          id="text1279-5"
          y="125.89528"
@@ -1066,18 +1066,18 @@
            y="125.89528"
            x="117.91651"
            id="tspan1277-4"
-           sodipodi:role="line">Buis 2</tspan></text>
+           sodipodi:role="line">Tube 2</tspan></text>
       <text
          id="text1283-0"
          y="134.41322"
-         x="95.85865"
+         x="90.037819"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
          xml:space="preserve"><tspan
            style="stroke-width:0.26458332"
            y="134.41322"
-           x="95.85865"
+           x="90.037819"
            id="tspan1281-5"
-           sodipodi:role="line">Rijstrook</tspan></text>
+           sodipodi:role="line">Driving lane</tspan></text>
       <text
          id="text1287-9"
          y="134.41322"
@@ -1088,7 +1088,7 @@
            y="134.41322"
            x="126.85271"
            id="tspan1285-8"
-           sodipodi:role="line">Vluchtstrook</tspan></text>
+           sodipodi:role="line">Emergency lane</tspan></text>
       <rect
          y="139.89758"
          x="105.0923"
@@ -1110,14 +1110,14 @@
       <text
          id="text1279-2"
          y="95.732773"
-         x="32.523361"
+         x="30.274403"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
          xml:space="preserve"><tspan
            style="stroke-width:0.26458332"
            y="95.732773"
-           x="32.523361"
+           x="30.274403"
            id="tspan1277-6"
-           sodipodi:role="line">Stilstand</tspan></text>
+           sodipodi:role="line">Standstill</tspan></text>
       <g
          id="g5038">
         <text
@@ -1130,7 +1130,7 @@
              id="tspan1281-0"
              x="22.392712"
              y="103.57674"
-             style="stroke-width:0.26458332">Buis 1</tspan></text>
+             style="stroke-width:0.26458332">Tube 1</tspan></text>
         <text
            xml:space="preserve"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -1141,7 +1141,7 @@
              id="tspan1285-7"
              x="48.148277"
              y="103.57674"
-             style="stroke-width:0.26458332">Buis 2</tspan></text>
+             style="stroke-width:0.26458332">Tube 2</tspan></text>
         <rect
            style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
            id="knop_sos_stilstand_buis_1"
@@ -1177,7 +1177,7 @@
            id="tspan962-8"
            x="79.441536"
            y="60.855129"
-           style="stroke-width:0.26458332">Rook</tspan></text>
+           style="stroke-width:0.26458332">Smoke</tspan></text>
       <g
          id="g1155-3"
          transform="translate(0.92245924,32.860906)">
@@ -1207,7 +1207,7 @@
              y="34.878609"
              x="32.241367"
              id="tspan970-09"
-             sodipodi:role="line">Buis 1</tspan></text>
+             sodipodi:role="line">Tube 1</tspan></text>
         <g
            transform="translate(-5.2916667,-1.4174142)"
            id="knop_rook_plus_buis_1">
@@ -1283,7 +1283,7 @@
              y="34.878613"
              x="111.75964"
              id="tspan970-3-0"
-             sodipodi:role="line">Buis 2</tspan></text>
+             sodipodi:role="line">Tube 2</tspan></text>
         <g
            transform="translate(74.226647,-1.4174094)"
            id="knop_rook_plus_buis_2">
@@ -1338,17 +1338,17 @@
       <text
          id="text1279-2-9"
          y="95.732773"
-         x="-5.2666597"
+         x="-12.41041"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
          xml:space="preserve"><tspan
            style="stroke-width:0.26458332"
            y="95.732773"
-           x="-5.2666597"
+           x="-12.41041"
            id="tspan1277-6-5"
-           sodipodi:role="line">Spookrijder</tspan><tspan
+           sodipodi:role="line">Wrongway driver</tspan><tspan
            style="stroke-width:0.26458332"
            y="103.67027"
-           x="-5.2666597"
+           x="-12.41041"
            sodipodi:role="line"
            id="tspan512" /></text>
       <g
@@ -1364,7 +1364,7 @@
              id="tspan1281-0-2"
              x="22.392712"
              y="103.57674"
-             style="stroke-width:0.26458332">Buis 1</tspan></text>
+             style="stroke-width:0.26458332">Tube 1</tspan></text>
         <text
            xml:space="preserve"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -1375,7 +1375,7 @@
              id="tspan1285-7-5"
              x="48.148277"
              y="103.57674"
-             style="stroke-width:0.26458332">Buis 2</tspan></text>
+             style="stroke-width:0.26458332">Tube 2</tspan></text>
         <rect
            style="display:inline;opacity:1;fill:#b72e2e;fill-opacity:1;stroke:#020001;stroke-width:0.26210073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
            id="knop_sos_spookrijder_buis_1"
@@ -1402,14 +1402,14 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="64.664795"
+       x="60.960629"
        y="159.03131"
        id="text968-2"><tspan
          sodipodi:role="line"
          id="tspan966-1"
-         x="64.664795"
+         x="60.960629"
          y="159.03131"
-         style="stroke-width:0.26458332">Noodbediening</tspan></text>
+         style="stroke-width:0.26458332">Emergency control</tspan></text>
     <rect
        y="162.67059"
        x="81.833359"
@@ -1435,7 +1435,7 @@
          id="tspan843"
          x="3.0413561"
          y="36.204529"
-         style="font-size:4.93888903px;stroke-width:0.26458332">Nooddeur</tspan></text>
+         style="font-size:4.93888903px;stroke-width:0.26458332">Escape door</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -1446,7 +1446,7 @@
          id="tspan1617"
          x="65.134964"
          y="27.884865"
-         style="font-size:5.64444447px;stroke-width:0.26458332">Buis 1</tspan></text>
+         style="font-size:5.64444447px;stroke-width:0.26458332">Tube 1</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -1457,7 +1457,7 @@
          id="tspan1621"
          x="131.43759"
          y="27.884865"
-         style="font-size:5.64444447px;stroke-width:0.26458332">Buis 2</tspan></text>
+         style="font-size:5.64444447px;stroke-width:0.26458332">Tube 2</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 40.254466,21.271464 V 190.03783"
@@ -1522,7 +1522,7 @@
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        x="2.4544685"
        y="44.568382"
        id="text1718"><tspan
@@ -1530,7 +1530,7 @@
          id="tspan1716"
          x="2.4544685"
          y="44.568382"
-         style="font-size:4.93888903px;stroke-width:0.26458332">Hulppostkasten</tspan></text>
+         style="font-size:4.23333311px;stroke-width:0.26458332">Emergency cabinet</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.58611107px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -1541,18 +1541,23 @@
          id="tspan1720"
          x="9.5298319"
          y="51.525822"
-         style="font-size:4.58611107px;stroke-width:0.26458332">Deur</tspan></text>
+         style="font-size:4.58611107px;stroke-width:0.26458332">Door</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29166651px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        x="9.3618841"
-       y="84.00737"
+       y="80.03862"
        id="text1730"><tspan
          sodipodi:role="line"
          id="tspan1728"
          x="9.3618841"
-         y="84.00737"
-         style="font-size:4.58611107px;stroke-width:0.26458332">Handblusser</tspan></text>
+         y="80.03862"
+         style="font-size:4.58611107px;stroke-width:0.26458332">Handheld</tspan><tspan
+         sodipodi:role="line"
+         x="9.3618841"
+         y="86.653206"
+         style="font-size:4.58611107px;stroke-width:0.26458332"
+         id="tspan1282">Extinguisher</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.58611107px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -1563,7 +1568,7 @@
          id="tspan1732"
          x="9.398057"
          y="96.604698"
-         style="font-size:4.58611107px;stroke-width:0.26458332">Brandslang</tspan></text>
+         style="font-size:4.58611107px;stroke-width:0.26458332">Fire hose</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.58611107px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -1574,7 +1579,7 @@
          id="tspan1736"
          x="9.3825541"
          y="66.866379"
-         style="font-size:4.58611107px;stroke-width:0.26458332">Noodtelefoon</tspan></text>
+         style="font-size:4.58611107px;stroke-width:0.26458332">Phone</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 0.50000029,0.49999971 V -7.5526283"
