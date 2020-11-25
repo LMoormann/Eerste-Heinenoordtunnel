@@ -6,9 +6,6 @@ import "besturing_svg.cif";
 svgin id "MTK_startboodschap" event Tunnel.MiddleTunnelChannel.ButtonStartMessage.Button.u_push;
 svgin id "MTK_stopboodschap" event Tunnel.MiddleTunnelChannel.ButtonStopMessage.Button.u_push;
 
-svgin id "OnvAfsluitbomen1" event Tunnel.Traffictube1.ButtonCloseUnconditionalBoombarriers.Button.u_push;
-svgin id "OnvAfsluitbomen2" event Tunnel.Traffictube2.ButtonCloseUnconditionalBoombarriers.Button.u_push;
-
 plant def HybrideTimer(event aan,reset,timeout;alg real looptijd):
   cont t = 0 der if uit:       0
                elif afgelopen: 0
@@ -1752,6 +1749,7 @@ group besturing_overzicht_systemen_en_detecties_VRI_en_afsluitboom_rb:
      svgin id "VRI_en_afsluitboom_openen_alle_afsluitbomen"+rb event Tunnel.Traffictube1.ButtonOpenBoombarriers.Button.u_push;
      svgin id "VRI_en_afsluitboom_stop_alle_afsluitbomen"+rb  event Tunnel.Traffictube1.ButtonStopBoombarriers.Button.u_push;
      svgin id "VRI_en_afsluitboom_sluiten_alle_afsluitbomen"+rb  event Tunnel.Traffictube1.ButtonCloseBoombarriers.Button.u_push;
+     svgin id "VRI_en_afsluitboom_Onvsluiten_alle_afsluitbomen"+rb  event Tunnel.Traffictube1.ButtonCloseUnconditionalBoombarriers.Button.u_push;
 
      svgout id "VRI_en_afsluitboom_openen_alle_afsluitbomen"+rb attr "fill"
         value if Tunnel.Traffictube1.Boombarrier1.SensorOpen.on and Tunnel.Traffictube1.Boombarrier2.SensorOpen.on:"yellow" else "grey" end;
@@ -2842,6 +2840,7 @@ group besturing_overzicht_systemen_en_detecties_VRI_en_afsluitboom_lb:
      svgin id "VRI_en_afsluitboom_openen_alle_afsluitbomen"+lb event Tunnel.Traffictube2.ButtonOpenBoombarriers.Button.u_push;
      svgin id "VRI_en_afsluitboom_stop_alle_afsluitbomen"+lb  event Tunnel.Traffictube2.ButtonStopBoombarriers.Button.u_push;
      svgin id "VRI_en_afsluitboom_sluiten_alle_afsluitbomen"+lb  event Tunnel.Traffictube2.ButtonCloseBoombarriers.Button.u_push;
+     svgin id "VRI_en_afsluitboom_Onvsluiten_alle_afsluitbomen"+lb  event Tunnel.Traffictube2.ButtonCloseUnconditionalBoombarriers.Button.u_push;
 
      svgout id "VRI_en_afsluitboom_openen_alle_afsluitbomen"+lb attr "fill"
         value if Tunnel.Traffictube2.Boombarrier1.SensorOpen.on and Tunnel.Traffictube2.Boombarrier2.SensorOpen.on:"yellow" else "grey" end;

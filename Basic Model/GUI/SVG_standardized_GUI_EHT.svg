@@ -547,16 +547,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="743.36532"
-     inkscape:cy="-370.55139"
+     inkscape:zoom="2"
+     inkscape:cx="153.16005"
+     inkscape:cy="-3720.3427"
      inkscape:document-units="px"
-     inkscape:current-layer="drop_down_menu_stand_buis"
+     inkscape:current-layer="overzicht_systemen_en_detecties_omroep"
      showgrid="false"
      width="1650mm"
      inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="-8"
+     inkscape:window-height="1137"
+     inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      scale-x="1"
@@ -5388,74 +5388,80 @@
        inkscape:connector-curvature="0" />
     <path
        id="VRI_en_afsluitboom_sluiten_alle_afsluitbomen"
-       d="m 50.707028,3743.8939 h 60.945202 c 1.78252,0 3.22551,-1.443 3.22551,-3.183 v -21.9845 c 0,-1.7825 -1.44299,-3.2255 -3.22551,-3.2255 H 50.707028 c -1.78252,0 -3.22551,1.443 -3.22551,3.2255 v 21.9845 c 0,1.74 1.44299,3.183 3.22551,3.183 z"
-       style="fill:#697477;fill-opacity:1;fill-rule:evenodd;stroke:none;enable-background:new"
+       d="m 29.45386,3743.8939 h 53.509787 c 1.56505,0 2.831993,-1.2633 2.831993,-2.7866 v -19.247 c 0,-1.5605 -1.266943,-2.8239 -2.831993,-2.8239 H 29.45386 c -1.565049,0 -2.831992,1.2634 -2.831992,2.8239 v 19.247 c 0,1.5233 1.266943,2.7866 2.831992,2.7866 z"
+       style="fill:#697477;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;enable-background:new"
        inkscape:connector-curvature="0" />
     <path
        id="path5618"
-       d="m 50.707028,3743.8939 h 60.945202 c 1.78252,0 3.22551,-1.443 3.22551,-3.183 v -21.9845 c 0,-1.7825 -1.44299,-3.2255 -3.22551,-3.2255 H 50.707028 c -1.78252,0 -3.22551,1.443 -3.22551,3.2255 v 21.9845 c 0,1.74 1.44299,3.183 3.22551,3.183 z"
+       d="m 29.45386,3743.8939 h 53.509787 c 1.56505,0 2.831993,-1.2633 2.831993,-2.7866 v -19.247 c 0,-1.5605 -1.266943,-2.8239 -2.831993,-2.8239 H 29.45386 c -1.565049,0 -2.831992,1.2634 -2.831992,2.8239 v 19.247 c 0,1.5233 1.266943,2.7866 2.831992,2.7866 z"
        style="fill:none;stroke:#000000;stroke-width:0.67905509px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1;enable-background:new"
        inkscape:connector-curvature="0" />
     <text
        id="VRI_en_afsluitboom_sluiten_alle_afsluitbomen_text"
-       y="3733.4199"
-       x="64.195885"
-       style="font-style:normal;font-variant:normal;font-weight:400;font-size:11.5625px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
-       xml:space="preserve"><tspan
+       y="3740.0947"
+       x="41.237755"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-size:10.13727856px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;enable-background:new"
+       xml:space="preserve"
+       transform="scale(1.001438,0.99856407)"><tspan
          id="tspan5622"
-         y="3733.4199"
-         x="64.195885"
-         sodipodi:role="line"><tspan
+         y="3740.0947"
+         x="41.237755"
+         sodipodi:role="line"
+         style="stroke-width:1"><tspan
            id="tspan5620"
-           style="font-style:normal;font-variant:normal;font-weight:400;font-size:11.5625px;font-family:Arial;fill:#ffffff"
+           style="font-style:normal;font-variant:normal;font-weight:400;font-size:10.13727856px;font-family:Arial;fill:#ffffff;stroke-width:1"
            dy="0"
            dx="0">Sluiten</tspan></tspan></text>
     <path
        id="VRI_en_afsluitboom_stop_alle_afsluitbomen"
-       d="m 123.53569,3743.8939 h 60.9452 c 1.78252,0 3.22551,-1.443 3.22551,-3.183 v -21.9845 c 0,-1.7825 -1.44299,-3.2255 -3.22551,-3.2255 h -60.9452 c -1.78252,0 -3.22551,1.443 -3.22551,3.2255 v 21.9845 c 0,1.74 1.44299,3.183 3.22551,3.183 z"
-       style="fill:#697477;fill-opacity:1;fill-rule:evenodd;stroke:none;enable-background:new"
+       d="m 157.39047,3743.8939 h 53.50978 c 1.56505,0 2.83199,-1.2633 2.83199,-2.7866 v -19.247 c 0,-1.5605 -1.26694,-2.8239 -2.83199,-2.8239 h -53.50978 c -1.56505,0 -2.83199,1.2634 -2.83199,2.8239 v 19.247 c 0,1.5233 1.26694,2.7866 2.83199,2.7866 z"
+       style="fill:#697477;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;enable-background:new"
        inkscape:connector-curvature="0" />
     <path
        id="path5628"
-       d="m 123.53569,3743.8939 h 60.9452 c 1.78252,0 3.22551,-1.443 3.22551,-3.183 v -21.9845 c 0,-1.7825 -1.44299,-3.2255 -3.22551,-3.2255 h -60.9452 c -1.78252,0 -3.22551,1.443 -3.22551,3.2255 v 21.9845 c 0,1.74 1.44299,3.183 3.22551,3.183 z"
+       d="m 157.39047,3743.8939 h 53.50978 c 1.56505,0 2.83199,-1.2633 2.83199,-2.7866 v -19.247 c 0,-1.5605 -1.26694,-2.8239 -2.83199,-2.8239 h -53.50978 c -1.56505,0 -2.83199,1.2634 -2.83199,2.8239 v 19.247 c 0,1.5233 1.26694,2.7866 2.83199,2.7866 z"
        style="fill:none;stroke:#000000;stroke-width:0.67905509px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;enable-background:new"
        inkscape:connector-curvature="0" />
     <text
        id="VRI_en_afsluitboom_stop_alle_afsluitbomen_text"
-       y="3733.3164"
-       x="143.30028"
-       style="font-style:normal;font-variant:normal;font-weight:400;font-size:11.5625px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
-       xml:space="preserve"><tspan
+       y="3740.0039"
+       x="174.49283"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-size:10.13727856px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;enable-background:new"
+       xml:space="preserve"
+       transform="scale(1.001438,0.99856407)"><tspan
          id="tspan5632"
-         y="3733.3164"
-         x="143.30028"
-         sodipodi:role="line"><tspan
+         y="3740.0039"
+         x="174.49283"
+         sodipodi:role="line"
+         style="stroke-width:1"><tspan
            id="tspan5630"
-           style="font-style:normal;font-variant:normal;font-weight:400;font-size:11.5625px;font-family:Arial;fill:#ffffff"
+           style="font-style:normal;font-variant:normal;font-weight:400;font-size:10.13727856px;font-family:Arial;fill:#ffffff;stroke-width:1"
            dy="0"
            dx="0">Stop</tspan></tspan></text>
     <path
        id="VRI_en_afsluitboom_openen_alle_afsluitbomen"
-       d="m 195.72774,3743.8939 h 60.9452 c 1.78251,0 3.18307,-1.443 3.18307,-3.183 v -21.9845 c 0,-1.7825 -1.40056,-3.2255 -3.18307,-3.2255 h -60.9452 c -1.78252,0 -3.22551,1.443 -3.22551,3.2255 v 21.9845 c 0,1.74 1.44299,3.183 3.22551,3.183 z"
-       style="fill:#c6a64c;fill-opacity:1;fill-rule:evenodd;stroke:none;enable-background:new"
+       d="m 220.77497,3743.8939 h 53.50978 c 1.56504,0 2.79473,-1.2633 2.79473,-2.7866 v -19.247 c 0,-1.5605 -1.22969,-2.8239 -2.79473,-2.8239 h -53.50978 c -1.56505,0 -2.832,1.2634 -2.832,2.8239 v 19.247 c 0,1.5233 1.26695,2.7866 2.832,2.7866 z"
+       style="fill:#c6a64c;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;enable-background:new"
        inkscape:connector-curvature="0" />
     <path
        id="path5638"
-       d="m 195.72774,3743.8939 h 60.9452 c 1.78251,0 3.18307,-1.443 3.18307,-3.183 v -21.9845 c 0,-1.7825 -1.40056,-3.2255 -3.18307,-3.2255 h -60.9452 c -1.78252,0 -3.22551,1.443 -3.22551,3.2255 v 21.9845 c 0,1.74 1.44299,3.183 3.22551,3.183 z"
+       d="m 220.77497,3743.8939 h 53.50978 c 1.56504,0 2.79473,-1.2633 2.79473,-2.7866 v -19.247 c 0,-1.5605 -1.22969,-2.8239 -2.79473,-2.8239 h -53.50978 c -1.56505,0 -2.832,1.2634 -2.832,2.8239 v 19.247 c 0,1.5233 1.26695,2.7866 2.832,2.7866 z"
        style="fill:none;stroke:#000000;stroke-width:0.67905509px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;enable-background:new"
        inkscape:connector-curvature="0" />
     <text
        id="VRI_en_afsluitboom_openen_alle_afsluitbomen_text"
-       y="3733.4199"
-       x="206.36868"
-       style="font-style:normal;font-variant:normal;font-weight:400;font-size:11.5625px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
-       xml:space="preserve"><tspan
+       y="3740.0947"
+       x="229.78728"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-size:10.13727856px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;enable-background:new"
+       xml:space="preserve"
+       transform="scale(1.001438,0.99856407)"><tspan
          id="tspan5642"
-         y="3733.4199"
-         x="206.36868"
-         sodipodi:role="line"><tspan
+         y="3740.0947"
+         x="229.78728"
+         sodipodi:role="line"
+         style="stroke-width:1"><tspan
            id="tspan5640"
-           style="font-style:normal;font-variant:normal;font-weight:400;font-size:11.5625px;font-family:Arial;fill:#000000"
+           style="font-style:normal;font-variant:normal;font-weight:400;font-size:10.13727856px;font-family:Arial;fill:#000000;stroke-width:1"
            dy="0"
            dx="0">Openen</tspan></tspan></text>
     <path
@@ -6589,6 +6595,33 @@
        id="g8062"
        clip-path="url(#clipEmfPath1-58)"
        transform="translate(20.942359,4095.1589)" />
+    <path
+       id="VRI_en_afsluitboom_sluiten_alle_afsluitbomen-3"
+       d="m 93.453266,3743.5996 h 53.509784 c 1.56505,0 2.832,-1.2633 2.832,-2.7866 v -19.247 c 0,-1.5605 -1.26695,-2.8239 -2.832,-2.8239 H 93.453266 c -1.56505,0 -2.832,1.2634 -2.832,2.8239 v 19.247 c 0,1.5233 1.26695,2.7866 2.832,2.7866 z"
+       style="display:inline;fill:#697477;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;enable-background:new"
+       inkscape:connector-curvature="0" />
+    <path
+       id="VRI_en_afsluitboom_Onvsluiten_alle_afsluitbomen"
+       d="m 93.453266,3743.5996 h 53.509784 c 1.56505,0 2.832,-1.2633 2.832,-2.7866 v -19.247 c 0,-1.5605 -1.26695,-2.8239 -2.832,-2.8239 H 93.453266 c -1.56505,0 -2.832,1.2634 -2.832,2.8239 v 19.247 c 0,1.5233 1.26695,2.7866 2.832,2.7866 z"
+       style="display:inline;fill:none;stroke:#000000;stroke-width:0.67905509px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1;enable-background:new"
+       inkscape:connector-curvature="0"
+       inkscape:label="#VRI_en_afsluitboom_Onvsluiten_alle_afsluitbomen" />
+    <text
+       id="VRI_en_afsluitboom_Onvsluiten_alle_afsluitbomen_text"
+       y="3739.8"
+       x="93.141708"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-size:10.13727856px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;enable-background:new"
+       xml:space="preserve"
+       transform="scale(1.001438,0.99856407)"><tspan
+         id="tspan5622-2"
+         y="3739.8"
+         x="93.141708"
+         sodipodi:role="line"
+         style="stroke-width:1"><tspan
+           id="tspan5620-1"
+           style="font-style:normal;font-variant:normal;font-weight:400;font-size:10.13727856px;font-family:Arial;fill:#ffffff;stroke-width:1"
+           dy="0"
+           dx="0">Sluiten Onv.</tspan></tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
@@ -6660,12 +6693,12 @@
       <path
          inkscape:connector-curvature="0"
          style="display:inline;fill:none;stroke:#000000;stroke-width:1.35811019px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1;enable-background:new"
-         d="M 23.206021,4772.1795 H 279.88885"
+         d="M 23.206021,4811.2887 H 279.88885"
          id="path5750-4" />
       <path
          inkscape:connector-curvature="0"
          style="display:inline;fill:#4c575b;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.45634413;enable-background:new"
-         d="m 23.206021,4685.403 v 85.6937 H 279.88885 v -85.6937 z"
+         d="m 23.206021,4685.403 v 125.2917 H 279.88885 V 4685.403 Z"
          id="path6268-5" />
       <g
          id="overzicht_systemen_en_detecties_omroep_knop_camera"
@@ -6996,6 +7029,62 @@
              sodipodi:role="line"
              id="tspan7630-4-5"
              style="text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:1.03950918">Afspelen</tspan></text>
+      </g>
+      <g
+         transform="translate(5.9007258,123.56703)"
+         style="display:inline;enable-background:new"
+         id="MTK_startboodschap"
+         inkscape:label="#g2652">
+        <path
+           id="overzicht_systemen_en_detecties_omroep_knop_live_bg-7"
+           d="m 31.43922,4681.6072 h 105.40221 c 3.0828,0 5.57838,-1.5001 5.57838,-3.3089 v -22.8531 c 0,-1.8529 -2.49558,-3.3528 -5.57838,-3.3528 H 31.43922 c -3.082797,0 -5.578387,1.4999 -5.578387,3.3528 v 22.8531 c 0,1.8088 2.49559,3.3089 5.578387,3.3089 z"
+           style="display:inline;fill:#697477;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.03950918;enable-background:new"
+           inkscape:connector-curvature="0"
+           inkscape:label="#VRI_en_afsluitboom_rood_alle_verkeerslichten-3-4" />
+        <path
+           id="path6274-3-13-2"
+           d="m 31.43922,4681.6072 h 105.40221 c 3.0828,0 5.57838,-1.5001 5.57838,-3.3089 v -22.8531 c 0,-1.8529 -2.49558,-3.3528 -5.57838,-3.3528 H 31.43922 c -3.082797,0 -5.578387,1.4999 -5.578387,3.3528 v 22.8531 c 0,1.8088 2.49559,3.3089 5.578387,3.3089 z"
+           style="display:inline;fill:none;stroke:#000000;stroke-width:0.70588392px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1;enable-background:new"
+           inkscape:connector-curvature="0" />
+        <text
+           id="VRI_en_afsluitboom_rood_alle_verkeerslichten_text-6-4-5"
+           y="4669.4517"
+           x="83.300262"
+           style="font-style:normal;font-variant:normal;font-weight:400;font-size:10.26589966px;line-height:125%;font-family:Arial;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.03950918;enable-background:new"
+           xml:space="preserve"><tspan
+             id="tspan3773-2"
+             y="4669.4517"
+             x="83.300262"
+             sodipodi:role="line"
+             style="text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:1.03950918">Start boodschap MTK</tspan></text>
+      </g>
+      <g
+         transform="translate(128.16849,123.56702)"
+         style="display:inline;enable-background:new"
+         id="MTK_stopboodschap"
+         inkscape:label="#g2652">
+        <path
+           id="overzicht_systemen_en_detecties_omroep_knop_live_bg-7-0"
+           d="m 31.43922,4681.6072 h 105.40221 c 3.0828,0 5.57838,-1.5001 5.57838,-3.3089 v -22.8531 c 0,-1.8529 -2.49558,-3.3528 -5.57838,-3.3528 H 31.43922 c -3.082797,0 -5.578387,1.4999 -5.578387,3.3528 v 22.8531 c 0,1.8088 2.49559,3.3089 5.578387,3.3089 z"
+           style="display:inline;fill:#697477;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.03950918;enable-background:new"
+           inkscape:connector-curvature="0"
+           inkscape:label="#VRI_en_afsluitboom_rood_alle_verkeerslichten-3-4" />
+        <path
+           id="path6274-3-13-2-9"
+           d="m 31.43922,4681.6072 h 105.40221 c 3.0828,0 5.57838,-1.5001 5.57838,-3.3089 v -22.8531 c 0,-1.8529 -2.49558,-3.3528 -5.57838,-3.3528 H 31.43922 c -3.082797,0 -5.578387,1.4999 -5.578387,3.3528 v 22.8531 c 0,1.8088 2.49559,3.3089 5.578387,3.3089 z"
+           style="display:inline;fill:none;stroke:#000000;stroke-width:0.70588392px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1;enable-background:new"
+           inkscape:connector-curvature="0" />
+        <text
+           id="VRI_en_afsluitboom_rood_alle_verkeerslichten_text-6-4-5-2"
+           y="4669.4517"
+           x="83.300262"
+           style="font-style:normal;font-variant:normal;font-weight:400;font-size:10.26589966px;line-height:125%;font-family:Arial;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.03950918;enable-background:new"
+           xml:space="preserve"><tspan
+             id="tspan3773-2-3"
+             y="4669.4517"
+             x="83.300262"
+             sodipodi:role="line"
+             style="text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:1.03950918">Stop boodschap MTK</tspan></text>
       </g>
     </g>
   </g>
@@ -11326,96 +11415,6 @@
          id="g7646"
          clip-path="url(#clipEmfPath1-21-7)"
          transform="translate(20.227606,3053.3031)" />
-    </g>
-    <g
-       id="OnvAfsluitbomen1"
-       inkscape:label="#g3915">
-      <rect
-         inkscape:label="#rect3772"
-         y="916.37653"
-         x="65.776276"
-         height="40.305088"
-         width="210.80426"
-         id="askdnlkawlnda"
-         style="display:inline;opacity:1;fill:#ffff00;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:4.39961863;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0;enable-background:new" />
-      <text
-         id="text3840"
-         y="943.52368"
-         x="81.648834"
-         style="font-style:normal;font-weight:normal;font-size:26.66666603px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-         xml:space="preserve"><tspan
-           style="font-size:18.66666603px"
-           y="943.52368"
-           x="81.648834"
-           id="tspan3838"
-           sodipodi:role="line">Onv. Afsluitboom 1</tspan></text>
-    </g>
-    <g
-       id="MTK_startboodschap"
-       inkscape:label="#g3925">
-      <rect
-         inkscape:label="#rect3772"
-         y="987.79407"
-         x="68.593681"
-         height="37.995903"
-         width="206.99591"
-         id="ajsndkawlddwa"
-         style="display:inline;opacity:1;fill:#ffff00;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:4.23296499;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0;enable-background:new" />
-      <text
-         id="text3840-3"
-         y="1013.2231"
-         x="70.136726"
-         style="font-style:normal;font-weight:normal;font-size:18.66666603px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
-         xml:space="preserve"><tspan
-           y="1013.2231"
-           x="70.136726"
-           id="tspan3838-9"
-           sodipodi:role="line">MTK Start Boodschap</tspan></text>
-    </g>
-    <g
-       id="MTK_stopboodschap"
-       inkscape:label="#g3930">
-      <rect
-         inkscape:label="#rect3772"
-         y="987.79407"
-         x="288.15186"
-         height="37.995903"
-         width="206.99591"
-         id="oianwdkwalnd"
-         style="display:inline;opacity:1;fill:#ffff00;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:4.23296499;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0;enable-background:new" />
-      <text
-         id="text3840-3-1"
-         y="1012.7426"
-         x="291.9375"
-         style="font-style:normal;font-weight:normal;font-size:18.66666603px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
-         xml:space="preserve"><tspan
-           y="1012.7426"
-           x="291.9375"
-           id="tspan3838-9-2"
-           sodipodi:role="line">MTK Stop Boodschap</tspan></text>
-    </g>
-    <g
-       id="OnvAfsluitbomen2"
-       inkscape:label="#g3920">
-      <rect
-         inkscape:label="#rect3772"
-         y="917.54065"
-         x="287.99777"
-         height="37.976768"
-         width="208.97676"
-         id="kjsadljkawnodilkad"
-         style="display:inline;opacity:1;fill:#ffff00;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:4.25209951;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0;enable-background:new" />
-      <text
-         id="text3840-4"
-         y="943.52448"
-         x="302.22852"
-         style="font-style:normal;font-weight:normal;font-size:26.66666603px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
-         xml:space="preserve"><tspan
-           style="font-size:18.66666603px"
-           y="943.52448"
-           x="302.22852"
-           id="tspan3838-94"
-           sodipodi:role="line">Onv. Afsluitboom 2</tspan></text>
     </g>
   </g>
   <g
@@ -16179,7 +16178,8 @@
   <g
      inkscape:groupmode="layer"
      id="detail_plattegrond_elementen"
-     inkscape:label="detail_plattegrond_elementen">
+     inkscape:label="detail_plattegrond_elementen"
+     style="display:inline">
     <image
        y="1815.8024"
        x="1380.2135"
@@ -16442,7 +16442,7 @@
      inkscape:groupmode="layer"
      id="detail_plattegrond_inactieve_camera_rechts"
      inkscape:label="detail_plattegrond_camera_inactive_camera_rechts"
-     style="filter:url(#filter4141)">
+     style="display:inline;filter:url(#filter4141)">
     <image
        width="38.666668"
        height="16"
@@ -16467,7 +16467,8 @@
   <g
      inkscape:groupmode="layer"
      id="detail_plattegrond_actieve_camera_rechts"
-     inkscape:label="detail_plattegrond_camera_active_camera_rechts">
+     inkscape:label="detail_plattegrond_camera_active_camera_rechts"
+     style="display:inline">
     <image
        y="1933.1301"
        x="-1498.6007"
@@ -16492,7 +16493,8 @@
   <g
      inkscape:groupmode="layer"
      id="overzicht_systemen_en_detecties_drop_down_bluswatervoorziening_blussen_stand"
-     inkscape:label="overzicht_systemen_en_detecties_drop_down_bluswatervoorziening_blussen_stand">
+     inkscape:label="overzicht_systemen_en_detecties_drop_down_bluswatervoorziening_blussen_stand"
+     style="display:inline">
     <g
        style="enable-background:new"
        inkscape:label="overzicht_systemen_en_detecties_drop_down_verlichting_veilige_ruimte_stand"
