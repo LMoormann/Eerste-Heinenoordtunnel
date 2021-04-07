@@ -1,4 +1,4 @@
-CIF models  for the Eerste Heinenoordtunnel.
+CIF models for the Eerste Heinenoordtunnel.
 
 Compatible with CIF version r9682, downloaded from: http://cif.se.wtb.tue.nl/
 

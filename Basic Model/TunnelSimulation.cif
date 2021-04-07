@@ -1,6 +1,6 @@
 import "Supervisor/generated_files/MonolithicSupervisor.cif";
 // import "Supervisor/Tunnel.cif";
 import "GUI/EHT_visualization_GUI.cif";
-import "Simulatiemodel/Hoofd_Simulatie_Tunnel.cif";
+import "Simulation Model/Hoofd_Simulatie_Tunnel.cif";
 
 

@@ -1,0 +1,32 @@
+from "lib:cif3" import *;
+
+// Input file
+string input_path = "Tunnel.cif";
+
+// Output folder
+string output_file = "generated_files/MonolithicSupervisor.cif";
+
+// Synthesize supervisor.
+outln("Synthesizing monolithic supervisor for %s...", input_path);
+outln();
+outln("File %s: synthesizing...", input_path);
+cif3datasynth(input_path,
+              "--option-dialog=no",
+              "-o", output_file,
+              "-t normal",
+              "-m debug",
+              "--stats=timing",
+             "--forward-reach=true",
+              "--bdd-table=400000"
+              );
+outln("File %s: synthesized.", output_file);
+outln();
+
+// Transform supervisor.
+outln("Transforming %s...", output_file);
+cif3cif(output_file,
+        "-o", output_file,
+        "-t simplify-values-optimized"
+        );
+
+outln("Transformation finished");
